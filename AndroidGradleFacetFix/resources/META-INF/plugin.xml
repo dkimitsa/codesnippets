@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>io.github.dkimitsa.androidgradlefacetfix</id>
+    <name>Fix for Android Gradle Facet</name>
+    <version>1.0</version>
+    <vendor email="demyan.kimitsa@gmail.com" url="http://dkimitsa.github.io">Demyan Kimitsa</vendor>
+
+    <description><![CDATA[
+      Fix for Android Gradle Facet that break all Java gradle projects, check <a href="https://youtrack.jetbrains.com/issue/IDEA-122904">IDEA-122904</a><br>
+      <a href="https://dkimitsa.github.io/2018/05/04/idea-fixing-android-gradle-facet3/?plugin">How it works</a>
+    ]]></description>
+
+    <idea-version since-build="173.0"/>
+
+    <depends>org.jetbrains.android</depends>
+
+    <project-components>
+        <component>
+            <implementation-class>io.github.dkimitsa.hacks.AndroidFacetRemoverProjectComponent</implementation-class>
+        </component>
+    </project-components>
+
+</idea-plugin>
