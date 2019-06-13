@@ -1,0 +1,177 @@
+
+
+
+
+test1.m
+__________________________
+struct PascalString { char v1;};
+%struct.PascalString = type { i8 }
+out/test1.m.x86_64:ret i32 1
+out/test1.m.x86:ret i32 1
+out/test1.m.armv7:ret i32 1
+
+out/test1.m.x86_64:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test1.m.x86:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test1.m.armv7:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+
+
+
+test2.m
+__________________________
+struct PascalString { short v1; short v2;};
+%struct.PascalString = type { i16, i16 }
+out/test2.m.x86_64:ret i32 4
+out/test2.m.x86:ret i32 4
+out/test2.m.armv7:ret i32 4
+
+out/test2.m.x86_64:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test2.m.x86:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test2.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+test3.m
+__________________________
+struct PascalString { char v1; short v2;};
+%struct.PascalString = type { i8, i16 }
+out/test3.m.x86_64:ret i32 4
+out/test3.m.x86:ret i32 4
+out/test3.m.armv7:ret i32 4
+
+out/test3.m.x86_64:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test3.m.x86:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test3.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+test4.m
+__________________________
+struct PascalString { short v1; char v2;};
+%struct.PascalString = type { i16, i8 }
+out/test4.m.x86_64:ret i32 4
+out/test4.m.x86:ret i32 4
+out/test4.m.armv7:ret i32 4
+
+out/test4.m.x86_64:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test4.m.x86:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test4.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+test5.m
+__________________________
+struct PascalString { char v1; short v2; char v3;};
+%struct.PascalString = type { i8, i16, i8 }
+out/test5.m.x86_64:ret i32 6
+out/test5.m.x86:ret i32 6
+out/test5.m.armv7:ret i32 6
+
+out/test5.m.x86_64:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/test5.m.x86:declare void @objc_msgSend_stret(i8*, i8*, ...)
+out/test5.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+pack_test1.m
+__________________________
+#pragma pack(push, 1)
+struct PascalString { char v1;};
+%struct.PascalString = type { i8 }
+out/pack_test1.m.x86_64:ret i32 1
+out/pack_test1.m.x86:ret i32 1
+out/pack_test1.m.armv7:ret i32 1
+
+out/pack_test1.m.x86_64:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/pack_test1.m.x86:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/pack_test1.m.armv7:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+
+
+
+pack_test2.m
+__________________________
+#pragma pack(push, 1)
+struct PascalString { char v1; char v2;};
+%struct.PascalString = type { i8, i8 }
+out/pack_test2.m.x86_64:ret i32 2
+out/pack_test2.m.x86:ret i32 2
+out/pack_test2.m.armv7:ret i32 2
+
+out/pack_test2.m.x86_64:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/pack_test2.m.x86:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/pack_test2.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+pack_test3.m
+__________________________
+#pragma pack(push, 1)
+struct PascalString { char v1; short v2;};
+%struct.PascalString = type <{ i8, i16 }>
+out/pack_test3.m.x86_64:ret i32 3
+out/pack_test3.m.x86:ret i32 3
+out/pack_test3.m.armv7:ret i32 3
+
+out/pack_test3.m.x86_64:declare void @objc_msgSend_stret(i8*, i8*, ...)
+out/pack_test3.m.x86:declare void @objc_msgSend_stret(i8*, i8*, ...)
+out/pack_test3.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+pack_test4.m
+__________________________
+#pragma pack(push, 1)
+struct PascalString { short v1; char v2;};
+%struct.PascalString = type <{ i16, i8 }>
+out/pack_test4.m.x86_64:ret i32 3
+out/pack_test4.m.x86:ret i32 3
+out/pack_test4.m.armv7:ret i32 3
+
+out/pack_test4.m.x86_64:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/pack_test4.m.x86:declare void @objc_msgSend_stret(i8*, i8*, ...)
+out/pack_test4.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+pack_test5.m
+__________________________
+#pragma pack(push, 1)
+struct PascalString { char v1; short v2; char v3;};
+%struct.PascalString = type <{ i8, i16, i8 }>
+out/pack_test5.m.x86_64:ret i32 4
+out/pack_test5.m.x86:ret i32 4
+out/pack_test5.m.armv7:ret i32 4
+
+out/pack_test5.m.x86_64:declare void @objc_msgSend_stret(i8*, i8*, ...)
+out/pack_test5.m.x86:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/pack_test5.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+pack_test6.m
+__________________________
+#pragma pack(push, 1)
+struct padding { short p1; };
+struct PascalString { char v1; struct padding v2; char v3;};
+%struct.PascalString = type <{ i8, %struct.padding, i8 }>
+out/pack_test6.m.x86_64:ret i32 4
+out/pack_test6.m.x86:ret i32 4
+out/pack_test6.m.armv7:ret i32 4
+
+out/pack_test6.m.x86_64:declare void @objc_msgSend_stret(i8*, i8*, ...)
+out/pack_test6.m.x86:declare i8* @objc_msgSend(i8*, i8*, ...) #1
+out/pack_test6.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
+
+
+
+pack_test7.m
+__________________________
+#pragma pack(push, 2)
+struct PascalString { short p1; long long p2;};
+%struct.PascalString = type <{ i16, i64 }>
+out/pack_test7.m.x86_64:ret i32 10
+out/pack_test7.m.x86:ret i32 10
+out/pack_test7.m.armv7:ret i32 10
+
+out/pack_test7.m.x86_64:declare void @objc_msgSend_stret(i8*, i8*, ...)
+out/pack_test7.m.x86:declare void @objc_msgSend_stret(i8*, i8*, ...)
+out/pack_test7.m.armv7:declare void @objc_msgSend_stret(i8*, i8*, ...)
