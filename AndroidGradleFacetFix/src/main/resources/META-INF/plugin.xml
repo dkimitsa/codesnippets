@@ -19,4 +19,8 @@
         </component>
     </project-components>
 
+    <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Android Facet removed notification"
+                           displayType="BALLOON"/>
+    </extensions>
 </idea-plugin>

@@ -1,8 +1,13 @@
 package io.github.dkimitsa.hacks;
 
 import com.android.tools.idea.gradle.project.facet.gradle.GradleFacet;
-import com.intellij.facet.*;
-import com.intellij.notification.*;
+import com.intellij.facet.Facet;
+import com.intellij.facet.FacetManager;
+import com.intellij.facet.ModifiableFacetModel;
+import com.intellij.facet.ProjectWideFacetAdapter;
+import com.intellij.facet.ProjectWideFacetListenersRegistry;
+import com.intellij.notification.NotificationGroupManager;
+import com.intellij.notification.NotificationType;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.components.ProjectComponent;
 import com.intellij.openapi.module.Module;
@@ -13,8 +18,6 @@ import org.jetbrains.annotations.NotNull;
 
 public class AndroidFacetRemoverProjectComponent implements ProjectComponent {
 
-    private static final NotificationGroup GROUP = new NotificationGroup("Android facet-fix notifications",
-            NotificationDisplayType.NONE, true);
     private final Project myProject;
 
     public AndroidFacetRemoverProjectComponent(Project p) {
@@ -30,28 +33,29 @@ public class AndroidFacetRemoverProjectComponent implements ProjectComponent {
 
     @Override
     public void projectOpened() {
-        removeExtraFacets();
+        ApplicationManager.getApplication().invokeLater(() -> {
+            ApplicationManager.getApplication().runWriteAction(this::removeExtraFacets);
+        });
     }
 
     private void removeExtraFacets() {
-        ApplicationManager.getApplication().runWriteAction(() -> {
-            StringBuilder sb = new StringBuilder();
-            String facetsRemoved = "";
-            for (Module module : ModuleManager.getInstance(myProject).getModules()) {
-                if (AndroidFacet.getInstance(module) == null && GradleFacet.getInstance(module) != null) {
-                    ModifiableFacetModel model = FacetManager.getInstance(module).createModifiableModel();
-                    model.removeFacet(GradleFacet.getInstance(module));
-                    facetsRemoved = GradleFacet.getFacetId();
-                    model.commit();
+        StringBuilder sb = new StringBuilder();
+        for (Module module : ModuleManager.getInstance(myProject).getModules()) {
+            if (AndroidFacet.getInstance(module) == null && GradleFacet.getInstance(module) != null) {
+                ModifiableFacetModel model = FacetManager.getInstance(module).createModifiableModel();
+                model.removeFacet(GradleFacet.getInstance(module));
+                model.commit();
 
-                    sb.append(facetsRemoved).append(" from module <b>").append(module.getName()).append("</b><br>");
-                }
+                sb.append(GradleFacet.getFacetId()).append(" from module <b>").append(module.getName()).append("</b><br>");
             }
+        }
 
-            if (sb.length() > 0) {
-                Notification notification = GROUP.createNotification("Facets removed", sb.toString(), NotificationType.INFORMATION);
-                Notifications.Bus.notify(notification, myProject);
-            }
-        });
+        if (sb.length() > 0) {
+            String message = "Facets removed:\n" + sb;
+            NotificationGroupManager.getInstance()
+                    .getNotificationGroup("Android Facet removed notification")
+                    .createNotification(message, NotificationType.INFORMATION)
+                    .notify(myProject);
+        }
     }
 }
