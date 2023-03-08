@@ -9,7 +9,7 @@
       <a href="https://dkimitsa.github.io/2018/05/04/idea-fixing-android-gradle-facet3/?plugin">How it works</a>
     ]]></description>
 
-    <idea-version since-build="213"/>
+    <idea-version since-build="222"/>
 
     <depends>org.jetbrains.android</depends>
 
