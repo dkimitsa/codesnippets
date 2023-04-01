@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>io.github.dkimitsa.robovm</groupId>
+    <version>1.0.0-SNAPSHOT</version>
+    <artifactId>robopods-rare-parent</artifactId>
+    <name>RoboPods Parent</name>
+    <packaging>pom</packaging>
+    <url>https://dkimitsa.github.io</url>
+    <description>
+        Alternative RoboPods: currently in development or not yet in official repo.
+    </description>
+    <inceptionYear>2017</inceptionYear>
+
+    <organization>
+        <name>Demyan Kimitsa</name>
+        <url>https://dkimitsa.github.io</url>
+    </organization>
+
+    <scm>
+        <url>https://github.com/dkimitsa/robovm-robopods</url>
+        <connection>scm:git:git://github.com/dkimitsa/robovm-robopods.git</connection>
+        <developerConnection>scm:git:git@github.com:github.com/dkimitsa/robovm-robopods.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/dkimitsa/robovm-robopods/issues</url>
+    </issueManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <robovm.version>2.3.19</robovm.version>
+        <robopods.version>${project.version}</robopods.version>
+        <skipTests>true</skipTests>
+    </properties>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven.org</id>
+            <url>http://repo1.maven.org/maven2/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!-- sonatype to access snapshots -->
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <!-- common robovm dependencies -->
+    <dependencies>
+        <dependency>
+            <groupId>com.mobidevelop.robovm</groupId>
+            <artifactId>robovm-rt</artifactId>
+            <version>${robovm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mobidevelop.robovm</groupId>
+            <artifactId>robovm-objc</artifactId>
+            <version>${robovm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.mobidevelop.robovm</groupId>
+            <artifactId>robovm-cocoatouch</artifactId>
+            <version>${robovm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!-- adds META-INF/robovm.xml where available -->
+        <resources>
+            <resource>
+                <directory>src/main/robopods</directory>
+            </resource>
+        </resources>
+
+        <!--  -->
+        <!-- common plugins: versions to be specified only here -->
+        <!--  -->
+        <pluginManagement>
+            <plugins>
+                <!-- compiler: produce Java8 code everywhere by default -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+                    <configuration>
+                        <release>8</release>
+                        <debug>true</debug>
+                        <optimize>true</optimize>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.1.1</version>
+                    <configuration>
+                        <doclint>none</doclint>
+                        <release>8</release>
+                        <detectJavaApiLink>false</detectJavaApiLink>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.1.0</version>
+                    <configuration>
+                        <excludeResources>true</excludeResources>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>1.6</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+
+        <!--  -->
+        <!-- Common actions: build, javadoc and sources -->
+        <!--  -->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>yabbiads</module>
+    </modules>
+</project>

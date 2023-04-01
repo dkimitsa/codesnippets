@@ -1,0 +1,52 @@
+package: org.robovm.pods.yabbiads
+include: [foundation, uikit, coregraphics, coreanimation]
+framework: YabbiAds
+clang_args: ['-x', 'objective-c']
+headers:
+    - "#import <UIKit/UIKit.h>"
+    - YabbiAds-Swift.h
+
+private_typedefs: {}
+
+typedefs: {}
+
+enums:
+    AdType: {}
+
+classes:
+    YabbiAds:
+        methods:
+            '+setCustomParams::':
+                name: setCustomParams
+            '+showAd::':
+                name: showAd
+    YabbiConfiguration:
+        methods:
+            '-initWithPublisherID:interstitialID:rewardedID:':
+                name: init
+
+
+protocols:
+    YbiInterstitialDelegate: {}
+    YbiRewardedDelegate: {}
+functions:
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    SWIFT_(.*):
+        exclude: true
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: '#{g[0]}'
