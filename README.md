@@ -1,2 +1,2 @@
-# codesnippets
-contains different code/projects to demonstrace specific cases, mostly RoboVM related
+# codesnippets -- rare bindings 
+ones that are not part of alt-pods
