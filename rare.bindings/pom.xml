@@ -35,9 +35,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <robovm.version>2.3.20</robovm.version>
-        <robopods.version>${project.version}</robopods.version>
         <skipTests>true</skipTests>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh dkimitsa</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <pluginRepositories>
         <pluginRepository>
