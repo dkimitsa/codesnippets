@@ -37,7 +37,7 @@ import org.robovm.apple.coreanimation.*;
 /*</javadoc>*/
 /*<annotations>*//*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/YbiRewardedDelegateAdapter/*</name>*/ 
-    extends /*<extends>*/NSObject/*</extends>*/ 
+    extends /*<extends>*/YbiAdDelegateAdapter/*</extends>*/ 
     /*<implements>*/implements YbiRewardedDelegate/*</implements>*/ {
 
     /*<ptr>*/

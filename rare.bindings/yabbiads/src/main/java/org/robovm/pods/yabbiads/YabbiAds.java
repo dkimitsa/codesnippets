@@ -54,24 +54,32 @@ import org.robovm.apple.coreanimation.*;
     /*</properties>*/
     /*<members>*//*</members>*/
     /*<methods>*/
+    @Method(selector = "INTERSTITIAL")
+    public static native @MachineSizedSInt long INTERSTITIAL();
+    @Method(selector = "REWARDED")
+    public static native @MachineSizedSInt long REWARDED();
     @Method(selector = "initialize:")
     public static native void initialize(YabbiConfiguration configuration);
     @Method(selector = "setCustomParams::")
     public static native void setCustomParams(String key, String value);
+    @Method(selector = "setMetaData::")
+    public static native void setMetaData(String key, String value);
     @Method(selector = "configuration")
     public static native YabbiConfiguration configuration();
     @Method(selector = "isInitialized")
     public static native boolean isInitialized();
     @Method(selector = "loadAd:")
-    public static native void loadAd(AdType type);
+    public static native void loadAd(@MachineSizedSInt long type);
     @Method(selector = "canLoadAd:")
-    public static native boolean canLoadAd(AdType type);
+    public static native boolean canLoadAd(@MachineSizedSInt long type);
     @Method(selector = "isAdLoaded:")
-    public static native boolean isAdLoaded(AdType type);
+    public static native boolean isAdLoaded(@MachineSizedSInt long type);
+    @Method(selector = "isAdLoading:")
+    public static native boolean isAdLoading(@MachineSizedSInt long type);
     @Method(selector = "showAd::")
-    public static native void showAd(AdType type, UIViewController rootViewController);
+    public static native void showAd(@MachineSizedSInt long type, UIViewController rootViewController);
     @Method(selector = "destroyAd:")
-    public static native void destroyAd(AdType type);
+    public static native void destroyAd(@MachineSizedSInt long type);
     @Method(selector = "setInterstitialDelegate:")
     public static native void setInterstitialDelegate(YbiInterstitialDelegate delegate);
     @Method(selector = "setRewardedDelegate:")

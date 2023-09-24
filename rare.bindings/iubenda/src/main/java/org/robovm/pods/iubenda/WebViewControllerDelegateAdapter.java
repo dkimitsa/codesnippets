@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.robovm.pods.yabbiads;
+package org.robovm.pods.iubenda;
 
 /*<imports>*/
 import java.io.*;
@@ -29,39 +29,44 @@ import org.robovm.rt.bro.annotation.*;
 import org.robovm.rt.bro.ptr.*;
 import org.robovm.apple.foundation.*;
 import org.robovm.apple.uikit.*;
-import org.robovm.apple.coregraphics.*;
-import org.robovm.apple.coreanimation.*;
+import org.robovm.apple.webkit.*;
 /*</imports>*/
 
 /*<javadoc>*/
-
 /*</javadoc>*/
 /*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/YbiRewardedDelegate/*</name>*/ 
-    /*<implements>*/extends YbiAdDelegate/*</implements>*/ {
+/*<visibility>*/public/*</visibility>*/ class /*<name>*/WebViewControllerDelegateAdapter/*</name>*/ 
+    extends /*<extends>*/NSObject/*</extends>*/ 
+    /*<implements>*/implements WebViewControllerDelegate/*</implements>*/ {
 
     /*<ptr>*/
     /*</ptr>*/
     /*<bind>*/
     /*</bind>*/
     /*<constants>*//*</constants>*/
+    /*<constructors>*//*</constructors>*/
     /*<properties>*/
     
     /*</properties>*/
+    /*<members>*//*</members>*/
     /*<methods>*/
-    @Method(selector = "onRewardedLoaded")
-    void onRewardedLoaded();
-    @Method(selector = "onRewardedLoadFailed:")
-    void onRewardedLoadFailed(String error);
-    @Method(selector = "onRewardedShown")
-    void onRewardedShown();
-    @Method(selector = "onRewardedShowFailed:")
-    void onRewardedShowFailed(String error);
-    @Method(selector = "onRewardedClosed")
-    void onRewardedClosed();
-    @Method(selector = "onRewardedFinished")
-    void onRewardedFinished();
+    @NotImplemented("receivedConsentWithPreferences:")
+    public void receivedConsent(String preferences) {}
+    @NotImplemented("onErrorWithUrl:")
+    public void onError(NSURL url) {}
+    @NotImplemented("openLinkWithUrl:")
+    public void openLink(String url) {}
+    @NotImplemented("openExternalLinkWithUrl:")
+    public boolean openExternalLink(NSURL url) { return false; }
+    @NotImplemented("onLargePopup")
+    public void onLargePopup() {}
+    @NotImplemented("onSmallPopup")
+    public void onSmallPopup() {}
+    @NotImplemented("onCSReady")
+    public void onCSReady() {}
+    @NotImplemented("onNavigationStart")
+    public void onNavigationStart() {}
+    @NotImplemented("onNavigationFinish")
+    public void onNavigationFinish() {}
     /*</methods>*/
-    /*<adapter>*/
-    /*</adapter>*/
 }

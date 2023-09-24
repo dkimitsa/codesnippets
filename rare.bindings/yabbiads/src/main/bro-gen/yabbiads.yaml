@@ -11,7 +11,6 @@ private_typedefs: {}
 typedefs: {}
 
 enums:
-    AdType: {}
 
 classes:
     YabbiAds:
@@ -20,6 +19,8 @@ classes:
                 name: setCustomParams
             '+showAd::':
                 name: showAd
+            '+setMetaData::':
+                name: setMetaData
     YabbiConfiguration:
         methods:
             '-initWithPublisherID:interstitialID:rewardedID:':
@@ -29,6 +30,8 @@ classes:
 protocols:
     YbiInterstitialDelegate: {}
     YbiRewardedDelegate: {}
+    YbiAdDelegate: {}
+
 functions:
     # Make sure we don't miss any functions if new ones are introduced in a later version
     (.*):
@@ -36,7 +39,6 @@ functions:
         name: 'Function_#{g[0]}'
 
 values:
-
     # Make sure we don't miss any values if new ones are introduced in a later version
     (.*):
         class: __FixMe

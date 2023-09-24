@@ -1,0 +1,87 @@
+package: org.robovm.pods.iubenda
+include: [foundation, uikit, webkit]
+clang_args: ['-x', 'objective-c']
+framework: iubenda
+headers:
+    - "#import <WebKit/WebKit.h>"
+    - iubenda-Swift.h
+
+typedefs:
+
+private_typedefs:
+
+enums:
+    BannerPosition: { }
+    GDPRApplies: { }
+    ATTStatus: { }
+    SubjectToGDPR: { }
+
+classes:
+    CMPStorageV1: { }
+    IubendaCMP:
+        methods:
+            '+initializeWith:':
+                name: initialize
+            '+saveConsentWithPreferences:timestamp:':
+                name: saveConsent
+            '+isPurposeEnabledWithId:':
+                name: isPurposeEnabled
+            '+requestAttConsentFrom:callback:':
+                name: requestAttConsent
+            '+getATTStatusFrom:callback:':
+                name: getATTStatus
+    IubendaCMPConfiguration: { }
+    Preferences: { }
+    TCF2Data: { }
+    TCF2DataConsents: { }
+    UserPreferences: { }
+    WebViewController:
+        methods:
+            '-userContentController:didReceiveScriptMessage:':
+                name: didReceiveScriptMessage
+            '-webView:decidePolicyForNavigationAction:decisionHandler:':
+                name: decidePolicyForNavigationAction
+            '-webView:createWebViewWithConfiguration:forNavigationAction:windowFeatures:':
+                name: createWebView
+            '-webView:decidePolicyForNavigationResponse:decisionHandler:':
+                name: decidePolicyForNavigationResponse
+            '-webView:didStartProvisionalNavigation:':
+                name: didStartProvisionalNavigation
+            '-webView:didFinishNavigation:':
+                name: didFinishNavigation
+
+protocols:
+    CMPStorage: {}
+    WebViewControllerDelegate:
+        methods:
+            '-receivedConsentWithPreferences:':
+                name: receivedConsent
+            '-onErrorWithUrl:':
+                name: onError
+            '-openLinkWithUrl:':
+                name: openLink
+            '-openExternalLinkWithUrl:':
+                name: openExternalLink
+functions:
+
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    SWIFT_.*:
+        exclude: true
+
+    # Make sure we don't miss any constants if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Constant__#{g[0]}'

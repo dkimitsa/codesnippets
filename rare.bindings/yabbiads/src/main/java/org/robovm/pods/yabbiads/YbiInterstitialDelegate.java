@@ -38,7 +38,7 @@ import org.robovm.apple.coreanimation.*;
 /*</javadoc>*/
 /*<annotations>*//*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ interface /*<name>*/YbiInterstitialDelegate/*</name>*/ 
-    /*<implements>*/extends NSObjectProtocol/*</implements>*/ {
+    /*<implements>*/extends YbiAdDelegate/*</implements>*/ {
 
     /*<ptr>*/
     /*</ptr>*/

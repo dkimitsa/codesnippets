@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.robovm.pods.yabbiads;
+package org.robovm.pods.iubenda;
 
 /*<imports>*/
 import java.io.*;
@@ -29,16 +29,15 @@ import org.robovm.rt.bro.annotation.*;
 import org.robovm.rt.bro.ptr.*;
 import org.robovm.apple.foundation.*;
 import org.robovm.apple.uikit.*;
-import org.robovm.apple.coregraphics.*;
-import org.robovm.apple.coreanimation.*;
+import org.robovm.apple.webkit.*;
 /*</imports>*/
 
 /*<javadoc>*/
 
 /*</javadoc>*/
 /*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/YbiRewardedDelegate/*</name>*/ 
-    /*<implements>*/extends YbiAdDelegate/*</implements>*/ {
+/*<visibility>*/public/*</visibility>*/ interface /*<name>*/WebViewControllerDelegate/*</name>*/ 
+    /*<implements>*/extends NSObjectProtocol/*</implements>*/ {
 
     /*<ptr>*/
     /*</ptr>*/
@@ -49,18 +48,24 @@ import org.robovm.apple.coreanimation.*;
     
     /*</properties>*/
     /*<methods>*/
-    @Method(selector = "onRewardedLoaded")
-    void onRewardedLoaded();
-    @Method(selector = "onRewardedLoadFailed:")
-    void onRewardedLoadFailed(String error);
-    @Method(selector = "onRewardedShown")
-    void onRewardedShown();
-    @Method(selector = "onRewardedShowFailed:")
-    void onRewardedShowFailed(String error);
-    @Method(selector = "onRewardedClosed")
-    void onRewardedClosed();
-    @Method(selector = "onRewardedFinished")
-    void onRewardedFinished();
+    @Method(selector = "receivedConsentWithPreferences:")
+    void receivedConsent(String preferences);
+    @Method(selector = "onErrorWithUrl:")
+    void onError(NSURL url);
+    @Method(selector = "openLinkWithUrl:")
+    void openLink(String url);
+    @Method(selector = "openExternalLinkWithUrl:")
+    boolean openExternalLink(NSURL url);
+    @Method(selector = "onLargePopup")
+    void onLargePopup();
+    @Method(selector = "onSmallPopup")
+    void onSmallPopup();
+    @Method(selector = "onCSReady")
+    void onCSReady();
+    @Method(selector = "onNavigationStart")
+    void onNavigationStart();
+    @Method(selector = "onNavigationFinish")
+    void onNavigationFinish();
     /*</methods>*/
     /*<adapter>*/
     /*</adapter>*/

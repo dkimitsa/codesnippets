@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.robovm.pods.yabbiads;
+package org.robovm.pods.iubenda;
 
 /*<imports>*/
 import java.io.*;
@@ -29,39 +29,30 @@ import org.robovm.rt.bro.annotation.*;
 import org.robovm.rt.bro.ptr.*;
 import org.robovm.apple.foundation.*;
 import org.robovm.apple.uikit.*;
-import org.robovm.apple.coregraphics.*;
-import org.robovm.apple.coreanimation.*;
+import org.robovm.apple.webkit.*;
 /*</imports>*/
 
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/YbiRewardedDelegate/*</name>*/ 
-    /*<implements>*/extends YbiAdDelegate/*</implements>*/ {
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC7iubenda15UserPreferences")/*</annotations>*/
+/*<visibility>*/public/*</visibility>*/ class /*<name>*/UserPreferences/*</name>*/ 
+    extends /*<extends>*/NSObject/*</extends>*/ 
+    /*<implements>*//*</implements>*/ {
 
-    /*<ptr>*/
-    /*</ptr>*/
-    /*<bind>*/
-    /*</bind>*/
+    /*<ptr>*/public static class UserPreferencesPtr extends Ptr<UserPreferences, UserPreferencesPtr> {}/*</ptr>*/
+    /*<bind>*/static { ObjCRuntime.bind(UserPreferences.class); }/*</bind>*/
     /*<constants>*//*</constants>*/
+    /*<constructors>*/
+    public UserPreferences() {}
+    protected UserPreferences(Handle h, long handle) { super(h, handle); }
+    protected UserPreferences(SkipInit skipInit) { super(skipInit); }
+    /*</constructors>*/
     /*<properties>*/
     
     /*</properties>*/
+    /*<members>*//*</members>*/
     /*<methods>*/
-    @Method(selector = "onRewardedLoaded")
-    void onRewardedLoaded();
-    @Method(selector = "onRewardedLoadFailed:")
-    void onRewardedLoadFailed(String error);
-    @Method(selector = "onRewardedShown")
-    void onRewardedShown();
-    @Method(selector = "onRewardedShowFailed:")
-    void onRewardedShowFailed(String error);
-    @Method(selector = "onRewardedClosed")
-    void onRewardedClosed();
-    @Method(selector = "onRewardedFinished")
-    void onRewardedFinished();
+    
     /*</methods>*/
-    /*<adapter>*/
-    /*</adapter>*/
 }

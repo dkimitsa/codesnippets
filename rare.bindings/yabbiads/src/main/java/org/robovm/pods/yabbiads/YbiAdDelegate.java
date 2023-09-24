@@ -37,8 +37,8 @@ import org.robovm.apple.coreanimation.*;
 
 /*</javadoc>*/
 /*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/YbiRewardedDelegate/*</name>*/ 
-    /*<implements>*/extends YbiAdDelegate/*</implements>*/ {
+/*<visibility>*/public/*</visibility>*/ interface /*<name>*/YbiAdDelegate/*</name>*/ 
+    /*<implements>*/extends NSObjectProtocol/*</implements>*/ {
 
     /*<ptr>*/
     /*</ptr>*/
@@ -49,18 +49,7 @@ import org.robovm.apple.coreanimation.*;
     
     /*</properties>*/
     /*<methods>*/
-    @Method(selector = "onRewardedLoaded")
-    void onRewardedLoaded();
-    @Method(selector = "onRewardedLoadFailed:")
-    void onRewardedLoadFailed(String error);
-    @Method(selector = "onRewardedShown")
-    void onRewardedShown();
-    @Method(selector = "onRewardedShowFailed:")
-    void onRewardedShowFailed(String error);
-    @Method(selector = "onRewardedClosed")
-    void onRewardedClosed();
-    @Method(selector = "onRewardedFinished")
-    void onRewardedFinished();
+    
     /*</methods>*/
     /*<adapter>*/
     /*</adapter>*/

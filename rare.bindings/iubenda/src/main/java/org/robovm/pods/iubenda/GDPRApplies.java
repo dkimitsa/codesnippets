@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.robovm.pods.yabbiads;
+package org.robovm.pods.iubenda;
 
 /*<imports>*/
 import java.io.*;
@@ -29,39 +29,36 @@ import org.robovm.rt.bro.annotation.*;
 import org.robovm.rt.bro.ptr.*;
 import org.robovm.apple.foundation.*;
 import org.robovm.apple.uikit.*;
-import org.robovm.apple.coregraphics.*;
-import org.robovm.apple.coreanimation.*;
+import org.robovm.apple.webkit.*;
 /*</imports>*/
 
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/YbiRewardedDelegate/*</name>*/ 
-    /*<implements>*/extends YbiAdDelegate/*</implements>*/ {
+/*<annotations>*/@Marshaler(ValuedEnum.AsMachineSizedSIntMarshaler.class)/*</annotations>*/
+public enum /*<name>*/GDPRApplies/*</name>*/ implements ValuedEnum {
+    /*<values>*/
+    Unknown(-1L),
+    No(0L),
+    Yes(1L);
+    /*</values>*/
 
-    /*<ptr>*/
-    /*</ptr>*/
     /*<bind>*/
     /*</bind>*/
     /*<constants>*//*</constants>*/
-    /*<properties>*/
-    
-    /*</properties>*/
-    /*<methods>*/
-    @Method(selector = "onRewardedLoaded")
-    void onRewardedLoaded();
-    @Method(selector = "onRewardedLoadFailed:")
-    void onRewardedLoadFailed(String error);
-    @Method(selector = "onRewardedShown")
-    void onRewardedShown();
-    @Method(selector = "onRewardedShowFailed:")
-    void onRewardedShowFailed(String error);
-    @Method(selector = "onRewardedClosed")
-    void onRewardedClosed();
-    @Method(selector = "onRewardedFinished")
-    void onRewardedFinished();
-    /*</methods>*/
-    /*<adapter>*/
-    /*</adapter>*/
+    /*<methods>*//*</methods>*/
+
+    private final long n;
+
+    private /*<name>*/GDPRApplies/*</name>*/(long n) { this.n = n; }
+    public long value() { return n; }
+    public static /*<name>*/GDPRApplies/*</name>*/ valueOf(long n) {
+        for (/*<name>*/GDPRApplies/*</name>*/ v : values()) {
+            if (v.n == n) {
+                return v;
+            }
+        }
+        throw new IllegalArgumentException("No constant with value " + n + " found in " 
+            + /*<name>*/GDPRApplies/*</name>*/.class.getName());
+    }
 }

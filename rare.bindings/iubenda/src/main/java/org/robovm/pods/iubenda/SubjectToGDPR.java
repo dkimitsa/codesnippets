@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.robovm.pods.yabbiads;
+package org.robovm.pods.iubenda;
 
 /*<imports>*/
 import java.io.*;
@@ -29,18 +29,18 @@ import org.robovm.rt.bro.annotation.*;
 import org.robovm.rt.bro.ptr.*;
 import org.robovm.apple.foundation.*;
 import org.robovm.apple.uikit.*;
-import org.robovm.apple.coregraphics.*;
-import org.robovm.apple.coreanimation.*;
+import org.robovm.apple.webkit.*;
 /*</imports>*/
 
 /*<javadoc>*/
 
 /*</javadoc>*/
 /*<annotations>*/@Marshaler(ValuedEnum.AsMachineSizedSIntMarshaler.class)/*</annotations>*/
-public enum /*<name>*/AdType/*</name>*/ implements ValuedEnum {
+public enum /*<name>*/SubjectToGDPR/*</name>*/ implements ValuedEnum {
     /*<values>*/
-    INTERSTITIAL(1L),
-    REWARDED(3L);
+    Unknown(-1L),
+    No(0L),
+    Yes(1L);
     /*</values>*/
 
     /*<bind>*/
@@ -50,15 +50,15 @@ public enum /*<name>*/AdType/*</name>*/ implements ValuedEnum {
 
     private final long n;
 
-    private /*<name>*/AdType/*</name>*/(long n) { this.n = n; }
+    private /*<name>*/SubjectToGDPR/*</name>*/(long n) { this.n = n; }
     public long value() { return n; }
-    public static /*<name>*/AdType/*</name>*/ valueOf(long n) {
-        for (/*<name>*/AdType/*</name>*/ v : values()) {
+    public static /*<name>*/SubjectToGDPR/*</name>*/ valueOf(long n) {
+        for (/*<name>*/SubjectToGDPR/*</name>*/ v : values()) {
             if (v.n == n) {
                 return v;
             }
         }
         throw new IllegalArgumentException("No constant with value " + n + " found in " 
-            + /*<name>*/AdType/*</name>*/.class.getName());
+            + /*<name>*/SubjectToGDPR/*</name>*/.class.getName());
     }
 }
