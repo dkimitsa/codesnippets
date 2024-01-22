@@ -25,8 +25,13 @@ public class AndroidFacetRemoverProjectComponent implements ProjectComponent {
         ProjectWideFacetListenersRegistry.getInstance(myProject).registerListener(new ProjectWideFacetAdapter<>() {
             @Override
             public void facetAdded(@NotNull Facet facet) {
-                if (facet.getTypeId().equals(GradleFacet.getFacetTypeId()))
-                    removeExtraFacets();
+                if (facet.getTypeId().equals(GradleFacet.getFacetTypeId())) {
+                    ApplicationManager.getApplication().invokeLater(() -> {
+                        ApplicationManager.getApplication().runWriteAction(() -> {
+                            removeExtraFacets();
+                        });
+                    });
+                }
             }
         });
     }
