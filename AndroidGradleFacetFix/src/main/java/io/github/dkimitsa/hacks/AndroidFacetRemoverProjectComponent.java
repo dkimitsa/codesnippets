@@ -26,7 +26,7 @@ public class AndroidFacetRemoverProjectComponent implements ProjectComponent {
             @Override
             public void facetAdded(@NotNull Facet facet) {
                 if (facet.getTypeId().equals(GradleFacet.getFacetTypeId()))
-                    removeExtraFacets();
+                    ApplicationManager.getApplication().runWriteAction(() -> { removeExtraFacets(); } );
             }
         });
     }
