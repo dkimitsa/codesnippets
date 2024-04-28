@@ -10,6 +10,7 @@
 
 | Name                         | Description                                            |
 |------------------------------|--------------------------------------------------------|
+| [BitLabs](bitlabs/)          | BitLabs - Game Monetization with Rewarded Surveys      |
 | [IubendaMobileSDK](iubenda/) | Framework that makes implementing in-app subscriptions |
 | [YabbiADs](yabbiads/)        | YabbiAds SDK for mobile advertising                    |
 
@@ -17,5 +18,6 @@
 
 | Name                         |        |
 |------------------------------|--------|
+| [BitLabs](bitlabs/)          | 3.2.0  |
 | [IubendaMobileSDK](iubenda/) | 2.6.8  |
 | [YabbiADs](yabbiads/)        | 1.6.0  |

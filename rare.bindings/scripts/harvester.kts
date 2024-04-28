@@ -81,6 +81,21 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
                 4. expected location ${downloadFolder.extend("iubenda.xcframework/ios-arm64_armv7/$artifact")} 
             """.trimIndent()
         )
+    },
+    "BitLabs" to { framework ->
+        val artifact = "$framework.framework"
+        val artifactLocation = Path.of("bitlabs/cocoapods/BitLabs.xcframework/ios-arm64/BitLabs.framework").toFile()
+        processFramework(
+            artifact = artifact,
+            moduleFolder = "bitlabs/",
+            sourceHeadersDir = artifactLocation.headers,
+            yaml = "bitlabs.yaml",
+            version = { artifactLocation.infoPlist.extractVersion() },
+            instruction = """
+                0. run bitlabs/cocoatouch/fetch.sh to fetch and build from cocotouch 
+                1. expected location ${artifactLocation}
+            """.trimIndent()
+        )
     }
 )
 
