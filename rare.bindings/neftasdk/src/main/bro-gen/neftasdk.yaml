@@ -1,0 +1,154 @@
+package: org.robovm.pods.neftasdk
+include: [foundation, uikit, webkit, coreanimation]
+clang_args: ['-x', 'objective-c']
+framework: NeftaSDK
+headers:
+    - "#import <CoreFoundation/CoreFoundation.h>"
+    - "#import <Foundation/Foundation.h>"
+    - "#import <UIKit/UIKit.h>"
+    - "#import <WebKit/WebKit.h>"
+    - NeftaPlugin_iOS.h
+    - NeftaSDK-Swift.h
+
+typedefs:
+
+private_typedefs:
+
+enums:
+    AdMarkupTypes: {}
+    ProgressionType: {}
+    ProgressionStatus: {}
+    ProgressionSource: {}
+    ResourceCategory: {}
+    ReceiveMethod: {}
+    SpendMethod: {}
+    SessionCategory: {}
+    Types: {}
+    Modes: {}
+
+classes:
+    BidResponse:
+        properties:
+            '_(.*)':
+                name: '#{g[0]}'
+    NeftaEvents:
+        methods:
+            '-AddProgressionEventWithStatus:type:source:':
+                name: AddProgressionEvent
+            '-AddProgressionEventWithStatus:type:source:name:value:':
+                name: AddProgressionEvent
+            '-AddProgressionEventWithStatus:type:source:name:value:customPayload:':
+                name: AddProgressionEvent
+            '-AddReceiveEventWithCategory:method:':
+                name: AddReceiveEvent
+            '-AddReceiveEventWithCategory:method:name:quantity:':
+                name: AddReceiveEvent
+            '-AddReceiveEventWithCategory:method:name:quantity:customPayload:':
+                name: AddReceiveEvent
+            '-AddSpendEventWithCategory:method:':
+                name: AddSpendEvent
+            '-AddSpendEventWithCategory:method:name:quantity:':
+                name: AddSpendEvent
+            '-AddSpendEventWithCategory:method:name:quantity:customPayload:':
+                name: AddSpendEvent
+            '-AddSessionEventWithCategory:':
+                name: AddSessionEvent
+            '-AddSessionEventWithCategory:name:value:customPayload:':
+                name: AddSessionEvent
+    NeftaPlugin:
+        methods:
+            '-RecordWithEvent:':
+                name: Record
+            '-EnableBannerWithEnable:':
+                name: EnableBanner
+            '-EnableBannerWithId:enable:':
+                name: EnableBanner
+            '-SetPublisherUserIdWithId:':
+                name: SetPublisherUserId
+            '-SetPlacementModeWithType:mode:':
+                name: SetPlacementMode
+            '-SetPlacementModeWithId:mode:':
+                name: SetPlacementMode
+            '-BidWithType:':
+                name: Bid
+            '-BidWithId:':
+                name: Bid
+            '-LoadWithType:':
+                name: Load
+            '-LoadWithId:':
+                name: Load
+            '-IsReadyWithType:':
+                name: IsReady
+            '-IsReadyWithId:':
+                name: IsReady
+            '-ShowWithType:':
+                name: Show
+            '-ShowWithId:':
+                name: Show
+            '-ShowMainWithId:':
+                name: ShowMain
+            '-CloseWithId:':
+                name: Close
+            '-GetNuidWithPresent:':
+                name: GetNuid
+            '-GetViewForPlacement:show:':
+                name: GetViewForPlacement
+    NeftaPlugin_iOS:
+        name: NeftaPluginIOS
+        methods:
+            '-PrepareRendererWithViewController:':
+                name: PrepareRenderer
+            '+InitWithAppId:':
+                name: Init
+    Placement:
+        properties:
+            '_(.*)':
+                name: '#{g[0]}'
+    VideoPlacement: {}
+    WebController:
+        methods:
+            '-webView:didFailNavigation:withError:':
+                name: didFailNavigation
+            '-webView:didFailProvisionalNavigation:withError:':
+                name: didFailProvisionalNavigation
+            '-webView:didFinishNavigation:':
+                name: didFinishNavigation
+            '-observeValueForKeyPath:ofObject:change:context:':
+                name: observeValue
+    WebPlacement: {}
+
+protocols:
+functions:
+
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+    NeftaSDKVersionNumber:
+        readonly: true
+        class: NeftaPluginIOS
+        name: getVersionNumber
+    NeftaSDKVersionString:
+        readonly: true
+        class: NeftaPluginIOS
+        name: getVersionString
+        marshaler: StringMarshalers.AsAsciiZMarshaler
+        type: String
+
+
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    SWIFT_.*:
+        exclude: true
+
+    # Make sure we don't miss any constants if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Constant__#{g[0]}'

@@ -176,8 +176,4 @@
         </plugins>
     </build>
 
-    <modules>
-        <module>yabbiads</module>
-	<module>iubenda</module>
-    </modules>
 </project>

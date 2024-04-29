@@ -12,6 +12,7 @@
 |------------------------------|--------------------------------------------------------|
 | [BitLabs](bitlabs/)          | BitLabs - Game Monetization with Rewarded Surveys      |
 | [IubendaMobileSDK](iubenda/) | Framework that makes implementing in-app subscriptions |
+| [NeftaSDK](neftasdk/)        | SDK for Nefta Ad Network                               |
 | [YabbiADs](yabbiads/)        | YabbiAds SDK for mobile advertising                    |
 
 ## Version of AltPods to framework version mapping
@@ -20,4 +21,5 @@
 |------------------------------|--------|
 | [BitLabs](bitlabs/)          | 3.2.0  |
 | [IubendaMobileSDK](iubenda/) | 2.6.8  |
+| [NeftaSDK](neftasdk/)        | 3.2.9  |
 | [YabbiADs](yabbiads/)        | 1.6.0  |

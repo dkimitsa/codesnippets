@@ -96,6 +96,21 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
                 1. expected location ${artifactLocation}
             """.trimIndent()
         )
+    },
+    "NeftaSDK" to { framework ->
+        val artifact = "$framework.framework"
+        val artifactLocation = downloadFolder.extend("NeftaSDK.xcframework/ios-arm64/$artifact")
+        processFramework(
+            artifact = artifact,
+            moduleFolder = "neftasdk/",
+            sourceHeadersDir = artifactLocation.headers,
+            yaml = "neftasdk.yaml",
+            version = { downloadFolder.extend("NeftaSDK.xcframework").infoPlist.extractVersion(key = "Version") },
+            instruction = """
+                1. download latest release from https://github.com/Nefta-io/NeftaSDK-iOS/releases                 2. get link from cocoaspec 
+                2. expected location ${artifactLocation} 
+            """.trimIndent()
+        )
     }
 )
 
@@ -430,12 +445,12 @@ fun processFramework(
     log.d("$artifact:  <<<< finished processing")
 }
 
-fun extractVersionFromPlist(infoPlist: File): String {
+fun extractVersionFromPlist(infoPlist: File, key: String = "CFBundleShortVersionString"): String {
     return execAndGetString(
         arrayOf(
             "/usr/libexec/PlistBuddy",
             "-c",
-            "Print :CFBundleShortVersionString",
+            "Print :$key",
             infoPlist.canonicalPath
         )
     )[0]
@@ -483,6 +498,10 @@ val File.infoPlist: File
 
 fun File.extractVersion(): String {
     return extractVersionFromPlist(this)
+}
+
+fun File.extractVersion(key: String): String {
+    return extractVersionFromPlist(this, key)
 }
 
 fun File.extend(path: String): File = File(this, path)
