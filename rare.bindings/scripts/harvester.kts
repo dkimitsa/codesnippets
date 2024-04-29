@@ -111,6 +111,29 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
                 2. expected location ${artifactLocation} 
             """.trimIndent()
         )
+    },
+    "DTBiOSSDK" to { framework ->
+        // amazon publisher services
+        val artifact = "$framework.framework"
+        val artifactLocation = Path.of("amznpubservices/cocoapods/DTBiOSSDK.xcframework/ios-arm64/DTBiOSSDK.framework").toFile()
+        fun getAmznpubservicesVersion(): String {
+            // extracts version from Podfile.lock file
+            val f = Path.of("amznpubservices/cocoapods/Podfile.lock").toFile()
+            return f.readLines().find { it.startsWith("  - AmazonPublisherServicesSDK (= ") }
+                ?.substringAfter("(= ")?.removeSuffix(")")
+                ?: error("Version not found in ${readmeFile.canonicalPath}")
+        }
+        processFramework(
+            artifact = artifact,
+            moduleFolder = "amznpubservices/",
+            sourceHeadersDir = artifactLocation.headers,
+            yaml = "amznpubservices.yaml",
+            version = { getAmznpubservicesVersion() },
+            instruction = """
+                0. run amznpubservices/cocoatouch/fetch.sh to fetch and build from cocotouch 
+                1. expected location ${artifactLocation}
+            """.trimIndent()
+        )
     }
 )
 

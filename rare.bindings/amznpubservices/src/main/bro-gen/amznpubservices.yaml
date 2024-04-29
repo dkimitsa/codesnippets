@@ -1,0 +1,479 @@
+package: org.robovm.pods.amznpubservices
+include: [foundation, uikit, coregraphics, coreanimation, webkit]
+clang_args: ['-x', 'objective-c']
+framework: DTBiOSSDK
+headers:
+    - DTBiOSSDK.h
+
+typedefs:
+
+private_typedefs:
+    DTBPricePoint: NSObject  # not exposed class
+
+enums:
+    APSAdNetwork: { }
+    APSMraidPolicy: { }
+    APSPrivacyType: { }
+    APSLogLevel: { }
+    APSAdFormat: { }
+    APSAdMediaType: { }
+    APSAdState: { }
+    APSAdLoadError: { }
+    APSErrorCode: { }
+    APSLoggerLevel: { }
+    DTBLogLevel: { }
+    DTBAdNetwork: { prefix: DTBADNETWORK_ }
+    DTBConsentStatus: { }
+    DTBCMPFlavor: { }
+    DTBMRAIDPolicy: { }
+    ADType: { }
+    DTBAdError: { }
+    DTBAdPlacementType: { }
+    DTBAdState: { prefix: DTBA }
+    DTBAdViewCloseButtonLocation: { }
+    DTBAdViewCloseButtonType: { }
+    DTBAdOrientation: { }
+    DTBAdErrorCode: { prefix: SampleErrorCode }
+    DTBSlotType: { prefix: SLOT_ }
+    APSEventSeverity: { }
+    APSEventType: { }
+    OMIDOwner: { prefix: OMID }
+    OMIDCreativeType: { }
+    OMIDImpressionType: { }
+    OMIDFriendlyObstructionType: { prefix: OMIDFriendlyObstruction }
+    OMIDErrorType: { prefix: OMIDError }
+    OMIDPosition: { }
+    OMIDPlayerState: { }
+    OMIDInteractionType: { }
+
+classes:
+    APS:
+        methods:
+            '+initializeWithAppKey:adNetwork:completion:':
+                name: init
+            '+initializeWithAppKey:adNetwork:config:completion:':
+                name: init
+            '+setCustomAttribute:forKey:':
+                name: setCustomAttribute
+            '+setPrivacyString:type:':
+                name: setPrivacyString
+    APSAd:
+        methods:
+            '+adWithMetadataFromAd:':
+                name: adWithMetadataFromAd
+            '+keywordsWithSlotUUID:':
+                name: getAdMobKeywords
+            '+keywordsWithSlotUUID:adFormat:':
+                name: getAdMobKeywords
+            '-networkDataWithKey:':
+                name: getUnityLevelPlayNetworkData
+    APSAdController:
+        methods:
+            '-initWithDelegate:':
+                name: init
+            '-fetchAd:extras:':
+                name: fetchAd
+    APSAdFormatProperties:
+        methods:
+            '+adFormatPropertiesWithBlock:':
+                name: create
+                constructor: true
+    APSAdFormatPropertyBuilder: {}
+    APSAdRequest:
+        methods:
+            '-initWithSlotUUID:':
+                name: init
+            '-initWithAd:':
+                name: init
+            '-setAdFormat:withProperties:':
+                name: setAdFormat
+            '-loadAdWithCompletionHandler:':
+                name: loadAd
+            '-setCustomTarget:forKey:':
+                name: setCustomTarget
+    APSAnalytics:
+        methods:
+            '+init:samplingRate:':
+                name: init
+            '+init:samplingRate:apiKey:':
+                name: init
+            '+logEvent:eventType:errorDetails:exception:':
+                name: logEvent
+            '+logEvent:eventType:exception:':
+                name: logEvent
+            '+logEvent:eventType:errorDetails:':
+                name: logEvent
+            '+addAdditionalDetails:value:':
+                name: addAdditionalDetails
+    APSAnalyticsNetworkManager: {}
+    APSCacheData:
+        methods:
+            '-initWithRequestId:adLoaderReq:':
+                name: init
+    APSCacheManager:
+        methods:
+            '+addAdMobCacheWithRequestId:cacheData:':
+                name: addAdMobCache
+            '+removeAdMobCacheWithRequestId:':
+                name: removeAdMobCache
+            '+getAdMobCacheWithRequestId:':
+                name: getAdMobCache
+    APSError:
+        methods:
+            '+errorWithCode:':
+                name: create
+                constructor: true
+    APSEvent:
+        methods:
+            '-initWithSeverity:eventType:':
+                name: init
+    APSInitConfig: {}
+    APSLogger:
+        methods:
+            '+trace:exception:':
+                name: trace
+            '+trace:tag:':
+                name: trace
+            '+trace:exception:tag:':
+                name: trace
+            '+debug:exception:':
+                name: debug
+            '+debug:tag:':
+                name: debug
+            '+debug:exception:tag:':
+                name: debug
+            '+info:exception:':
+                name: info
+            '+info:tag:':
+                name: info
+            '+info:exception:tag:':
+                name: info
+            '+warn:exception:':
+                name: warn
+            '+warn:tag:':
+                name: warn
+            '+warn:exception:tag:':
+                name: warn
+            '+error:exception:':
+                name: error
+            '+error:tag:':
+                name: error
+            '+error:exception:tag:':
+                name: error
+            '+fatalWithRemoteLogging:':
+                name: fatal
+            '+fatalWithRemoteLogging:exception:':
+                name: fatal
+            '+fatalWithRemoteLogging:tag:':
+                name: fatal
+            '+fatalWithRemoteLogging:exception:tag:':
+                name: fatal
+    APSMobileKeychain:
+        methods:
+            '+saveObject:forKey:queryDictionary:':
+                name: saveObject
+            '+loadObjectForKey:queryDictionary:':
+                name: loadObject
+            '+deleteObjectForKey:queryDictionary:':
+                name: deleteObject
+    APSOmSdkHelper: {}
+    APSSafeMutableDictionary: {}
+    APSStoreKit:
+        methods:
+            '+processEvent:options:':
+                name: processEvent
+            '+skadnHelper:withInfo:':
+                name: skadnHelper
+    DTBAdBannerDispatcher:
+        methods:
+            '-initWithAdFrame:delegate:':
+                name: init
+            '-fetchBannerAdWithParameters:':
+                name: fetchBannerAd
+            '-fetchBannerAd:params:':
+                name: fetchBannerAd
+    DTBAdDispatcher:
+        methods:
+            '-fireErrorEvent:forAction:':
+                name: fireErrorEvent
+            '-fireExposureChangeEvent:withVisibleRect:':
+                name: fireExposureChangeEvent
+            '-addCloseIndicator:toView:':
+                name: addCloseIndicator
+    DTBAdErrorInfo: {}
+    DTBAdHelper:
+        methods:
+            '+createAmazonErrorWithCode:':
+                name: createAmazonError
+            '+createAmazonErrorWithCode:withMessage:':
+                name: createAmazonError
+            '+validateAdMobBannerCustomEventWithExpectedSizeHandler:serverParameter:parameters:':
+                name: validateAdMobBannerCustomEvent
+            '+validateAdMobInterstitialCustomEvent:parameters:':
+                name: validateAdMobInterstitialCustomEvent
+            '+viewForAdView:expectedSizeHandler:requestedSize:':
+                name: getViewForAdView
+            '+viewForAdView:expectedSize:requestedSize:':
+                name: getViewForAdView
+            '+handleBannerBidsWith:withParams:':
+                name: handleBannerBids
+            '+skadnHelper:withInfo:':
+                name: skadnHelper
+            '+createAdMobBannerRequestKeyword:width:height:extras:':
+                name: createAdMobBannerRequestKeyword
+            '+createAdMobBannerRequestKeyword:width:height:':
+                name: createAdMobBannerRequestKeyword
+            '+createAdMobInterstitialRequestKeyword:extras:':
+                name: createAdMobInterstitialRequestKeyword
+            '+createAdMobBannerRequestKeywordWithSlotGroup:':
+                name: createAdMobBannerRequestKeyword
+            '+createAdMobBannerRequestKeywordWithSlotGroup:extras:':
+                name: createAdMobBannerRequestKeyword
+            '+getValueForKeyFromAdMobKeywords:key:':
+                name: getValueForKeyFromAdMobKeywords
+            '+validateAdMobCustomSingleEventPricePoint:parameters:':
+                name: validateAdMobCustomSingleEventPricePoint
+            '+validateAdMobBannerCustomEventWithExpectedSizeHandlerGeneric:serverParameter:parameters:isSpp:':
+                name: validateAdMobBannerCustomEvent
+            '+validateAdMobInterstitialCustomEventGeneric:parameters:isSpp:':
+                name: validateAdMobInterstitialCustomEventGeneric
+            '+sendAdapterSuccessEndEventWithEndTime:startTime:adapterVersion:bidId:correlationId:':
+                name: sendAdapterSuccessEndEvent
+            '+sendAdapterFailureEndEventWithEndTime:startTime:adapterVersion:correlationId:':
+                name: sendAdapterFailureEndEvent
+    DTBAdInterstitialDispatcher:
+        methods:
+            '-initWithDelegate:':
+                name: init
+            '-fetchAdWithParameters:':
+                name: fetchAd
+            '-fetchAd:params:':
+                name: fetchAd
+    DTBAdInterstitialViewController: {}
+    DTBAdLoader:
+        methods:
+            '-putCustomTarget:withKey:':
+                name: putCustomTarget
+    DTBAdNetworkInfo:
+        methods:
+            '-initWithNetworkName:':
+                name: init
+            '-setAdNetworkProperties:adNetworkValue:':
+                name: setAdNetworkProperties
+            '-getAdNetworkName':
+                exclude: true # conflicts with same property
+    DTBAdResponse: {}
+    DTBAdSize:
+        methods:
+            '-initBannerAdSizeWithWidth:height:andSlotUUID:':
+                name: initBannerAdSizeWithWidth
+                static_constructor_name: createBannerAdSize
+            '-initInterstitialAdSizeWithSlotUUID:':
+                name: initInterstitialAdSizeWithSlotUUID
+                static_constructor_name: createInterstitialAdSize
+            '-initVideoAdSizeWithSlotUUID:':
+                name: initVideoAdSizeWithSlotUUID
+                static_constructor_name: createVideoAdSize
+            '-initVideoAdSizeWithPlayerWidth:height:andSlotUUID:':
+                name: initVideoAdSizeWithPlayerWidth
+                static_constructor_name: createVideoAdSize
+            '-initVideoAdSizeWithPlayerWidth:height:slotUUID:andPubSettings:':
+                name: initVideoAdSizeWithPlayerWidth
+                static_constructor_name: createVideoAdSize
+    DTBAdView: {}
+    DTBAds:
+        methods:
+            '-addCustomAttribute:value:':
+                name: addCustomAttribute
+            '+setLocalExtras:localExtras:':
+                name: setLocalExtras
+    DTBDebugProperties: {}
+    DTBFetchFactory:
+        methods:
+            '-createFetchManagerForLoader:isSmartBanner:':
+                name: createFetchManager
+    DTBFetchManager: {}
+    DTBMraidConstants: {}
+    DTBMraidUtils: {}
+    DTBSlotGroup:
+        methods:
+            '-initWithName:':
+                name: init
+            '-sizeByWidth:height:':
+                name: getSize
+            '-sizeByWidth:height:type:':
+                name: getSize
+            '-sizeByUUID:':
+                name: getSize
+            '-sizeBySlotType:':
+            name: getSize
+    OMIDAmazonAdEvents:
+        methods:
+            '-initWithAdSession:error:':
+                name: init
+            '-impressionOccurredWithError:':
+                name: impressionOccurred
+            '-loadedWithError:':
+                name: loaded
+            '-loadedWithVastProperties:error:':
+                name: loaded
+    OMIDAmazonAdSession:
+        methods:
+            '-initWithConfiguration:adSessionContext:error:':
+                name: init
+            '-addFriendlyObstruction:purpose:detailedReason:error:':
+                name: addFriendlyObstruction
+            '-logErrorWithType:message:':
+                name: logError
+    OMIDAmazonAdSessionConfiguration:
+        methods:
+            '-initWithCreativeType:impressionType:impressionOwner:mediaEventsOwner:isolateVerificationScripts:error:':
+                name: init
+    OMIDAmazonAdSessionContext:
+        methods:
+            '-initWithPartner:webView:contentUrl:customReferenceIdentifier:error:':
+                name: initWithPartnerWebView
+                static_constructor_name: createWithWebView
+            '-initWithPartner:javaScriptWebView:contentUrl:customReferenceIdentifier:error:':
+                name: initWithPartnerJavaScriptWebView
+                static_constructor_name: createWithJavaScriptWebView
+            '-initWithPartner:script:resources:contentUrl:customReferenceIdentifier:error:':
+                name: init
+    OMIDAmazonMediaEvents:
+        methods:
+            '-initWithAdSession:error:':
+                name: init
+            '-startWithDuration:mediaPlayerVolume:':
+                name: start
+            '-adUserInteractionWithType:':
+                name: adUserInteraction
+    OMIDAmazonPartner:
+        methods:
+            '-initWithName:versionString:':
+                name: init
+    OMIDAmazonSDK: {}
+    OMIDAmazonScriptInjector:
+        methods:
+            '+injectScriptContent:intoHTML:error:':
+                name: injectScriptContent
+    OMIDAmazonVASTProperties:
+        methods:
+            '-initWithSkipOffset:autoPlay:position:':
+                name: init
+            '-initWithAutoPlay:position:':
+                name: init
+    OMIDAmazonVerificationScriptResource:
+        methods:
+            '-initWithURL:vendorKey:parameters:':
+                name: init
+            '-initWithURL:':
+                name: init
+
+protocols:
+    APSAdDelegate: { }
+    APSLoggerDelegate: { }
+    DTBAdBannerDispatcherDelegate:
+        methods:
+            '-adFailedToLoad:errorCode:':
+                name: adFailedToLoad
+    DTBAdCallback:
+        methods:
+            '-onFailure:dtbAdErrorInfo:':
+                name: onFailure
+    DTBAdInterstitialDispatcherDelegate:
+        methods:
+            '-interstitial:didFailToLoadAdWithErrorCode:':
+                name: didFailToLoadAd
+    DTBExpectedSize: { }
+    DTBUseCustomCloseDelegate: { }
+
+functions:
+    APSAdFormat(.*):
+        class: APSAdFormat
+        name: '#{g[0].downcase_first}'
+    NSStringFromSlotType:
+        class: DTBSlotGroup
+        name: toString
+    slotTypeFromCGSize:
+        class: DTBSlotGroup
+        name: fromCGSize
+    APSParsing(.*):
+        class: APSParsing
+        name: '#{g[0].downcase_first}'
+
+
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+    APS_ANALYTICS_(.*):
+        class: APSAnalytics
+        name: '#{g[0]}'
+    DTBiOSSDKVersionNumber:
+        class: DTBAds
+        readonly: true
+        name: getVersionNumber
+    DTBiOSSDKVersionString:
+        class: DTBAds
+        readonly: true
+        name: getVersionString
+        marshaler: StringMarshalers.AsAsciiZMarshaler
+        type: String
+    (APSMraidVersion.*):
+        class: APSInitConfig
+        name: '#{g[0]}'
+    APSErrorAdDomain:
+        class: APSError
+    FormatType_toString:
+        exclude: true
+    (kMraid.*):
+        class: DTBMraidConstants
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    SWIFT_.*:
+        exclude: true
+
+    APS_ANALYTICS_OS_NAME:
+        exclude: true # conflicts as defined in multiple places
+    APS_ANALYTICS_(.*):
+        class: APSAnalytics
+        name: '#{g[0]}'
+    kAmazon(.*):
+        class: DTBErrorCodes
+        name: '#{g[0]}'
+    APS_(SIZE_MAX|BANNER_WIDTH|BANNER_HEIGHT|MREC_WIDTH|MREC_HEIGHT|LEADERBOARD_WIDTH|LEADERBOARD_HEIGHT|INSTREAM_VIDEO_DEFAULT_WIDTH|INSTREAM_VIDEO_DEFAULT_HEIGHT):
+        class: APSAdFormat
+        name: '#{g[0]}'
+    (A9_BID_ID_KEY|A9_HOST_KEY|A9_PRICE_POINTS_KEY|A9_VID_KEY|A9_SKADN_KEY|APS_VIDEO_FLAG|APS_VIDEO_TYPE|APS_VIDEO_SKIP_AFTER|APS_APP_KEY):
+        class: DTBAdLoader
+        static_class: Constants
+        name: '#{g[0]}'
+    (AMAZON_.*_RESPONSE):
+        class: APSAd
+    APS_NETWORK_KEY:
+        class: APSAd
+    (DTB_VIDEO_.*):
+        class: DTBAdSize
+    (INTEGRATED_OM_VERSION|DEFAULT_OMSDK_PARTNER_NAME|OM_SDK_PARTNER_KEY_NAME|OM_SDK_PARTNER_VERSION_KEY_NAME):
+        class: APSOmSdkHelper
+    (BID_INFO|PLACEMENT_HINT|AMAZON_SLOTS|AMAZON_AD_INFO|EVENT_SERVER_PARAMETER|LOAD_START_TIME|EXPECTED_WIDTH|EXPECTED_HEIGHT|SKADNETWORK_PARAMS|CLICKTRACKERS_ARRAY|IS_VIDEO):
+        class: DTBMediationConstants
+    (APS_ADMOB_CONST_.*):
+        class: DTBAdHelper
+    (APS_AAX_PRICE_POINT_LENGTH|COMPARE_LESS_THAN_OR_EQUAL_TO|COMPARE_GREATER_THAN_OR_EQUAL_TO|COMPARE_EQUAL_TO):
+        class: DTBAdHelper
+    DEFAULT_ADMOB_AUTO_REFRESH_TIME_IN_SEC:
+        class: APSCacheData
+
+
+    # Make sure we don't miss any constants if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Constant__#{g[0]}'

@@ -1,0 +1,5 @@
+<config>
+    <frameworks>
+        <framework>DTBiOSSDK</framework>
+    </frameworks>
+</config>
