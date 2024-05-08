@@ -3,11 +3,15 @@
 ## Versions
 | Release version | $pod_version     |
 |-----------------|------------------|
-| 3.2.0           | 3.2.0.0-SNAPSHOT |
+| 3.2.0           | 3.2.0.1-SNAPSHOT |
 
 
 ## Install Instructions
-Get `BitLabs.xcframeworks` from `cocoapods` using [fetch.sh](cocoapods/fetch.sh) script. 
+Get 
+  - `BitLabs.xcframeworks`
+  - `Alamofire.xcframeworks`
+  - `Alamofire.bundle`
+from `cocoapods` using [fetch.sh](cocoapods/fetch.sh) script. 
 
 ### 3rd party native framework
 This RoboPod requires you to add the native `BitLabs.xcframework`.
@@ -20,6 +24,11 @@ This RoboPod requires you to add the native `BitLabs.xcframework`.
     <frameworkPaths>
         <path>libs</path> <!-- path to BitLabs.xcframework -->
     </frameworkPaths>
+    <resources>
+        <resource>
+            <path>res/Alamofire.bundle</path> <!-- path to Alamofire.bundle -->
+        </resource>
+    </resources>
 </config>
 ```
 

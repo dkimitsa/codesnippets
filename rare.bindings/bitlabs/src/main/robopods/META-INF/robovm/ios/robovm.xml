@@ -1,5 +1,6 @@
 <config>
     <frameworks>
         <framework>BitLabs</framework>
+        <framework>Alamofire</framework>
     </frameworks>
 </config>

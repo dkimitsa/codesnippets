@@ -9,6 +9,8 @@ rm -rf Pods
 rm -rf target-ios
 rm -rf target-ios-sim
 rm -rf BitLabs.xcframework
+rm -rf Alamofire.xcframework
+rm -rf Alamofire.bundle
 
 # copy dummy project required to fetch lib using cocoapods
 cp -R ../../scripts/fetch_pods.xcodeproj ./
@@ -31,3 +33,10 @@ xcodebuild -create-xcframework \
     -framework "target-ios/${PODNAME}.framework" \
     -output "${PODNAME}.xcframework"
 
+PODNAME=Alamofire
+xcodebuild -create-xcframework \
+    -framework "target-ios-sim/${PODNAME}.framework" \
+    -framework "target-ios/${PODNAME}.framework" \
+    -output "${PODNAME}.xcframework"
+
+cp -R target-ios/Alamofire.bundle .
