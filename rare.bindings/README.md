@@ -21,7 +21,7 @@
 | Name                                     |        |
 |------------------------------------------|--------|
 | [Amazon Pub.Services](amznpubservices/)  | 4.9.2  |
-| [BitLabs](bitlabs/)                      | 3.2.0  |
+| [BitLabs](bitlabs/)                      | 3.2.1  |
 | [IubendaMobileSDK](iubenda/)             | 2.6.8  |
 | [NeftaSDK](neftasdk/)                    | 3.2.9  |
 | [YabbiADs](yabbiads/)                    | 1.6.0  |

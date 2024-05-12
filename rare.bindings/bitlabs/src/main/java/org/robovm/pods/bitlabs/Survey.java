@@ -35,7 +35,7 @@ import org.robovm.apple.coreanimation.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC7BitLabs6Survey")/*</annotations>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("BitLabs.Survey")/*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/Survey/*</name>*/ 
     extends /*<extends>*/NSObject/*</extends>*/ 
     /*<implements>*//*</implements>*/ {

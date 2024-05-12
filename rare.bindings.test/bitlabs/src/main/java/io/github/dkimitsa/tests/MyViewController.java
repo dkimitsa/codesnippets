@@ -31,6 +31,6 @@ public class MyViewController extends UIViewController {
     }
 
     private void demo() {
-        DemoBitLabs.demo();
+        DemoBitLabs.demo(this);
     }
 }

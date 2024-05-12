@@ -35,7 +35,7 @@ import org.robovm.apple.coreanimation.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC7BitLabs7BitLabs")/*</annotations>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("BitLabs.BitLabs")/*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/BitLabs/*</name>*/ 
     extends /*<extends>*/NSObject/*</extends>*/ 
     /*<implements>*//*</implements>*/ {
@@ -74,6 +74,8 @@ import org.robovm.apple.coreanimation.*;
     public native void getLeaderboard(@Block VoidBlock1<GetLeaderboardResponse> completionHandler);
     @Method(selector = "setRewardCompletionHandler:")
     public native void setRewardCompletionHandler(@Block VoidFloatBlock rewardCompletionHandler);
+    @Method(selector = "setIsDebugMode:")
+    public native void setIsDebugMode(boolean isDebugMode);
     @Method(selector = "launchOfferWallWithParent:")
     public native void launchOfferWall(UIViewController parent);
     @Method(selector = "getColor")

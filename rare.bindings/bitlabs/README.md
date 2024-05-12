@@ -3,7 +3,7 @@
 ## Versions
 | Release version | $pod_version     |
 |-----------------|------------------|
-| 3.2.0           | 3.2.0.1-SNAPSHOT |
+| 3.2.1           | 3.2.1.0-SNAPSHOT |
 
 
 ## Install Instructions

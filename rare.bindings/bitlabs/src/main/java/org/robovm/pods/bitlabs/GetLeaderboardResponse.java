@@ -35,7 +35,7 @@ import org.robovm.apple.coreanimation.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC7BitLabs22GetLeaderboardResponse")/*</annotations>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("BitLabs.GetLeaderboardResponse")/*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/GetLeaderboardResponse/*</name>*/ 
     extends /*<extends>*/NSObject/*</extends>*/ 
     /*<implements>*//*</implements>*/ {

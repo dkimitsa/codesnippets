@@ -347,6 +347,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BitLabs * _N
 /// \param rewardCompletionHandler The closure to execute on Reward completions.
 ///
 - (void)setRewardCompletionHandler:(void (^ _Nonnull)(float))rewardCompletionHandler;
+- (void)setIsDebugMode:(BOOL)isDebugMode;
 /// Presents a ViewController with a WebKitViewController to show the Offerwall.
 /// \param parent The presenting ViewController
 ///
@@ -379,10 +380,12 @@ SWIFT_CLASS("_TtC7BitLabs6Survey")
 
 
 @class NSCoder;
+@class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC7BitLabs10WidgetView")
-@interface WidgetView : UIView
+@interface WidgetView : UIView <UIGestureRecognizerDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 

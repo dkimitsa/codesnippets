@@ -35,10 +35,10 @@ import org.robovm.apple.coreanimation.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC7BitLabs10WidgetView")/*</annotations>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("BitLabs.WidgetView")/*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/WidgetView/*</name>*/ 
     extends /*<extends>*/UIView/*</extends>*/ 
-    /*<implements>*//*</implements>*/ {
+    /*<implements>*/implements UIGestureRecognizerDelegate/*</implements>*/ {
 
     /*<ptr>*/public static class WidgetViewPtr extends Ptr<WidgetView, WidgetViewPtr> {}/*</ptr>*/
     /*<bind>*/static { ObjCRuntime.bind(WidgetView.class); }/*</bind>*/
@@ -55,6 +55,8 @@ import org.robovm.apple.coreanimation.*;
     /*</properties>*/
     /*<members>*//*</members>*/
     /*<methods>*/
+    @Method(selector = "gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:")
+    public native boolean shouldRecognizeSimultaneously(UIGestureRecognizer gestureRecognizer, UIGestureRecognizer otherGestureRecognizer);
     /**
      * @since Available in iOS 9.0 and later.
      */
@@ -65,5 +67,20 @@ import org.robovm.apple.coreanimation.*;
      */
     @Method(selector = "userInterfaceLayoutDirectionForSemanticContentAttribute:relativeToLayoutDirection:")
     public static native UIUserInterfaceLayoutDirection getUserInterfaceLayoutDirection(UISemanticContentAttribute semanticContentAttribute, UIUserInterfaceLayoutDirection layoutDirection);
+    @Method(selector = "gestureRecognizerShouldBegin:")
+    public native boolean shouldBegin(UIGestureRecognizer gestureRecognizer);
+    @Method(selector = "gestureRecognizer:shouldRequireFailureOfGestureRecognizer:")
+    public native boolean shouldRequireFailure(UIGestureRecognizer gestureRecognizer, UIGestureRecognizer otherGestureRecognizer);
+    @Method(selector = "gestureRecognizer:shouldBeRequiredToFailByGestureRecognizer:")
+    public native boolean shouldBeRequiredToFail(UIGestureRecognizer gestureRecognizer, UIGestureRecognizer otherGestureRecognizer);
+    @Method(selector = "gestureRecognizer:shouldReceiveTouch:")
+    public native boolean shouldReceiveTouch(UIGestureRecognizer gestureRecognizer, UITouch touch);
+    @Method(selector = "gestureRecognizer:shouldReceivePress:")
+    public native boolean shouldReceivePress(UIGestureRecognizer gestureRecognizer, UIPress press);
+    /**
+     * @since Available in iOS 13.4 and later.
+     */
+    @Method(selector = "gestureRecognizer:shouldReceiveEvent:")
+    public native boolean shouldReceiveEvent(UIGestureRecognizer gestureRecognizer, UIEvent event);
     /*</methods>*/
 }
