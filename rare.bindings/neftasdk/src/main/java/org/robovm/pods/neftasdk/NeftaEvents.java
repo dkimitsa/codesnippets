@@ -36,7 +36,7 @@ import org.robovm.apple.coreanimation.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC8NeftaSDK11NeftaEvents")/*</annotations>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("NeftaSDK.NeftaEvents")/*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/NeftaEvents/*</name>*/ 
     extends /*<extends>*/NSObject/*</extends>*/ 
     /*<implements>*//*</implements>*/ {
@@ -74,7 +74,7 @@ import org.robovm.apple.coreanimation.*;
     public native void AddSpendEvent(ResourceCategory category, SpendMethod method, String name, @MachineSizedSInt long quantity, String customPayload);
     @Method(selector = "AddSessionEventWithCategory:")
     public native void AddSessionEvent(SessionCategory category);
-    @Method(selector = "AddSessionEventWithCategory:name:value:customPayload:")
-    public native void AddSessionEvent(SessionCategory category, String name, @MachineSizedSInt long value, String customPayload);
+    @Method(selector = "AddSessionEventWithCategory:name:value:customPayload:log:")
+    public native void AddSessionEvent(SessionCategory category, String name, @MachineSizedSInt long value, String customPayload, boolean log);
     /*</methods>*/
 }

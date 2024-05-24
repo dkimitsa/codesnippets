@@ -36,7 +36,7 @@ import org.robovm.apple.coreanimation.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC8NeftaSDK11NeftaPlugin")/*</annotations>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("NeftaSDK.NeftaPlugin")/*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/NeftaPlugin/*</name>*/ 
     extends /*<extends>*/NSObject/*</extends>*/ 
     /*<implements>*//*</implements>*/ {
@@ -179,6 +179,8 @@ import org.robovm.apple.coreanimation.*;
     public native String GetNuid(boolean present);
     @Method(selector = "GetViewForPlacement:show:")
     public native UIView GetViewForPlacement(Placement placement, boolean show);
+    @Method(selector = "SetOverrideWithUrl:")
+    public native void SetOverride(String url);
     @Method(selector = "Version")
     public static native String Version();
     @Method(selector = "OnLog")

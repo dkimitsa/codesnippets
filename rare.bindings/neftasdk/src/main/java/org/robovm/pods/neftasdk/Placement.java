@@ -36,7 +36,7 @@ import org.robovm.apple.coreanimation.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC8NeftaSDK9Placement")/*</annotations>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("NeftaSDK.Placement")/*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/Placement/*</name>*/ 
     extends /*<extends>*/NSObject/*</extends>*/ 
     /*<implements>*//*</implements>*/ {

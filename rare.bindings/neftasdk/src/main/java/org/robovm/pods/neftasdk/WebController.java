@@ -36,7 +36,7 @@ import org.robovm.apple.coreanimation.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("_TtC8NeftaSDK13WebController")/*</annotations>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass("NeftaSDK.WebController")/*</annotations>*/
 /*<visibility>*/public/*</visibility>*/ class /*<name>*/WebController/*</name>*/ 
     extends /*<extends>*/UIView/*</extends>*/ 
     /*<implements>*/implements WKNavigationDelegate/*</implements>*/ {

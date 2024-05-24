@@ -9,7 +9,7 @@
     <artifactId>robopods-neftasdk-ios</artifactId>
     <name>RoboPods Nefta SDK iOS</name>
     <packaging>jar</packaging>
-    <version>3.2.9.0-SNAPSHOT</version>
+    <version>3.3.0.0-SNAPSHOT</version>
 
     <licenses>
         <license>
