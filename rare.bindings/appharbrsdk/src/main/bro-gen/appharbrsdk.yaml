@@ -1,0 +1,136 @@
+package: org.robovm.pods.appharbr
+include: [foundation, uikit, webkit]
+clang_args: ['-x', 'objective-c']
+framework: AppHarbrSDK
+headers:
+    - AppHarbrSDK-Swift.h
+
+typedefs:
+
+private_typedefs:
+
+enums:
+    AHInitializeError: { nserror: true }
+    AdAnalyzedResult: { }
+    AdBlockReason: { }
+    AHAdFormat: { }
+    AdSdk: { }
+    AdStateResult: { }
+    VerificationStatus: { }
+    
+classes:
+    AdResult: { }
+    AppHarbr:
+        methods:
+            '-initializeSdkWithConfiguration:completion:':
+                name: initializeSdk
+            '-addBannerAdSdk:adObject:delegate:':
+                name: addBanner
+            '-addNativeBannerAdSdk:adLoader:delegate:':
+                name: addNativeBanner
+            '-addInterstitialAdSdk:interstitialAd:unitId:delegate:':
+                name: addInterstitial
+            '-addRewardedAdSdk:rewardedAd:unitId:delegate:':
+                name: addRewarded
+            '-addRewardedInterstitialAdSdk:rewardedAd:unitId:delegate:':
+                name: addRewardedInterstitial
+            '-shouldBlockNativeAd:usingAdSdk:unitId:request:':
+                name: shouldBlockNativeAd
+            '-getInterstitialStateWithAd:':
+                name: getInterstitialState
+            '-getRewardedStateWithAd:':
+                name: getRewardedState
+            '-getRewardedInterstitialStateWithAd:':
+                name: getRewardedInterstitialState
+            '-removeBannerWithView:':
+                name: removeBanner
+            '-removeNativeBannerWithAdLoader:':
+                name: removeNativeBanner
+            '-removeInterstitialWithAd:':
+                name: removeInterstitial
+            '-removeRewardedWithAd:':
+                name: removeRewarded
+    AppHarbrAdQuality:
+        methods:
+            '-initializeSdkWithApiKey:directMediationSdk:configuration:completion:':
+                name: initializeSdk
+            '-verifyAdWithAdObject:adFormat:adContent:adNetworkSdk:mediationUnitId:adNetworkUnitId:mediationCID:adNetworkCID:extraData:delegate:':
+                name: verifyAd
+            '-willDisplayAdWithAdObject:adFormat:adContent:adNetworkSdk:mediationUnitId:adNetworkUnitId:mediationCID:adNetworkCID:extraData:':
+                name: willDisplayAd
+            '-willCloseAdWithAdObject:':
+                name: willCloseAd
+            '-didClickAdWithAdObject:':
+                name: didClickAd
+            '-removeAdWithAdObject:':
+                name: removeAd
+    AppHarbrConfiguration: { }
+    AppHarbrConfigurationBuilder:
+        methods:
+            '-initWithApiKey:':
+                name: init
+            '-appendTargetedAdNetworksWith:':
+                name: appendTargetedAdNetworks
+    AppHarbrConfigurationKeys: { }
+    AppHarbrExtraDataKeys: { }
+    AppHarbrSdkDebug:
+        methods:
+            '-initWithDebug:blockAll:reportAll:':
+                name: init
+            '-withBlockAllWithBlockAll:':
+                name: withBlockAll
+            '-withReportAllWithReportAll:':
+                name: withReportAll
+            '-withBlockDomainsWithBlockDomains:':
+                name: withBlockDomains
+
+protocols:
+    AppHarbrAdAnalyzeDelegate:
+        methods:
+            '-didAdAnalyzedWithAd:adNetwork:unitId:adFormat:result:':
+                name: didAdAnalyzed
+    AppHarbrAdQualityDelegate:
+        methods:
+            '-didAdIncidentWithAd:adFormat:blockReasons:reportReasons:creativeId:adNetworkSdk:unitId:timestamp:':
+                name: didAdIncident
+            '-didAdIncidentOnDisplayWithAd:adFormat:blockReasons:reportReasons:creativeId:adNetworkSdk:unitId:timestamp:':
+                name: didAdIncidentOnDisplay
+            '-didAdVerifiedWithAd:adFormat:adNetworkSdk:timestamp:':
+                name: didAdVerified
+            '-didAdNotVerifiedWithAd:adFormat:error:adNetworkSdk:timestamp:':
+                name: didAdNotVerified
+    AppHarbrDelegate:
+        methods:
+            '-didAdBlockedWithAd:unitId:adForamt:reasons:':
+                name: didAdBlocked
+    AppHarbrIncidentDelegate:
+        methods:
+            '-didAdIncidentWithAd:adNetwork:creativeId:unitId:adForamt:blockReasons:reportReasons:':
+                name: didAdIncident
+                
+functions:
+
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    SWIFT_.*:
+        exclude: true
+    AHInitializeErrorDomain:
+        class: AHInitializeError
+        name: ErrorDomain
+
+    # Make sure we don't miss any constants if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Constant__#{g[0]}'

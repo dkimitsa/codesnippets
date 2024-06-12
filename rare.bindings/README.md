@@ -11,6 +11,7 @@
 | Name                                    | Description                                            |
 |-----------------------------------------|--------------------------------------------------------|
 | [Amazon Pub.Services](amznpubservices/) | Anazob Publisher Services                              |
+| [AppHarbrSDK](appharbrsdk/)             | Secure, High-Quality Ads for Optimal User Experience   |
 | [BitLabs](bitlabs/)                     | BitLabs - Game Monetization with Rewarded Surveys      |
 | [IubendaMobileSDK](iubenda/)            | Framework that makes implementing in-app subscriptions |
 | [NeftaSDK](neftasdk/)                   | SDK for Nefta Ad Network                               |
@@ -22,6 +23,7 @@
 | Name                                     |        |
 |------------------------------------------|--------|
 | [Amazon Pub.Services](amznpubservices/)  | 4.9.2  |
+| [AppHarbrSDK](appharbrsdk/)              |   - AppHarbrSDK (1.14.3|
 | [BitLabs](bitlabs/)                      | 3.2.1  |
 | [IubendaMobileSDK](iubenda/)             | 2.6.8  |
 | [NeftaSDK](neftasdk/)                    | 3.3.0  |

@@ -176,6 +176,29 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
             }
         )
     },
+    "AppHarbrSDK" to { framework ->
+        // amazon publisher services
+        val artifact = "$framework.framework"
+        val artifactLocation = Path.of("appharbrsdk/cocoapods/AppHarbrSDK.xcframework/ios-arm64/AppHarbrSDK.framework").toFile()
+        fun podfileversion(): String {
+            // extracts version from Podfile.lock file
+            val f = Path.of("appharbrsdk/cocoapods/Podfile.lock").toFile()
+            return f.readLines().find { it.startsWith("  - AppHarbrSDK (") }
+                ?.substringAfter("(`")?.removeSuffix(")")
+                ?: error("Version not found in ${readmeFile.canonicalPath}")
+        }
+        processFramework(
+            artifact = artifact,
+            moduleFolder = "appharbrsdk/",
+            sourceHeadersDir = artifactLocation.headers,
+            yaml = "appharbrsdk.yaml",
+            version = { podfileversion() },
+            instruction = """
+                0. run appharbrsdk/cocoatouch/fetch.sh to fetch and build from cocotouch 
+                1. expected location ${artifactLocation}
+            """.trimIndent()
+        )
+    },
 
 )
 
