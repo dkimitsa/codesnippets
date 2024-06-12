@@ -1,0 +1,6 @@
+<config>
+    <frameworks>
+        <framework>Usercentrics</framework>
+        <framework>UsercentricsUI</framework>
+    </frameworks>
+</config>

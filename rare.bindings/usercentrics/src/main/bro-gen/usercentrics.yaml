@@ -1,0 +1,1053 @@
+package: org.robovm.pods.usercentrics
+include: [ foundation, uikit ]
+clang_args: [ '-x', 'objective-c' ]
+framework: Usercentrics
+internal_frameworks:
+    - UsercentricsUI
+
+headers:
+    - Usercentrics.h
+    - "#import <UsercentricsUI/UsercentricsUI-Swift.h>"
+
+typedefs:
+
+private_typedefs:
+
+enums:
+
+classes:
+    # exclude all companions
+    '.*Companion':
+        exclude: true
+
+    # UsercentricsUI.framework
+    UsercentricsResourceLoader: { }
+    UsercentricsUnityBanner:
+        name: UsercentricsBanner
+        methods:
+            '-showFirstLayerWithHostView:bannerSettings:':
+                name: showFirstLayer
+            '-showSecondLayerWithHostView:bannerSettings:':
+                name: showSecondLayer
+
+    # UsercentricsUI.framework
+
+    # exclude all companion properties
+    UsercentricsBase:
+        properties:
+            '+companion':
+                scope: global
+                exclude: true
+            '+shared':
+                scope: global
+                exclude: true
+        methods:
+            '+initialize':
+                exclude: true
+                scope: global
+            '+companion':
+                exclude: true
+                scope: global
+
+    UsercentricsAdTechProvider:
+        methods:
+            '-initWithId:name:privacyPolicyUrl:consent:':
+                name: init
+            '-doCopyId:name:privacyPolicyUrl:consent:':
+                name: doCopy
+    UsercentricsAdTechProviderDecision:
+        methods:
+            '-initWithId:consent:':
+                name: init
+            '-doCopyId:consent:':
+                name: doCopy
+    UsercentricsAdditionalConsentModeData:
+        methods:
+            '-initWithAcString:adTechProviders:':
+                name: init
+            '-doCopyAcString:adTechProviders:':
+                name: doCopy
+    UsercentricsAdjustMediationKt: { }
+    UsercentricsCCPAData:
+        methods:
+            '-initWithVersion:noticeGiven:optedOut:lspact:':
+                name: init
+            '-doCopyVersion:noticeGiven:optedOut:lspact:':
+                name: doCopy
+    UsercentricsCCPARegion: { }
+    UsercentricsCCPASettings:
+        methods:
+            '-initWithOptOutNoticeLabel:btnSave:firstLayerTitle:secondLayerTitle:secondLayerDescription:btnMoreInfo:firstLayerMobileVariant:isActive:region:showOnPageLoad:reshowAfterDays:iabAgreementExists:removeDoNotSellToggle:appFirstLayerDescription:firstLayerMobileDescriptionIsActive:firstLayerMobileDescription:secondLayerHideLanguageSwitch:':
+                name: init
+            '-doCopyOptOutNoticeLabel:btnSave:firstLayerTitle:secondLayerTitle:secondLayerDescription:btnMoreInfo:firstLayerMobileVariant:isActive:region:showOnPageLoad:reshowAfterDays:iabAgreementExists:removeDoNotSellToggle:appFirstLayerDescription:firstLayerMobileDescriptionIsActive:firstLayerMobileDescription:secondLayerHideLanguageSwitch:':
+                name: doCopy
+    UsercentricsConsentApplied:
+        methods:
+            '-initWithName:templateId:consent:mediated:':
+                name: init
+            '-doCopyName:templateId:consent:mediated:':
+                name: doCopy
+    UsercentricsConsentDisclosure:
+        methods:
+            '-initWithIdentifier:type:name:maxAgeSeconds:cookieRefresh:purposes:domain:description:':
+                name: init
+            '-doCopyIdentifier:type:name:maxAgeSeconds:cookieRefresh:purposes:domain:description:':
+                name: doCopy
+    UsercentricsConsentDisclosureObject:
+        methods:
+            '-initWithDisclosures:':
+                name: init
+    UsercentricsConsentDisclosureType: { }
+    UsercentricsCustomizationColor:
+        methods:
+            '-initWithPrimary:acceptBtnText:acceptBtnBackground:denyBtnText:denyBtnBackground:saveBtnText:saveBtnBackground:linkIcon:linkFont:text:layerBackground:overlay:toggleInactiveBackground:toggleInactiveIcon:toggleActiveBackground:toggleActiveIcon:toggleDisabledBackground:toggleDisabledIcon:secondLayerTab:tabsBorderColor:ccpaButtonColor:ccpaButtonTextColor:':
+                name: init
+            '-doCopyPrimary:acceptBtnText:acceptBtnBackground:denyBtnText:denyBtnBackground:saveBtnText:saveBtnBackground:linkIcon:linkFont:text:layerBackground:overlay:toggleInactiveBackground:toggleInactiveIcon:toggleActiveBackground:toggleActiveIcon:toggleDisabledBackground:toggleDisabledIcon:secondLayerTab:tabsBorderColor:ccpaButtonColor:ccpaButtonTextColor:':
+                name: doCopy
+    UsercentricsCustomizationFont:
+        methods:
+            '-initWithFamily:size:':
+                name: init
+            '-doCopyFamily:size:':
+                name: doCopy
+    UsercentricsDataCategory:
+        methods:
+            '-initWithId:name:description:':
+                name: init
+            '-doCopyId:name:description:':
+                name: doCopy
+    UsercentricsDataRetention:
+        methods:
+            '-initWithStdRetention:purposes:specialPurposes:':
+                name: init
+            '-doCopyStdRetention:purposes:specialPurposes:':
+                name: doCopy
+    UsercentricsDpsDisplayFormat: { }
+    UsercentricsFirstLayer:
+        methods:
+            '-initWithHideButtonDeny:logoPosition:secondLayerTrigger:closeOption:mobileVariant:':
+                name: init
+            '-doCopyHideButtonDeny:logoPosition:secondLayerTrigger:closeOption:mobileVariant:':
+                name: doCopy
+    UsercentricsFirstLayerButtonLabels:
+        methods:
+            '-initWithAcceptAll:denyAll:more:save:':
+                name: init
+    UsercentricsFirstLayerCloseOption: { }
+    UsercentricsFirstLayerLogoPosition: { }
+    UsercentricsFirstLayerMobileVariant: { }
+    UsercentricsGeolocationRuleset:
+        methods:
+            '-initWithActiveSettingsId:bannerRequiredAtLocation:':
+                name: init
+            '-doCopyActiveSettingsId:bannerRequiredAtLocation:':
+                name: doCopy
+    UsercentricsIdAndConsent:
+        methods:
+            '-initWithId:consent:legitimateInterestConsent:':
+                name: init
+            '-doCopyId:consent:legitimateInterestConsent:':
+                name: doCopy
+    UsercentricsIdAndName:
+        methods:
+            '-initWithId:name:':
+                name: init
+            '-doCopyId:name:':
+                name: doCopy
+    UsercentricsKotlinArray:
+        methods:
+            '-setIndex:value:':
+                name: set
+            '+arrayWithSize:init:':
+                name: createArray
+    UsercentricsKotlinEnum:
+        methods:
+            '-initWithName:ordinal:':
+                name: init
+    UsercentricsKotlinException:
+        methods:
+            '+new':
+                exclude: true
+    UsercentricsKotlinNothing: { }
+    UsercentricsKotlinThrowable:
+        methods:
+            '-initWithMessage:':
+                name: init
+            '-initWithCause:':
+                name: init
+            '-initWithMessage:cause:':
+                name: init
+            '+new':
+                exclude: true
+    UsercentricsKotlinUnit: { }
+    UsercentricsKotlinx_serialization_coreSerialKind:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreSerializersModule:
+        exclude: true
+    UsercentricsLegacyConsent:
+        methods:
+            '-initWithHistory:status:':
+                name: init
+            '-doCopyHistory:status:':
+                name: doCopy
+    UsercentricsLegacyConsentHistoryEntry:
+        methods:
+            '-initWithAction:status:type:language:timestampInMillis:':
+                name: init
+            '-doCopyAction:status:type:language:timestampInMillis:':
+                name: doCopy
+    UsercentricsLegalBasisLocalization:
+        methods:
+            '-doCopyLabels:labelsAria:data:':
+                name: doCopy
+    UsercentricsMediationResultPayload:
+        methods:
+            '-initWithApplied:':
+                name: init
+    UsercentricsMigrationException: { }
+    UsercentricsMigrationNotFoundException:
+        methods:
+            '-initWithOldVersion:targetVersion:':
+                name: init
+    UsercentricsMutableDictionary: { }
+    UsercentricsMutableSet: { }
+    UsercentricsNetworkMode: { }
+    UsercentricsNumber: { skip_def_constructor: true }
+    UsercentricsUByte: { skip_def_constructor: true }
+    UsercentricsByte: { skip_def_constructor: true }
+    UsercentricsBoolean: { skip_def_constructor: true }
+    UsercentricsInt: { skip_def_constructor: true }
+    UsercentricsUInt: { skip_def_constructor: true }
+    UsercentricsLong: { skip_def_constructor: true }
+    UsercentricsULong: { skip_def_constructor: true }
+    UsercentricsFloat: { skip_def_constructor: true }
+    UsercentricsDouble: { skip_def_constructor: true }
+    UsercentricsShort: { skip_def_constructor: true }
+    UsercentricsUShort: { skip_def_constructor: true }
+
+    UsercentricsPredefinedTVActionButton:
+        methods:
+            '-initWithLabel:type:':
+                name: init
+            '-doCopyLabel:type:':
+                name: doCopy
+    UsercentricsPredefinedTVActionButtonType: { }
+    UsercentricsPredefinedTVActionButtonTypeAcceptAll: { }
+    UsercentricsPredefinedTVActionButtonTypeDenyAll: { }
+    UsercentricsPredefinedTVActionButtonTypeMore:
+        methods:
+            '-initWithInitialSection:':
+                name: init
+    UsercentricsPredefinedTVActionButtonTypeUrl:
+        methods:
+            '-initWithUrl:':
+                name: init
+    UsercentricsPredefinedTVFirstLayerSettings:
+        methods:
+            '-initWithTitle:content:logoUrl:primaryActions:secondaryActions:':
+                name: init
+    UsercentricsPredefinedTVSecondLayerCardEntry:
+        methods:
+            '-initWithId:title:description:toggle:content:':
+                name: init
+            '-doCopyId:title:description:toggle:content:':
+                name: doCopy
+    UsercentricsPredefinedTVSecondLayerCardSection:
+        methods:
+            '-initWithName:entries:':
+                name: init
+            '-doCopyName:entries:':
+                name: doCopy
+    UsercentricsPredefinedTVSecondLayerDetailsEntry: { }
+    UsercentricsPredefinedTVSecondLayerDetailsEntryLink:
+        methods:
+            '-initWithTitle:linkLabel:url:':
+                name: init
+            '-doCopyTitle:linkLabel:url:':
+                name: doCopy
+    UsercentricsPredefinedTVSecondLayerDetailsEntryText:
+        methods:
+            '-initWithText:':
+                name: init
+    UsercentricsPredefinedTVSecondLayerDetailsEntryTitleContent:
+        methods:
+            '-initWithTitle:content:':
+                name: init
+            '-doCopyTitle:content:':
+                name: doCopy
+    UsercentricsPredefinedTVSecondLayerSettings:
+        methods:
+            '-initWithTitle:save:denyAll:toggleLocalizations:content:':
+                name: init
+    UsercentricsPredefinedTVSecondLayerSettingsContent: { }
+    UsercentricsPredefinedTVSecondLayerSettingsContentCards:
+        methods:
+            '-initWithSections:':
+                name: init
+    UsercentricsPredefinedTVSecondLayerSettingsContentDetailsWithIllustrations:
+        methods:
+            '-initWithExtraToggle:entries:':
+                name: init
+            '-doCopyExtraToggle:entries:':
+                name: doCopy
+    UsercentricsPredefinedTVSecondLayerSettingsContentDetailsWithVendors:
+        methods:
+            '-initWithTitle:extraToggle:entries:':
+                name: init
+            '-doCopyTitle:extraToggle:entries:':
+                name: doCopy
+    UsercentricsPredefinedTVViewSettings:
+        methods:
+            '-initWithCustomization:firstLayer:secondLayer:ariaLabels:':
+                name: init
+    UsercentricsPredefinedUIApplication:
+        methods:
+            '-initWithCookieInformationService:logger:loggerLevel:':
+                name: init
+    UsercentricsPredefinedUIApplicationManager:
+        methods:
+            '-initWithConsentManager:logger:cookieInformationService:bannerViewDataService:':
+                name: init
+    UsercentricsPredefinedUIAriaLabels:
+        methods:
+            '-initWithAcceptAllButton:ccpaButton:ccpaMoreInformation:closeButton:collapse:cookiePolicyButton:copyControllerId:denyAllButton:expand:fullscreenButton:imprintButton:languageSelector:privacyButton:privacyPolicyButton:saveButton:serviceInCategoryDetails:servicesInCategory:tabButton:usercentricsCMPButtons:usercentricsCMPContent:usercentricsCMPHeader:usercentricsCMPUI:usercentricsCard:usercentricsList:vendorConsentToggle:vendorDetailedStorageInformation:vendorLegIntToggle:logoAltTag:':
+                name: init
+    UsercentricsPredefinedUIButtonType: { }
+    UsercentricsPredefinedUICardContent: { }
+    UsercentricsPredefinedUICardUI:
+        methods:
+            '-initWithFeature:title:':
+                name: init
+            '-initWithSpecialPurpose:title:':
+                name: init
+            '-initWithId:title:shortDescription:mainSwitchSettings:content:switchSettings:dependantSwitchSettings:':
+                name: init
+            '-doCopyId:title:shortDescription:mainSwitchSettings:content:switchSettings:dependantSwitchSettings:':
+                name: doCopy
+    UsercentricsPredefinedUICardUISection:
+        methods:
+            '-initWithTitle:cards:controllerID:':
+                name: init
+            '-doCopyTitle:cards:controllerID:':
+                name: doCopy
+    UsercentricsPredefinedUICategoriesContent:
+        methods:
+            '-initWithCardUISections:':
+                name: init
+    UsercentricsPredefinedUIColorMachine:
+        methods:
+            '-lightenColorBaseHexColor:amount:':
+                name: lightenColor
+    UsercentricsPredefinedUIControllerIDSettings:
+        methods:
+            '-initWithLabel:value:':
+                name: init
+            '-doCopyLabel:value:':
+                name: doCopy
+    UsercentricsPredefinedUICookieInformationLabels:
+        methods:
+            '-initWithAnyDomain:day:days:domain:duration:error:hour:hours:identifier:loading:maximumAge:minute:minutes:month:months:multipleDomains:no:nonCookieStorage:second:seconds:session:title:titleDetailed:tryAgain:type:year:years:yes:storageInformationDescription:cookieStorage:cookieRefresh:purposes:':
+                name: init
+            '-doCopyAnyDomain:day:days:domain:duration:error:hour:hours:identifier:loading:maximumAge:minute:minutes:month:months:multipleDomains:no:nonCookieStorage:second:seconds:session:title:titleDetailed:tryAgain:type:year:years:yes:storageInformationDescription:cookieStorage:cookieRefresh:purposes:':
+                name: doCopy
+    UsercentricsPredefinedUICustomization:
+        methods:
+            '-initWithColor:font:logoUrl:cornerRadius:':
+                name: init
+    UsercentricsPredefinedUICustomizationColor:
+        methods:
+            '-initWithText:acceptAllButton:denyAllButton:saveButton:okButton:manageButton:toggles:layerBackgroundColor:layerBackgroundSecondaryColor:linkColor:tabColor:baseOverlayColor:overlayOpacity:tabsBorderColor:':
+                name: init
+    UsercentricsPredefinedUICustomizationColorButton:
+        methods:
+            '-initWithText:background:cornerRadius:':
+                name: init
+    UsercentricsPredefinedUICustomizationColorToggles:
+        methods:
+            '-initWithActiveBackground:inactiveBackground:disabledBackground:activeIcon:inactiveIcon:disabledIcon:':
+                name: init
+    UsercentricsPredefinedUICustomizationFont:
+        methods:
+            '-initWithFamily:size:':
+                name: init
+    UsercentricsPredefinedUIDataDistribution:
+        methods:
+            '-initWithProcessingLocation:thirdPartyCountries:':
+                name: init
+            '-doCopyProcessingLocation:thirdPartyCountries:':
+                name: doCopy
+    UsercentricsPredefinedUIDataDistributionTitle:
+        methods:
+            '-initWithProcessingLocationTitle:thirdPartyCountriesTitle:thirdPartyCountriesDescription:':
+                name: init
+    UsercentricsPredefinedUIDecision:
+        methods:
+            '-initWithServiceId:values:':
+                name: init
+            '-doCopyServiceId:values:':
+                name: doCopy
+    UsercentricsPredefinedUIDependantSwitchSettings:
+        methods:
+            '-initWithId:switchSettings:':
+                name: init
+            '-doCopyId:switchSettings:':
+                name: doCopy
+    UsercentricsPredefinedUIDescriptionTitle:
+        methods:
+            '-initWithTitleDescription:title:':
+                name: init
+    UsercentricsPredefinedUIDeviceStorageContent:
+        methods:
+            '-initWithTitle:content:':
+                name: init
+            '-doCopyTitle:content:':
+                name: doCopy
+    UsercentricsPredefinedUIFactoryHolder:
+        methods:
+            '-initWithUiHolder:uiApplication:':
+                name: init
+    UsercentricsPredefinedUIFirstLayerHeaderSettings:
+        methods:
+            '-initWithTitle:shortDescription:contentDescription:links:logoPosition:logoURL:language:firstLayerCloseLink:firstLayerCloseIcon:readMoreText:':
+                name: init
+    UsercentricsPredefinedUIFooterButton:
+        methods:
+            '-initWithLabel:type:customization:':
+                name: init
+    UsercentricsPredefinedUIFooterEntry:
+        methods:
+            '-initWithLabel:':
+                name: init
+    UsercentricsPredefinedUIFooterSettings:
+        methods:
+            '-initWithPoweredBy:optOutToggle:optOutToggleInitialValue:buttons:buttonsLandscape:':
+                name: init
+    UsercentricsPredefinedUIGeneralLabels:
+        methods:
+            '-initWithControllerId:date:decision:readMore:more:acceptAll:denyAll:continueWithoutAccepting:':
+                name: init
+    UsercentricsPredefinedUIHistoryEntry:
+        methods:
+            '-initWithStatus:decisionText:formattedDate:':
+                name: init
+            '-doCopyStatus:decisionText:formattedDate:':
+                name: doCopy
+    UsercentricsPredefinedUIHolder:
+        methods:
+            '-initWithContext:data:consentManager:viewHandlers:':
+                name: init
+            '-doCopyContext:data:consentManager:viewHandlers:':
+                name: doCopy
+    UsercentricsPredefinedUIHtmlLinkType: { }
+    UsercentricsPredefinedUIHyperlinkServiceContent:
+        methods:
+            '-initWithUrl:':
+                name: init
+    UsercentricsPredefinedUIInteraction: { }
+    UsercentricsPredefinedUILabels:
+        methods:
+            '-initWithGeneral:service:firstLayerButtonLabels:cookieInformationLabels:ariaLabels:':
+                name: init
+    UsercentricsPredefinedUILanguage:
+        methods:
+            '-initWithIsoCode:':
+                name: init
+    UsercentricsPredefinedUILanguageSettings:
+        methods:
+            '-initWithAvailable:selected:':
+                name: init
+            '-doCopyAvailable:selected:':
+                name: doCopy
+    UsercentricsPredefinedUILink:
+        methods:
+            '-initWithLabel:url:linkType:eventType:':
+                name: init
+            '-doCopyLabel:url:linkType:eventType:':
+                name: doCopy
+    UsercentricsPredefinedUILinkType: { }
+    UsercentricsPredefinedUIProcessingCompany:
+        methods:
+            '-initWithAddress:dataProtectionOfficer:name:':
+                name: init
+            '-doCopyAddress:dataProtectionOfficer:name:':
+                name: doCopy
+    UsercentricsPredefinedUIPurposeCardContent:
+        methods:
+            '-initWithExamples:vendors:':
+                name: init
+            '-doCopyExamples:vendors:':
+                name: doCopy
+    UsercentricsPredefinedUIPurposeVendorDetails:
+        methods:
+            '-initWithTitle:value:':
+                name: init
+            '-doCopyTitle:value:':
+                name: doCopy
+    UsercentricsPredefinedUIResponse:
+        methods:
+            '-initWithUserInteraction:consents:controllerId:':
+                name: init
+            '-doCopyUserInteraction:consents:controllerId:':
+                name: doCopy
+    UsercentricsPredefinedUISecondLayerHeaderSettings:
+        methods:
+            '-initWithTitle:contentDescription:links:logoPosition:logoURL:language:firstLayerCloseLink:firstLayerCloseIcon:':
+                name: init
+    UsercentricsPredefinedUIServiceConsent:
+        methods:
+            '-initWithHistory:status:':
+                name: init
+            '-doCopyHistory:status:':
+                name: doCopy
+    UsercentricsPredefinedUIServiceContent: { }
+    UsercentricsPredefinedUIServiceContentSection:
+        methods:
+            '-initWithTitle:content:':
+                name: init
+            '-doCopyTitle:content:':
+                name: doCopy
+    UsercentricsPredefinedUIServiceDetails:
+        methods:
+            '-initWithId:mainSwitchSettings:serviceContentSection:name:dataCollected:dataDistribution:dataPurposes:dataRecipients:serviceDescription:processingCompany:retentionPeriodDescription:technologiesUsed:urls:categoryLabel:consent:storageInformationContentSection:dpsDisplayFormat:_legalBasis:disableLegalBasis:':
+                name: init
+            '-doCopyId:mainSwitchSettings:serviceContentSection:name:dataCollected:dataDistribution:dataPurposes:dataRecipients:serviceDescription:processingCompany:retentionPeriodDescription:technologiesUsed:urls:categoryLabel:consent:storageInformationContentSection:dpsDisplayFormat:_legalBasis:disableLegalBasis:':
+                name: doCopy
+    UsercentricsPredefinedUIServiceLabels:
+        methods:
+            '-initWithDataCollected:dataDistribution:dataPurposes:dataRecipientsTitle:descriptionTitle:history:legalBasis:processingCompanyTitle:retentionPeriodTitle:technologiesUsed:urls:':
+                name: init
+    UsercentricsPredefinedUIServicesCardContent:
+        methods:
+            '-initWithServices:':
+                name: init
+    UsercentricsPredefinedUIServicesContent:
+        methods:
+            '-initWithCardUISections:':
+                name: init
+    UsercentricsPredefinedUISimpleCardContent:
+        methods:
+            '-initWithTitle:description:value:':
+                name: init
+            '-initWithTitle:description:values:':
+                name: init
+    UsercentricsPredefinedUISimpleServiceContent:
+        methods:
+            '-initWithContent:':
+                name: init
+    UsercentricsPredefinedUISingleServiceCardContent:
+        methods:
+            '-initWithService:':
+                name: init
+    UsercentricsPredefinedUIStorageInformationButtonInfo:
+        methods:
+            '-initWithLabel:url:deviceStorage:':
+                name: init
+            '-doCopyLabel:url:deviceStorage:':
+                name: doCopy
+    UsercentricsPredefinedUIStorageInformationServiceContent:
+        methods:
+            '-initWithContent:button:':
+                name: init
+    UsercentricsPredefinedUISwitchSettingsUI:
+        methods:
+            '-initWithId:label:disabled:currentValue:':
+                name: init
+            '-doCopyId:label:disabled:currentValue:':
+                name: doCopy
+    UsercentricsPredefinedUITabSettings:
+        methods:
+            '-initWithTitle:content:':
+                name: init
+    UsercentricsPredefinedUIToggleLocalizations:
+        methods:
+            '-initWithOnText:offText:':
+                name: init
+    UsercentricsPredefinedUIToggleSettings:
+        methods:
+            '-initWithId:title:consentId:isEnabled:currentValue:parentId:dependentsIds:':
+                name: init
+            '-doCopyId:title:consentId:isEnabled:currentValue:parentId:dependentsIds:':
+                name: doCopy
+    UsercentricsPredefinedUIURLs:
+        methods:
+            '-initWithCookiePolicy:dataProcessingAgreement:optOut:privacyPolicy:':
+                name: init
+            '-doCopyCookiePolicy:dataProcessingAgreement:optOut:privacyPolicy:':
+                name: doCopy
+    UsercentricsPredefinedUIURLsTitle:
+        methods:
+            '-initWithCookiePolicyTitle:dataProcessingAgreementTitle:optOutTitle:privacyPolicyTitle:':
+                name: init
+    UsercentricsPredefinedUIVariant: { }
+    UsercentricsPredefinedUIViewData:
+        methods:
+            '-initWithControllerId:uiVariant:settings:':
+                name: init
+    UsercentricsPredefinedUIViewHandlers:
+        methods:
+            '-initWithUpdateLanguage:':
+                name: init
+    UsercentricsPredefinedUIViewSettings:
+        methods:
+            '-initWithCustomization:internationalizationLabels:firstLayerV2:secondLayerV2:':
+                name: init
+    UsercentricsPublishedApp:
+        methods:
+            '-initWithBundleId:platform:':
+                name: init
+            '-doCopyBundleId:platform:':
+                name: doCopy
+    UsercentricsPublishedAppPlatform: { }
+    UsercentricsRestrictionType: { }
+    UsercentricsRetentionPeriod:
+        methods:
+            '-initWithIdAndPeriod:':
+                name: init
+    UsercentricsSecondLayer:
+        methods:
+            '-initWithTabsCategoriesLabel:tabsServicesLabel:hideTogglesForServices:hideDataProcessingServices:hideButtonDeny:hideLanguageSwitch:acceptButtonText:denyButtonText:':
+                name: init
+            '-doCopyTabsCategoriesLabel:tabsServicesLabel:hideTogglesForServices:hideDataProcessingServices:hideButtonDeny:hideLanguageSwitch:acceptButtonText:denyButtonText:':
+                name: doCopy
+    UsercentricsSecondLayerSide: { }
+    UsercentricsSecondLayerTrigger: { }
+    UsercentricsSecondLayerVariant: { }
+    UsercentricsServiceConsentTemplate:
+        methods:
+            '-initWithIsDeactivated:defaultConsentStatus:templateId:version:categorySlug:description:isHidden:subConsents:isAutoUpdateAllowed:legalBasisList:disableLegalBasis:':
+                name: init
+            '-doCopyIsDeactivated:defaultConsentStatus:templateId:version:categorySlug:description:isHidden:subConsents:isAutoUpdateAllowed:legalBasisList:disableLegalBasis:':
+                name: doCopy
+    UsercentricsSubConsentTemplate:
+        methods:
+            '-initWithIsDeactivated:defaultConsentStatus:templateId:version:categorySlug:description:isHidden:':
+                name: init
+            '-doCopyIsDeactivated:defaultConsentStatus:templateId:version:categorySlug:description:isHidden:':
+                name: doCopy
+    UsercentricsTCF2ChangedPurposes:
+        methods:
+            '-initWithPurposes:legIntPurposes:notAllowedPurposes:':
+                name: init
+            '-doCopyPurposes:legIntPurposes:notAllowedPurposes:':
+                name: doCopy
+    UsercentricsTCF2Scope: { }
+    UsercentricsTCF2Settings:
+        methods:
+            '-init.*':
+                name: init
+            '-doCopy.*':
+                name: doCopy
+    UsercentricsTCFData:
+        methods:
+            '-initWithFeatures:purposes:specialFeatures:specialPurposes:stacks:vendors:tcString:thirdPartyCount:':
+                name: init
+            '-doCopyFeatures:purposes:specialFeatures:specialPurposes:stacks:vendors:tcString:thirdPartyCount:':
+                name: doCopy
+    UsercentricsTCFDecisionUILayer: { }
+    UsercentricsTCFFeature:
+        methods:
+            '-initWithPurposeDescription:illustrations:id:name:':
+                name: init
+            '-doCopyPurposeDescription:illustrations:id:name:':
+                name: doCopy
+    UsercentricsTCFPurpose:
+        methods:
+            '-initWithPurposeDescription:illustrations:id:name:consent:isPartOfASelectedStack:legitimateInterestConsent:showConsentToggle:showLegitimateInterestToggle:stackId:numberOfVendors:':
+                name: init
+            '-doCopyPurposeDescription:illustrations:id:name:consent:isPartOfASelectedStack:legitimateInterestConsent:showConsentToggle:showLegitimateInterestToggle:stackId:numberOfVendors:':
+                name: doCopy
+    UsercentricsTCFSpecialFeature:
+        methods:
+            '-initWithPurposeDescription:illustrations:id:name:consent:isPartOfASelectedStack:stackId:showConsentToggle:':
+                name: init
+            '-doCopyPurposeDescription:illustrations:id:name:consent:isPartOfASelectedStack:stackId:showConsentToggle:':
+                name: doCopy
+    UsercentricsTCFSpecialPurpose:
+        methods:
+            '-initWithPurposeDescription:illustrations:id:name:':
+                name: init
+            '-doCopyPurposeDescription:illustrations:id:name:':
+                name: doCopy
+    UsercentricsTCFStack:
+        methods:
+            '-initWithDescription:id:name:purposeIds:specialFeatureIds:':
+                name: init
+            '-doCopyDescription:id:name:purposeIds:specialFeatureIds:':
+                name: doCopy
+    UsercentricsTCFUserDecisionOnPurpose:
+        methods:
+            '-initWithId:consent:legitimateInterestConsent:':
+                name: init
+            '-doCopyId:consent:legitimateInterestConsent:':
+                name: doCopy
+    UsercentricsTCFUserDecisionOnSpecialFeature:
+        methods:
+            '-initWithId:consent:':
+                name: init
+            '-doCopyId:consent:':
+                name: doCopy
+    UsercentricsTCFUserDecisionOnVendor:
+        methods:
+            '-initWithId:consent:legitimateInterestConsent:':
+                name: init
+            '-doCopyId:consent:legitimateInterestConsent:':
+                name: doCopy
+    UsercentricsTCFUserDecisions:
+        methods:
+            '-initWithPurposes:specialFeatures:vendors:adTechProviders:':
+                name: init
+            '-doCopyPurposes:specialFeatures:vendors:adTechProviders:':
+                name: doCopy
+    UsercentricsTCFVendor:
+        methods:
+            '-initWithConsent:features:flexiblePurposes:id:legitimateInterestConsent:legitimateInterestPurposes:name:policyUrl:purposes:restrictions:specialFeatures:specialPurposes:showConsentToggle:showLegitimateInterestToggle:cookieMaxAgeSeconds:usesNonCookieAccess:deviceStorageDisclosureUrl:usesCookies:cookieRefresh:dataSharedOutsideEU:dataRetention:dataCategories:vendorUrls:':
+                name: init
+            '-doCopyConsent:features:flexiblePurposes:id:legitimateInterestConsent:legitimateInterestPurposes:name:policyUrl:purposes:restrictions:specialFeatures:specialPurposes:showConsentToggle:showLegitimateInterestToggle:cookieMaxAgeSeconds:usesNonCookieAccess:deviceStorageDisclosureUrl:usesCookies:cookieRefresh:dataSharedOutsideEU:dataRetention:dataCategories:vendorUrls:':
+                name: doCopy
+    UsercentricsTCFVendorRestriction:
+        methods:
+            '-initWithPurposeId:restrictionType:':
+                name: init
+            '-doCopyPurposeId:restrictionType:':
+                name: doCopy
+    UsercentricsTCModelKt: { }
+    UsercentricsTCString:
+        methods:
+            '+new':
+                exclude: true
+    UsercentricsTCfVendorUrlsKt:
+        methods:
+            '+getVendorUrlsVendor:settings:':
+                name: getVendorUrls
+    UsercentricsTimeoutException:
+        methods:
+            '+new':
+                exclude: true
+    UsercentricsTranslationAriaLabels:
+        methods:
+            '-initWithAcceptAllButton:ccpaButton:ccpaMoreInformation:closeButton:collapse:cookiePolicyButton:copyControllerId:denyAllButton:expand:fullscreenButton:imprintButton:languageSelector:privacyButton:privacyPolicyButton:saveButton:serviceInCategoryDetails:servicesInCategory:tabButton:usercentricsCMPButtons:usercentricsCMPContent:usercentricsCMPHeader:usercentricsCMPUI:usercentricsCard:usercentricsList:vendorConsentToggle:vendorDetailedStorageInformation:vendorLegIntToggle:':
+                name: init
+            '-doCopyAcceptAllButton:ccpaButton:ccpaMoreInformation:closeButton:collapse:cookiePolicyButton:copyControllerId:denyAllButton:expand:fullscreenButton:imprintButton:languageSelector:privacyButton:privacyPolicyButton:saveButton:serviceInCategoryDetails:servicesInCategory:tabButton:usercentricsCMPButtons:usercentricsCMPContent:usercentricsCMPHeader:usercentricsCMPUI:usercentricsCard:usercentricsList:vendorConsentToggle:vendorDetailedStorageInformation:vendorLegIntToggle:':
+                name: doCopy
+    UsercentricsUCSVGHelper:
+        methods:
+            '-createFromData:logger:':
+                name: createFromData
+    UsercentricsUCUIFirstLayerSettings:
+        methods:
+            '-initWithLayout:headerSettings:footerSettings:contentSettings:':
+                name: init
+    UsercentricsUCUISecondLayerSettings:
+        methods:
+            '-initWithHeaderSettings:footerSettings:contentSettings:':
+                name: init
+    UsercentricsUSAFrameworks: { }
+    UsercentricsUpdatedConsentPayload:
+        methods:
+            '-initWithConsents:controllerId:tcString:uspString:acString:':
+                name: init
+            '-doCopyConsents:controllerId:tcString:uspString:acString:':
+                name: doCopy
+    UsercentricsUserDecision:
+        methods:
+            '-initWithServiceId:consent:':
+                name: init
+            '-doCopyServiceId:consent:':
+                name: doCopy
+    UsercentricsUsercentricsAnalyticsEventType:
+        name: UsercentricsAnalyticsEventType
+    UsercentricsUsercentricsCMPData:
+        name: UsercentricsCMPData
+        methods:
+            '-initWithSettings:services:legalBasis:activeVariant:userLocation:':
+                name: init
+            '-doCopySettings:services:legalBasis:activeVariant:userLocation:':
+                name: doCopy
+    UsercentricsUsercentricsCategory:
+        name: UsercentricsCategory
+        methods:
+            '-initWithCategorySlug:label:description:isEssential:isHidden:':
+                name: init
+            '-doCopyCategorySlug:label:description:isEssential:isHidden:':
+                name: doCopy
+    UsercentricsUsercentricsConsentAction:
+        name: UsercentricsConsentAction
+    UsercentricsUsercentricsConsentHistoryEntry:
+        name: UsercentricsConsentHistoryEntry
+        methods:
+            '-initWithStatus:type:timestampInMillis:':
+                name: init
+            '-doCopyStatus:type:timestampInMillis:':
+                name: doCopy
+    UsercentricsUsercentricsConsentType:
+        name: UsercentricsConsentType
+    UsercentricsUsercentricsContext:
+        name: UsercentricsContext
+        methods:
+            '+new':
+                exclude: true
+    UsercentricsUsercentricsCustomization:
+        name: UsercentricsCustomization
+        methods:
+            '-initWithLogoUrl:borderRadiusLayer:borderRadiusButton:overlayOpacity:font:color:logoAltTag:':
+                name: init
+            '-doCopyLogoUrl:borderRadiusLayer:borderRadiusButton:overlayOpacity:font:color:logoAltTag:':
+                name: doCopy
+    UsercentricsUsercentricsDisposableEvent:
+        name: UsercentricsDisposableEvent
+        methods:
+            '-initWithCallback:':
+                name: init
+            '-dispose':
+                name: doDispose
+    UsercentricsUsercentricsEvent:
+        name: UsercentricsEvent
+    UsercentricsUsercentricsInternalHelper:
+        name: UsercentricsInternalHelper
+    UsercentricsUsercentricsKt:
+        name: UsercentricsCore
+        methods:
+            '+isReadyOnSuccess:onFailure:':
+                name: isReady
+    UsercentricsUsercentricsLabels:
+        name: UsercentricsLabels
+        methods:
+            '-init.*':
+                name: init
+            '-doCopy.*':
+                name: doCopy
+    UsercentricsUsercentricsLocation:
+        name: UsercentricsLocation
+        methods:
+            '-initWithCountryCode:regionCode:':
+                name: init
+            '-doCopyCountryCode:regionCode:':
+                name: doCopy
+    UsercentricsUsercentricsLoggerLevel:
+        name: UsercentricsLoggerLevel
+    UsercentricsUsercentricsMediation:
+        name: UsercentricsMediation
+    UsercentricsUsercentricsMediationAdjust:
+        name: UsercentricsMediationAdjust
+    UsercentricsUsercentricsOptions:
+        name: UsercentricsOptions
+        methods:
+            '-initWithSettingsId:':
+                name: init
+            '-initWithSettingsId:defaultLanguage:version:timeoutMillis:loggerLevel:ruleSetId:consentMediation:':
+                name: init
+            '+new':
+                exclude: true
+    UsercentricsUsercentricsReadyStatus:
+        name: UsercentricsReadyStatus
+        methods:
+            '-initWithShouldCollectConsent:consents:geolocationRuleset:location:':
+                name: init
+            '-doCopyShouldCollectConsent:consents:geolocationRuleset:location:':
+                name: doCopy
+    UsercentricsUsercentricsSDK:
+        name: UsercentricsSDK
+        methods:
+            '-acceptAllForTCFFromLayer:consentType:':
+                name: acceptAll
+            '-changeLanguageLanguage:onSuccess:onFailure:':
+                name: changeLanguageLanguage
+            '-clearUserSessionOnSuccess:onError:':
+                name: clearUserSession
+            '-denyAllForTCFFromLayer:consentType:':
+                name: denyAll
+            '-getUIFactoryHolderViewContext:abTestingVariant:predefinedUIVariant:callback:':
+                name: getUIFactoryHolderViewContext
+            '-restoreUserSessionControllerId:onSuccess:onFailure:':
+                name: restoreUserSessionControllerId
+            '-saveDecisionsDecisions:consentType:':
+                name: saveDecisions
+            '-saveDecisionsForTCFTcfDecisions:fromLayer:serviceDecisions:consentType:':
+                name: saveDecisions
+            '-saveOptOutForCCPAIsOptedOut:consentType:':
+                name: saveOptOut
+            '+new':
+                exclude: true
+    UsercentricsUsercentricsService:
+        name: UsercentricsService
+        methods:
+            '-initWithTemplateId:version:type:adminSettingsId:dataProcessor:dataPurposes:processingCompany:nameOfProcessingCompany:addressOfProcessingCompany:descriptionOfService:technologyUsed:languagesAvailable:dataCollectedList:dataPurposesList:dataRecipientsList:legalBasisList:retentionPeriodList:subConsents:language:createdBy:updatedBy:isLatest:linkToDpa:legalGround:optOutUrl:policyOfProcessorUrl:categorySlug:recordsOfProcessingActivities:retentionPeriodDescription:dataProtectionOfficer:privacyPolicyURL:cookiePolicyURL:locationOfProcessing:dataCollectedDescription:thirdCountryTransfer:description:cookieMaxAgeSeconds:usesNonCookieAccess:deviceStorageDisclosureUrl:deviceStorage:dpsDisplayFormat:isHidden:framework:isDeactivated:isAutoUpdateAllowed:disableLegalBasis:isEssential:':
+                name: init
+            '-doCopyTemplateId:version:type:adminSettingsId:dataProcessor:dataPurposes:processingCompany:nameOfProcessingCompany:addressOfProcessingCompany:descriptionOfService:technologyUsed:languagesAvailable:dataCollectedList:dataPurposesList:dataRecipientsList:legalBasisList:retentionPeriodList:subConsents:language:createdBy:updatedBy:isLatest:linkToDpa:legalGround:optOutUrl:policyOfProcessorUrl:categorySlug:recordsOfProcessingActivities:retentionPeriodDescription:dataProtectionOfficer:privacyPolicyURL:cookiePolicyURL:locationOfProcessing:dataCollectedDescription:thirdCountryTransfer:description:cookieMaxAgeSeconds:usesNonCookieAccess:deviceStorageDisclosureUrl:deviceStorage:dpsDisplayFormat:isHidden:framework:isDeactivated:isAutoUpdateAllowed:disableLegalBasis:isEssential:':
+                name: doCopy
+    UsercentricsUsercentricsServiceConsent:
+        name: UsercentricsServiceConsent
+        methods:
+            '-initWithTemplateId:status:history:type:dataProcessor:version:isEssential:':
+                name: init
+            '-doCopyTemplateId:status:history:type:dataProcessor:version:isEssential:':
+                name: doCopy
+    UsercentricsUsercentricsSettings:
+        name: UsercentricsSettings
+        methods:
+            '-initWithLabels:secondLayer:version:language:imprintUrl:privacyPolicyUrl:cookiePolicyUrl:firstLayerDescriptionHtml:firstLayerMobileDescriptionHtml:settingsId:bannerMobileDescriptionIsActive:enablePoweredBy:displayOnlyForEU:tcf2Enabled:reshowBanner:editableLanguages:languagesAvailable:showInitialViewForVersionChange:ccpa:tcf2:customization:firstLayer:styles:interactionAnalytics:consentAnalytics:consentXDevice:variants:dpsDisplayFormat:framework:publishedApps:consentTemplates:categories:':
+                name: init
+            '-doCopyLabels:secondLayer:version:language:imprintUrl:privacyPolicyUrl:cookiePolicyUrl:firstLayerDescriptionHtml:firstLayerMobileDescriptionHtml:settingsId:bannerMobileDescriptionIsActive:enablePoweredBy:displayOnlyForEU:tcf2Enabled:reshowBanner:editableLanguages:languagesAvailable:showInitialViewForVersionChange:ccpa:tcf2:customization:firstLayer:styles:interactionAnalytics:consentAnalytics:consentXDevice:variants:dpsDisplayFormat:framework:publishedApps:consentTemplates:categories:':
+                name: doCopy
+    UsercentricsUsercentricsShadedColor:
+        name: UsercentricsShadedColor
+        methods:
+            '-initWithColor100:color80:color16:color2:':
+                name: init
+            '-doCopyColor100:color80:color16:color2:':
+                name: doCopy
+    UsercentricsUsercentricsStyles:
+        name: UsercentricsStyles
+        methods:
+            '-initWithBtnPrivacyButtonInactiveSize:historyDateFormat:btnPrivacyButtonActiveSize:txtOptInMsgFontSize:btnPrivacyButtonTransparency:btnPrivacyButtonBgColor:btnAcceptTextColor:btnDenyTextColor:txtOptInMsgColor:btnMoreInfoBgColor:btnMoreInfoTextColor:btnAcceptBgColor:btnDenyBgColor:linkColor:cornerModalHeaderBgColor:cornerModalHeaderTextColor:privacyModalHeaderBgColor:privacyModalHeaderTextColor:bannerBgColor:bannerTextColor:btnPrivacyButtonTextColor:modalSaveTextColor:modalSaveBgColor:chipTextColor:chipBgColor:':
+                name: init
+            '-doCopyBtnPrivacyButtonInactiveSize:historyDateFormat:btnPrivacyButtonActiveSize:txtOptInMsgFontSize:btnPrivacyButtonTransparency:btnPrivacyButtonBgColor:btnAcceptTextColor:btnDenyTextColor:txtOptInMsgColor:btnMoreInfoBgColor:btnMoreInfoTextColor:btnAcceptBgColor:btnDenyBgColor:linkColor:cornerModalHeaderBgColor:cornerModalHeaderTextColor:privacyModalHeaderBgColor:privacyModalHeaderTextColor:bannerBgColor:bannerTextColor:btnPrivacyButtonTextColor:modalSaveTextColor:modalSaveBgColor:chipTextColor:chipBgColor:':
+                name: doCopy
+    UsercentricsUsercentricsTCFSettings:
+        name: UsercentricsTCFSettings
+    UsercentricsUsercentricsVariant:
+        name: UsercentricsVariant
+    UsercentricsVariantsSettings:
+        methods:
+            '-initWithEnabled:experimentsJson:activateWith:':
+                name: init
+            '-doCopyEnabled:experimentsJson:activateWith:':
+                name: doCopy
+    UsercentricsVendorUrl:
+        methods:
+            '-initWithLangId:privacy:legIntClaim:':
+                name: init
+            '-doCopyLangId:privacy:legIntClaim:':
+                name: doCopy
+    UsercentricsUnityDataRetention:
+        methods:
+            '-initWithDataRetention:':
+                name: init
+            '-initWithPurposes:specialPurposes:_stdRetention:':
+                name: init
+            '-doCopyPurposes:specialPurposes:_stdRetention:':
+                name: doCopy
+    UsercentricsUnityFirstLayerSettings:
+        methods:
+            '-initWithTitle:description:additionalInfo:resurfaceNote:vendorListLinkTitle:manageSettingsLinkTitle:purposesLabel:featuresLabel:acceptAllButton:denyAllButton:saveButton:':
+                name: init
+            '-doCopyTitle:description:additionalInfo:resurfaceNote:vendorListLinkTitle:manageSettingsLinkTitle:purposesLabel:featuresLabel:acceptAllButton:denyAllButton:saveButton:':
+                name: doCopy
+    UsercentricsUnityMessageProvider:
+        methods:
+            '+new': { exclude: true }
+    UsercentricsUnityPredefinedUIResponse:
+        methods:
+            '-initWithUserInteraction:consents:controllerId:':
+                name: init
+            '-doCopyUserInteraction:consents:controllerId:':
+                name: doCopy
+    UsercentricsUnityServiceConsent:
+        methods:
+            '-initWithServiceConsent:':
+                name: init
+            '-initWithTemplateId:status:history:dataProcessor:version:isEssential:_type:':
+                name: init
+            '-doCopyTemplateId:status:history:dataProcessor:version:isEssential:_type:':
+                name: doCopy
+    UsercentricsUnityUpdatedConsentPayload:
+        methods:
+            '-initWithPayload:':
+                name: init
+            '-initWithConsents:controllerId:tcString:uspString:acString:':
+                name: init
+            '-doCopyConsents:controllerId:tcString:uspString:acString:':
+                name: doCopy
+    UsercentricsUsercentricsUnity:
+        exclude: true
+protocols:
+    UsercentricsBannerViewDataService: { }
+    UsercentricsBaseTCFUserDecision: { }
+    UsercentricsConsentTemplate: { }
+    UsercentricsICcpa:
+        methods:
+            '-setCcpaStorageIsOptedOut:isNoticeGiven:':
+                name: setCcpaStorage
+    UsercentricsIEtagCacheStorage:
+        methods:
+            '-getStoredFileKey:etagValue:':
+                name: getStoredFileKey
+            '-storeFileAndEtagKey:etagValue:body:':
+                name: storeFileAndEtagKey
+    UsercentricsKotlinAnnotation: { }
+    UsercentricsKotlinComparable:
+        exclude: true
+    UsercentricsKotlinIterator: { }
+    UsercentricsKotlinKAnnotatedElement: { }
+    UsercentricsKotlinKClass: { }
+    UsercentricsKotlinKClassifier: { }
+    UsercentricsKotlinKDeclarationContainer: { }
+    UsercentricsKotlinx_serialization_coreCompositeDecoder:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreCompositeEncoder:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreDecoder:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreDeserializationStrategy:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreEncoder:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreKSerializer:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreSerialDescriptor:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreSerializationStrategy:
+        exclude: true
+    UsercentricsKotlinx_serialization_coreSerializersModuleCollector:
+        exclude: true
+    UsercentricsPredefinedTVSecondLayerSettingsContentDetails: { }
+    UsercentricsPredefinedUIConsentManager:
+        methods:
+            '-saveFromLayer:userDecisions:':
+                name: save
+    UsercentricsPredefinedUIHeaderSettings: { }
+    UsercentricsPredefinedUITabContent: { }
+    UsercentricsTCFConsentWithLegitimateInterestDecision: { }
+    UsercentricsUsercentricsCookieInformationService:
+        name: UsercentricsCookieInformationService
+        methods:
+            '-fetchCookieInfoCookieInfoURL:onSuccess:onError:':
+                name: fetchCookieInfo
+    UsercentricsUsercentricsLogger:
+        name: UsercentricsLogger
+        methods:
+            '-debugMessage:cause:':
+                name: debugMessage
+            '-errorMessage:cause:':
+                name: errorMessage
+            '-warningMessage:cause:':
+                name: warningMessage
+
+    UsercentricsIUnityUsercentricsInstanceProvider: { }
+    UsercentricsUnityMessageSender:
+        methods:
+            '-sendUnityMessageGameObjectName:receiver:content:':
+                name: sendUnityMessage
+functions:
+
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    SWIFT_.*:
+        exclude: true
+
+    # Make sure we don't miss any constants if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Constant__#{g[0]}'

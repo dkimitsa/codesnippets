@@ -134,7 +134,49 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
                 1. expected location ${artifactLocation}
             """.trimIndent()
         )
-    }
+    },
+    "Usercentrics" to { framework ->
+        val artifact = "$framework.framework"
+        val artifactLocation = downloadFolder.extend("Usercentrics/Usercentrics.xcframework/ios-arm64/$artifact")
+        processFramework(
+            artifact = artifact,
+            moduleFolder = "usercentrics/",
+            sourceHeadersDir = downloadFolder,
+            destinationHeadersDir = Path.of("usercentrics", "src", "main", "bro-gen").toFile(),
+            yaml = "usercentrics.yaml",
+            version = { downloadFolder.extend("Usercentrics/version/").readText() },
+            instruction = """
+                1. download latest Usercentrics-???-unity-static.xcframework.zip from https://usercentrics.com/docs/apps/integration/install/
+                2. unpack rename to Usercentrics-unity-static
+                3. download latest UsercentricsUI-???-unity-static.xcframework.zip from https://usercentrics.com/docs/apps/integration/install/
+                4. unpack and rename to UsercentricsUI-unity-static
+                5. create a file ${downloadFolder.extend("Usercentrics/version")} and put verions there, e.g. 11.0.4 
+                6. expected location ${downloadFolder.extend("Usercentrics-unity-static/Usercentrics.xcframework/ios-arm64/Usercentrics.framework")} 
+                                     ${downloadFolder.extend("UsercentricsUI-unity-static/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework")} 
+            """.trimIndent(),
+            headerFolderCleaner = { _, dst ->
+                cleanUpHeaders("Usercentrics", dst.extend("Usercentrics.framework"))
+                cleanUpHeaders("UsercentricsUI", dst.extend("UsercentricsUI.framework"))
+            },
+            headersCopier = { _, src, dst ->
+                copyHeaders("Usercentrics.framework",
+                    src.extend("Usercentrics-unity-static/Usercentrics.xcframework/ios-arm64/Usercentrics.framework/Headers"),
+                    dst.extend("Usercentrics.framework/Headers"))
+                copyHeaders("UsercentricsUI.framework",
+                    src.extend("UsercentricsUI-unity-static/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework/Headers"),
+                    dst.extend("UsercentricsUI.framework/Headers"))
+            } ,
+            interactiveValidateHeaderFolder = { _, src, instruction, optional ->
+                interactiveValidateHeaderFolder("Usercentrics.framework",
+                    src.extend("Usercentrics-unity-static/Usercentrics.xcframework/ios-arm64/Usercentrics.framework/Headers"),
+                    instruction, optional)
+                interactiveValidateHeaderFolder("UsercentricsUI.framework",
+                    src.extend("UsercentricsUI-unity-static/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework/Headers"),
+                    instruction, optional)
+            }
+        )
+    },
+
 )
 
 // parse arguments
