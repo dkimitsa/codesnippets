@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class UsercentricsCCPADataCompanion, UsercentricsCCPAData, UsercentricsAdTechProviderCompanion, UsercentricsAdTechProvider, UsercentricsAdditionalConsentModeData, UsercentricsGeolocationRulesetCompanion, UsercentricsGeolocationRuleset, UsercentricsKotlinUnit, UsercentricsPredefinedUIViewData, NSError, UsercentricsUsercentricsServiceConsent, UsercentricsUpdatedConsentPayloadCompanion, UsercentricsUpdatedConsentPayload, UsercentricsUserDecisionCompanion, UsercentricsUserDecision, UsercentricsKotlinEnumCompanion, UsercentricsKotlinEnum<E>, UsercentricsUsercentricsAnalyticsEventType, UsercentricsKotlinArray<T>, UsercentricsUsercentricsSettings, UsercentricsUsercentricsService, UsercentricsLegalBasisLocalization, UsercentricsUsercentricsVariant, UsercentricsUsercentricsLocation, UsercentricsUsercentricsCMPData, UsercentricsUsercentricsCategory, UsercentricsUsercentricsConsentType, UsercentricsUsercentricsConsentHistoryEntryCompanion, UsercentricsUsercentricsConsentHistoryEntry, UsercentricsUsercentricsEvent, UsercentricsMediationResultPayload, UsercentricsUsercentricsDisposableEvent<T>, UsercentricsUsercentricsInternalHelper, UsercentricsUsercentricsLoggerLevel, UsercentricsUsercentricsOptionsCompanion, UsercentricsNetworkMode, UsercentricsUsercentricsReadyStatusCompanion, UsercentricsUsercentricsReadyStatus, UsercentricsTCFDecisionUILayer, UsercentricsTCFData, UsercentricsPredefinedUIApplicationManager, UsercentricsPredefinedUIVariant, UsercentricsUsercentricsContext, UsercentricsPredefinedUIFactoryHolder, UsercentricsTCFUserDecisions, UsercentricsUsercentricsServiceConsentCompanion, UsercentricsKotlinThrowable, UsercentricsKotlinException, UsercentricsConsentAppliedCompanion, UsercentricsConsentApplied, UsercentricsMediationResultPayloadCompanion, UsercentricsUsercentricsMediation, UsercentricsUsercentricsMediationAdjust, UsercentricsLegacyConsentHistoryEntry, UsercentricsLegacyConsent, UsercentricsUsercentricsConsentAction, UsercentricsPredefinedTVActionButtonType, UsercentricsPredefinedTVActionButton, UsercentricsPredefinedTVActionButtonTypeAcceptAll, UsercentricsPredefinedTVActionButtonTypeDenyAll, UsercentricsPredefinedTVActionButtonTypeMore, UsercentricsPredefinedTVActionButtonTypeUrl, UsercentricsPredefinedUIToggleSettings, UsercentricsPredefinedTVSecondLayerSettingsContent, UsercentricsPredefinedTVSecondLayerCardEntry, UsercentricsPredefinedTVSecondLayerCardSection, UsercentricsPredefinedTVSecondLayerDetailsEntryCompanion, UsercentricsPredefinedTVSecondLayerDetailsEntry, UsercentricsPredefinedTVSecondLayerDetailsEntryLink, UsercentricsPredefinedTVSecondLayerDetailsEntryText, UsercentricsPredefinedTVSecondLayerDetailsEntryTitleContent, UsercentricsPredefinedUIToggleLocalizations, UsercentricsPredefinedTVSecondLayerSettingsContentCards, UsercentricsPredefinedTVSecondLayerSettingsContentDetailsWithIllustrations, UsercentricsPredefinedTVSecondLayerSettingsContentDetailsWithVendors, UsercentricsPredefinedUICustomization, UsercentricsPredefinedTVFirstLayerSettings, UsercentricsPredefinedTVSecondLayerSettings, UsercentricsPredefinedUIAriaLabels, UsercentricsPredefinedUIButtonType, UsercentricsTCFFeature, UsercentricsTCFSpecialPurpose, UsercentricsPredefinedUISwitchSettingsUI, UsercentricsPredefinedUICardContent, UsercentricsPredefinedUIDependantSwitchSettings, UsercentricsPredefinedUICardUI, UsercentricsPredefinedUIControllerIDSettings, UsercentricsPredefinedUICardUISection, UsercentricsPredefinedUICookieInformationLabelsCompanion, UsercentricsPredefinedUICookieInformationLabels, UsercentricsPredefinedUICustomizationColor, UsercentricsPredefinedUICustomizationFont, UsercentricsUsercentricsShadedColor, UsercentricsPredefinedUICustomizationColorButton, UsercentricsPredefinedUICustomizationColorToggles, UsercentricsPredefinedUICustomizationFontCompanion, UsercentricsPredefinedUIDataDistribution, UsercentricsPredefinedUIDecisionCompanion, UsercentricsPredefinedUIDecision, UsercentricsPredefinedUIDeviceStorageContent, UsercentricsPredefinedUILanguageSettings, UsercentricsPredefinedUILink, UsercentricsFirstLayerLogoPosition, UsercentricsPredefinedUIFooterEntry, UsercentricsPredefinedUIFooterButton, UsercentricsPredefinedUIHistoryEntry, UsercentricsPredefinedUIHtmlLinkTypeCompanion, UsercentricsPredefinedUIHtmlLinkType, UsercentricsPredefinedUIServiceContent, UsercentricsPredefinedUIHyperlinkServiceContent, UsercentricsPredefinedUIGeneralLabels, UsercentricsPredefinedUIServiceLabels, UsercentricsFirstLayerButtonLabels, UsercentricsPredefinedUILanguage, UsercentricsPredefinedUILinkType, UsercentricsPredefinedUILinkCompanion, UsercentricsPredefinedUIProcessingCompany, UsercentricsPredefinedUISimpleCardContent, UsercentricsPredefinedUIPurposeVendorDetails, UsercentricsPredefinedUIPurposeCardContent, UsercentricsPredefinedUIServiceConsent, UsercentricsPredefinedUIServiceContentSection, UsercentricsPredefinedUIURLs, UsercentricsDpsDisplayFormat, UsercentricsPredefinedUIServiceDetails, UsercentricsPredefinedUIDescriptionTitle, UsercentricsPredefinedUIDataDistributionTitle, UsercentricsPredefinedUIURLsTitle, UsercentricsPredefinedUIServicesCardContent, UsercentricsPredefinedUISimpleServiceContent, UsercentricsPredefinedUISingleServiceCardContent, UsercentricsPredefinedUIStorageInformationButtonInfo, UsercentricsPredefinedUILabels, UsercentricsUCUIFirstLayerSettings, UsercentricsUCUISecondLayerSettings, UsercentricsFirstLayerMobileVariant, UsercentricsPredefinedUIFooterSettings, UsercentricsUCUIFirstLayerSettingsCompanion, UsercentricsPredefinedUITabSettings, UsercentricsUSAFrameworks, UsercentricsUsercentricsConsentActionCompanion, UsercentricsUsercentricsConsentTypeCompanion, UsercentricsPredefinedUIResponse, UsercentricsUsercentricsTCFSettings, UsercentricsAdTechProviderDecision, UsercentricsIdAndConsentCompanion, UsercentricsIdAndConsent, UsercentricsIdAndNameCompanion, UsercentricsIdAndName, UsercentricsTCFPurpose, UsercentricsTCFSpecialFeature, UsercentricsTCFStack, UsercentricsTCFVendor, UsercentricsTCFDataCompanion, UsercentricsTCFFeatureCompanion, UsercentricsTCFPurposeCompanion, UsercentricsTCFSpecialFeatureCompanion, UsercentricsTCFSpecialPurposeCompanion, UsercentricsTCFStackCompanion, UsercentricsTCFUserDecisionOnPurpose, UsercentricsTCFUserDecisionOnSpecialFeature, UsercentricsTCFUserDecisionOnVendor, UsercentricsTCFVendorRestriction, UsercentricsDataRetention, UsercentricsVendorUrl, UsercentricsTCFVendorCompanion, UsercentricsRestrictionType, UsercentricsTCFVendorRestrictionCompanion, UsercentricsPredefinedUIHolder, UsercentricsPredefinedUIApplication, UsercentricsPredefinedUIViewHandlers, UsercentricsPredefinedUIInteraction, UsercentricsPredefinedUIResponseCompanion, UsercentricsUCSVGHelper, UIImage, NSData, UsercentricsPredefinedUIColorMachine, UsercentricsUsercentricsShadedColorCompanion, UsercentricsUsercentricsSDK, UsercentricsUsercentricsUnityCompanion, UsercentricsUnityPredefinedUIResponse, UsercentricsRetentionPeriod, UsercentricsUnityDataRetentionCompanion, UsercentricsUnityDataRetention, UsercentricsUnityFirstLayerSettingsCompanion, UsercentricsUnityFirstLayerSettings, UsercentricsUnityServiceConsent, UsercentricsUnityPredefinedUIResponseCompanion, UsercentricsUnityServiceConsentCompanion, UsercentricsUnityUpdatedConsentPayloadCompanion, UsercentricsUnityUpdatedConsentPayload, UsercentricsPredefinedUIViewSettings, UsercentricsPredefinedTVViewSettings, UsercentricsUsercentricsLocationCompanion, UsercentricsCCPARegion, UsercentricsCCPASettingsCompanion, UsercentricsCCPASettings, UsercentricsConsentDisclosureType, UsercentricsConsentDisclosureCompanion, UsercentricsConsentDisclosure, UsercentricsConsentDisclosureObjectCompanion, UsercentricsConsentDisclosureObject, UsercentricsConsentDisclosureTypeCompanion, UsercentricsCustomizationColorCompanion, UsercentricsCustomizationColor, UsercentricsCustomizationFontCompanion, UsercentricsCustomizationFont, UsercentricsSecondLayerTrigger, UsercentricsFirstLayerCloseOption, UsercentricsFirstLayerCompanion, UsercentricsFirstLayer, UsercentricsPublishedAppPlatform, UsercentricsPublishedAppCompanion, UsercentricsPublishedApp, UsercentricsSecondLayerCompanion, UsercentricsSecondLayer, UsercentricsSecondLayerSide, UsercentricsSecondLayerVariant, UsercentricsSubConsentTemplate, UsercentricsServiceConsentTemplateCompanion, UsercentricsServiceConsentTemplate, UsercentricsSubConsentTemplateCompanion, UsercentricsTCF2ChangedPurposesCompanion, UsercentricsTCF2ChangedPurposes, UsercentricsTCF2Scope, UsercentricsTCF2SettingsCompanion, UsercentricsTCF2Settings, UsercentricsUsercentricsCategoryCompanion, UsercentricsUsercentricsCustomizationCompanion, UsercentricsUsercentricsCustomization, UsercentricsUsercentricsLabelsCompanion, UsercentricsUsercentricsLabels, UsercentricsUsercentricsServiceCompanion, UsercentricsUsercentricsStyles, UsercentricsVariantsSettings, UsercentricsUsercentricsSettingsCompanion, UsercentricsUsercentricsStylesCompanion, UsercentricsVariantsSettingsCompanion, UsercentricsLegalBasisLocalizationCompanion, UsercentricsTranslationAriaLabels, UsercentricsTranslationAriaLabelsCompanion, UsercentricsTCStringCompanion, UsercentricsRestrictionTypeCompanion, UsercentricsDataCategoryCompanion, UsercentricsDataCategory, UsercentricsDataRetentionCompanion, UsercentricsRetentionPeriodCompanion, UsercentricsVendorUrlCompanion, NSAttributedString, UsercentricsUsercentricsOptions, UsercentricsKotlinx_serialization_coreSerializersModule, UsercentricsKotlinx_serialization_coreSerialKind, UsercentricsKotlinNothing;
+@class UsercentricsCCPADataCompanion, UsercentricsCCPAData, UsercentricsAdTechProviderCompanion, UsercentricsAdTechProvider, UsercentricsAdditionalConsentModeData, UsercentricsGeolocationRulesetCompanion, UsercentricsGeolocationRuleset, UsercentricsKotlinUnit, UsercentricsPredefinedUIViewData, NSError, UsercentricsUsercentricsServiceConsent, UsercentricsUpdatedConsentPayloadCompanion, UsercentricsUpdatedConsentPayload, UsercentricsUserDecisionCompanion, UsercentricsUserDecision, UsercentricsKotlinEnumCompanion, UsercentricsKotlinEnum<E>, UsercentricsUsercentricsAnalyticsEventType, UsercentricsKotlinArray<T>, UsercentricsUsercentricsSettings, UsercentricsUsercentricsService, UsercentricsLegalBasisLocalization, UsercentricsUsercentricsVariant, UsercentricsUsercentricsLocation, UsercentricsUsercentricsCMPData, UsercentricsUsercentricsCategory, UsercentricsUsercentricsConsentType, UsercentricsUsercentricsConsentHistoryEntryCompanion, UsercentricsUsercentricsConsentHistoryEntry, UsercentricsUsercentricsEvent, UsercentricsMediationResultPayload, UsercentricsUsercentricsDisposableEvent<T>, UsercentricsUsercentricsInternalHelper, UsercentricsUsercentricsLoggerLevel, UsercentricsUsercentricsOptionsCompanion, UsercentricsNetworkMode, UsercentricsUsercentricsReadyStatusCompanion, UsercentricsUsercentricsReadyStatus, UsercentricsTCFDecisionUILayer, UsercentricsTCFData, UsercentricsPredefinedUIApplicationManager, UsercentricsPredefinedUIVariant, UsercentricsPredefinedUIFactoryHolder, UsercentricsTCFUserDecisions, UsercentricsUsercentricsServiceConsentCompanion, UsercentricsKotlinThrowable, UsercentricsKotlinException, UsercentricsConsentAppliedCompanion, UsercentricsConsentApplied, UsercentricsMediationResultPayloadCompanion, UsercentricsUsercentricsMediation, UsercentricsUsercentricsMediationAdjust, UsercentricsLegacyConsentHistoryEntry, UsercentricsLegacyConsent, UsercentricsUsercentricsConsentAction, UsercentricsPredefinedTVActionButtonType, UsercentricsPredefinedTVActionButton, UsercentricsPredefinedTVActionButtonTypeAcceptAll, UsercentricsPredefinedTVActionButtonTypeDenyAll, UsercentricsPredefinedTVActionButtonTypeMore, UsercentricsPredefinedTVActionButtonTypeUrl, UsercentricsPredefinedUIToggleSettings, UsercentricsPredefinedTVSecondLayerSettingsContent, UsercentricsPredefinedTVSecondLayerCardEntry, UsercentricsPredefinedTVSecondLayerCardSection, UsercentricsPredefinedTVSecondLayerDetailsEntryCompanion, UsercentricsPredefinedTVSecondLayerDetailsEntry, UsercentricsPredefinedTVSecondLayerDetailsEntryLink, UsercentricsPredefinedTVSecondLayerDetailsEntryText, UsercentricsPredefinedTVSecondLayerDetailsEntryTitleContent, UsercentricsPredefinedUIToggleLocalizations, UsercentricsPredefinedTVSecondLayerSettingsContentCards, UsercentricsPredefinedTVSecondLayerSettingsContentDetailsWithIllustrations, UsercentricsPredefinedTVSecondLayerSettingsContentDetailsWithVendors, UsercentricsPredefinedUICustomization, UsercentricsPredefinedTVFirstLayerSettings, UsercentricsPredefinedTVSecondLayerSettings, UsercentricsPredefinedUIAriaLabels, UsercentricsPredefinedUIButtonType, UsercentricsTCFFeature, UsercentricsTCFSpecialPurpose, UsercentricsPredefinedUISwitchSettingsUI, UsercentricsPredefinedUICardContent, UsercentricsPredefinedUIDependantSwitchSettings, UsercentricsPredefinedUICardUI, UsercentricsPredefinedUIControllerIDSettings, UsercentricsPredefinedUICardUISection, UsercentricsPredefinedUICookieInformationLabelsCompanion, UsercentricsPredefinedUICookieInformationLabels, UsercentricsPredefinedUICustomizationColor, UsercentricsPredefinedUICustomizationFont, UsercentricsUsercentricsShadedColor, UsercentricsPredefinedUICustomizationColorButton, UsercentricsPredefinedUICustomizationColorToggles, UsercentricsPredefinedUICustomizationFontCompanion, UsercentricsPredefinedUIDataDistribution, UsercentricsPredefinedUIDecisionCompanion, UsercentricsPredefinedUIDecision, UsercentricsPredefinedUIDeviceStorageContent, UsercentricsPredefinedUILanguageSettings, UsercentricsPredefinedUILink, UsercentricsFirstLayerLogoPosition, UsercentricsPredefinedUIFooterEntry, UsercentricsPredefinedUIFooterButton, UsercentricsPredefinedUIHistoryEntry, UsercentricsPredefinedUIHtmlLinkTypeCompanion, UsercentricsPredefinedUIHtmlLinkType, UsercentricsPredefinedUIServiceContent, UsercentricsPredefinedUIHyperlinkServiceContent, UsercentricsPredefinedUIGeneralLabels, UsercentricsPredefinedUIServiceLabels, UsercentricsFirstLayerButtonLabels, UsercentricsPredefinedUILanguage, UsercentricsPredefinedUILinkType, UsercentricsPredefinedUILinkCompanion, UsercentricsPredefinedUIProcessingCompany, UsercentricsPredefinedUISimpleCardContent, UsercentricsPredefinedUIPurposeVendorDetails, UsercentricsPredefinedUIPurposeCardContent, UsercentricsPredefinedUIServiceConsent, UsercentricsPredefinedUIServiceContentSection, UsercentricsPredefinedUIURLs, UsercentricsDpsDisplayFormat, UsercentricsPredefinedUIServiceDetails, UsercentricsPredefinedUIDescriptionTitle, UsercentricsPredefinedUIDataDistributionTitle, UsercentricsPredefinedUIURLsTitle, UsercentricsPredefinedUIServicesCardContent, UsercentricsPredefinedUISimpleServiceContent, UsercentricsPredefinedUISingleServiceCardContent, UsercentricsPredefinedUIStorageInformationButtonInfo, UsercentricsPredefinedUILabels, UsercentricsUCUIFirstLayerSettings, UsercentricsUCUISecondLayerSettings, UsercentricsFirstLayerMobileVariant, UsercentricsPredefinedUIFooterSettings, UsercentricsUCUIFirstLayerSettingsCompanion, UsercentricsPredefinedUITabSettings, UsercentricsUSAFrameworks, UsercentricsUsercentricsConsentActionCompanion, UsercentricsUsercentricsConsentTypeCompanion, UsercentricsPredefinedUIResponse, UsercentricsUsercentricsTCFSettings, UsercentricsAdTechProviderDecision, UsercentricsIdAndConsentCompanion, UsercentricsIdAndConsent, UsercentricsIdAndNameCompanion, UsercentricsIdAndName, UsercentricsTCFPurpose, UsercentricsTCFSpecialFeature, UsercentricsTCFStack, UsercentricsTCFVendor, UsercentricsTCFDataCompanion, UsercentricsTCFFeatureCompanion, UsercentricsTCFPurposeCompanion, UsercentricsTCFSpecialFeatureCompanion, UsercentricsTCFSpecialPurposeCompanion, UsercentricsTCFStackCompanion, UsercentricsTCFUserDecisionOnPurpose, UsercentricsTCFUserDecisionOnSpecialFeature, UsercentricsTCFUserDecisionOnVendor, UsercentricsTCFVendorRestriction, UsercentricsDataRetention, UsercentricsVendorUrl, UsercentricsTCFVendorCompanion, UsercentricsRestrictionType, UsercentricsTCFVendorRestrictionCompanion, UsercentricsPredefinedUIHolder, UsercentricsPredefinedUIApplication, UsercentricsPredefinedUIViewHandlers, UsercentricsPredefinedUIInteraction, UsercentricsPredefinedUIResponseCompanion, UsercentricsUCSVGHelper, UIImage, NSData, UsercentricsPredefinedUIColorMachine, UsercentricsUsercentricsShadedColorCompanion, UsercentricsPredefinedUIViewSettings, UsercentricsPredefinedTVViewSettings, UsercentricsUsercentricsLocationCompanion, UsercentricsCCPARegion, UsercentricsCCPASettingsCompanion, UsercentricsCCPASettings, UsercentricsConsentDisclosureType, UsercentricsConsentDisclosureCompanion, UsercentricsConsentDisclosure, UsercentricsConsentDisclosureObjectCompanion, UsercentricsConsentDisclosureObject, UsercentricsConsentDisclosureTypeCompanion, UsercentricsCustomizationColorCompanion, UsercentricsCustomizationColor, UsercentricsCustomizationFontCompanion, UsercentricsCustomizationFont, UsercentricsSecondLayerTrigger, UsercentricsFirstLayerCloseOption, UsercentricsFirstLayerCompanion, UsercentricsFirstLayer, UsercentricsPublishedAppPlatform, UsercentricsPublishedAppCompanion, UsercentricsPublishedApp, UsercentricsSecondLayerCompanion, UsercentricsSecondLayer, UsercentricsSecondLayerSide, UsercentricsSecondLayerVariant, UsercentricsSubConsentTemplate, UsercentricsServiceConsentTemplateCompanion, UsercentricsServiceConsentTemplate, UsercentricsSubConsentTemplateCompanion, UsercentricsTCF2ChangedPurposesCompanion, UsercentricsTCF2ChangedPurposes, UsercentricsTCF2Scope, UsercentricsTCF2SettingsCompanion, UsercentricsTCF2Settings, UsercentricsUsercentricsCategoryCompanion, UsercentricsUsercentricsCustomizationCompanion, UsercentricsUsercentricsCustomization, UsercentricsUsercentricsLabelsCompanion, UsercentricsUsercentricsLabels, UsercentricsUsercentricsServiceCompanion, UsercentricsUsercentricsStyles, UsercentricsVariantsSettings, UsercentricsUsercentricsSettingsCompanion, UsercentricsUsercentricsStylesCompanion, UsercentricsVariantsSettingsCompanion, UsercentricsLegalBasisLocalizationCompanion, UsercentricsTranslationAriaLabels, UsercentricsTranslationAriaLabelsCompanion, UsercentricsTCStringCompanion, UsercentricsRestrictionTypeCompanion, UsercentricsDataCategoryCompanion, UsercentricsDataCategory, UsercentricsRetentionPeriod, UsercentricsDataRetentionCompanion, UsercentricsRetentionPeriodCompanion, UsercentricsVendorUrlCompanion, NSAttributedString, UsercentricsUsercentricsOptions, UsercentricsUsercentricsSDK, UsercentricsKotlinx_serialization_coreSerializersModule, UsercentricsKotlinx_serialization_coreSerialKind, UsercentricsKotlinNothing;
 
-@protocol UsercentricsKotlinx_serialization_coreKSerializer, UsercentricsKotlinComparable, UsercentricsPredefinedTVSecondLayerSettingsContentDetails, UsercentricsPredefinedUITabContent, UsercentricsPredefinedUIHeaderSettings, UsercentricsUsercentricsCookieInformationService, UsercentricsUsercentricsLogger, UsercentricsBaseTCFUserDecision, UsercentricsTCFConsentWithLegitimateInterestDecision, UsercentricsPredefinedUIConsentManager, UsercentricsBannerViewDataService, UsercentricsUnityMessageSender, UsercentricsConsentTemplate, UsercentricsKotlinx_serialization_coreEncoder, UsercentricsKotlinx_serialization_coreSerialDescriptor, UsercentricsKotlinx_serialization_coreSerializationStrategy, UsercentricsKotlinx_serialization_coreDecoder, UsercentricsKotlinx_serialization_coreDeserializationStrategy, UsercentricsKotlinIterator, UsercentricsKotlinx_serialization_coreCompositeEncoder, UsercentricsKotlinAnnotation, UsercentricsKotlinx_serialization_coreCompositeDecoder, UsercentricsKotlinx_serialization_coreSerializersModuleCollector, UsercentricsKotlinKClass, UsercentricsKotlinKDeclarationContainer, UsercentricsKotlinKAnnotatedElement, UsercentricsKotlinKClassifier;
+@protocol UsercentricsKotlinx_serialization_coreKSerializer, UsercentricsKotlinComparable, UsercentricsPredefinedTVSecondLayerSettingsContentDetails, UsercentricsPredefinedUITabContent, UsercentricsPredefinedUIHeaderSettings, UsercentricsUsercentricsCookieInformationService, UsercentricsUsercentricsLogger, UsercentricsBaseTCFUserDecision, UsercentricsTCFConsentWithLegitimateInterestDecision, UsercentricsPredefinedUIConsentManager, UsercentricsBannerViewDataService, UsercentricsConsentTemplate, UsercentricsKotlinx_serialization_coreEncoder, UsercentricsKotlinx_serialization_coreSerialDescriptor, UsercentricsKotlinx_serialization_coreSerializationStrategy, UsercentricsKotlinx_serialization_coreDecoder, UsercentricsKotlinx_serialization_coreDeserializationStrategy, UsercentricsKotlinIterator, UsercentricsKotlinx_serialization_coreCompositeEncoder, UsercentricsKotlinAnnotation, UsercentricsKotlinx_serialization_coreCompositeDecoder, UsercentricsKotlinx_serialization_coreSerializersModuleCollector, UsercentricsKotlinKClass, UsercentricsKotlinKDeclarationContainer, UsercentricsKotlinKAnnotatedElement, UsercentricsKotlinKClassifier;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -159,20 +159,10 @@ __attribute__((swift_name("CCPAData")))
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 - (NSString *)toUSPString __attribute__((swift_name("toUSPString()"))) __attribute__((deprecated("Please, use the field uspString directly")));
-
-/** Limited Service Provider Agreement Covered Transaction. */
 @property (readonly) UsercentricsBoolean * _Nullable lspact __attribute__((swift_name("lspact")));
-
-/** True if the notice was given. False if not. */
 @property (readonly) UsercentricsBoolean * _Nullable noticeGiven __attribute__((swift_name("noticeGiven")));
-
-/** True if the user opted out the consents, so the user denies the services. False if not, so the user accepts the services. */
 @property UsercentricsBoolean * _Nullable optedOut __attribute__((swift_name("optedOut")));
-
-/** Encoded USP String. */
 @property (readonly) NSString *uspString __attribute__((swift_name("uspString")));
-
-/** CCPA version. */
 @property (readonly) int32_t version __attribute__((swift_name("version")));
 @end
 
@@ -296,8 +286,7 @@ __attribute__((swift_name("UpdatedConsentPayload.Companion")))
 @end
 
 
-/** The user consent decision about a service.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -306,39 +295,21 @@ __attribute__((swift_name("UserDecision")))
 @interface UsercentricsUserDecision : UsercentricsBase
 - (instancetype)initWithServiceId:(NSString *)serviceId consent:(BOOL)consent __attribute__((swift_name("init(serviceId:consent:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsUserDecisionCompanion *companion __attribute__((swift_name("companion")));
-
-/** The user consent decision about a service. */
 - (UsercentricsUserDecision *)doCopyServiceId:(NSString *)serviceId consent:(BOOL)consent __attribute__((swift_name("doCopy(serviceId:consent:)")));
-
-/** The user consent decision about a service. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** The user consent decision about a service. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** The user consent decision about a service. */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** True if the consent was given. False if not. */
 @property BOOL consent __attribute__((swift_name("consent")));
-
-/** The service ID. Also known as 'Template ID'. */
 @property (readonly) NSString *serviceId __attribute__((swift_name("serviceId")));
 @end
 
-
-/** The user consent decision about a service. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UserDecision.Companion")))
 @interface UsercentricsUserDecisionCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** The user consent decision about a service. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsUserDecisionCompanion *shared __attribute__((swift_name("shared")));
-
-/** The user consent decision about a service. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -391,29 +362,16 @@ __attribute__((swift_name("UsercentricsCMPData")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** The active variant. */
 @property (readonly) UsercentricsUsercentricsVariant *activeVariant __attribute__((swift_name("activeVariant")));
-
-/** The categories defined for the settingsId. */
 @property (readonly) NSArray<UsercentricsUsercentricsCategory *> *categories __attribute__((swift_name("categories")));
-
-/** The legal basis localizations. */
 @property (readonly) UsercentricsLegalBasisLocalization *legalBasis __attribute__((swift_name("legalBasis")));
-
-/** The services defined for the settingsId. */
 @property (readonly) NSArray<UsercentricsUsercentricsService *> *services __attribute__((swift_name("services")));
-
-/** The general settings defined for the settingsId. */
 @property (readonly) UsercentricsUsercentricsSettings *settings __attribute__((swift_name("settings")));
-
-/** The current user location. */
 @property (readonly) UsercentricsUsercentricsLocation *userLocation __attribute__((swift_name("userLocation")));
 @end
 
 
-/**  The consent history entry.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -422,42 +380,22 @@ __attribute__((swift_name("UsercentricsConsentHistoryEntry")))
 @interface UsercentricsUsercentricsConsentHistoryEntry : UsercentricsBase
 - (instancetype)initWithStatus:(BOOL)status type:(UsercentricsUsercentricsConsentType *)type timestampInMillis:(int64_t)timestampInMillis __attribute__((swift_name("init(status:type:timestampInMillis:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsUsercentricsConsentHistoryEntryCompanion *companion __attribute__((swift_name("companion")));
-
-/**  The consent history entry. */
 - (UsercentricsUsercentricsConsentHistoryEntry *)doCopyStatus:(BOOL)status type:(UsercentricsUsercentricsConsentType *)type timestampInMillis:(int64_t)timestampInMillis __attribute__((swift_name("doCopy(status:type:timestampInMillis:)")));
-
-/**  The consent history entry. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**  The consent history entry. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**  The consent history entry. */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** True if consent was given, False if not. */
 @property (readonly) BOOL status __attribute__((swift_name("status")));
-
-/** The UNIX timestamp in millisecons of the consent. */
 @property (readonly) int64_t timestampInMillis __attribute__((swift_name("timestampInMillis")));
-
-/** The type of the current consent status. E.g. 'Explicit'. */
 @property (readonly) UsercentricsUsercentricsConsentType *type __attribute__((swift_name("type")));
 @end
 
-
-/**  The consent history entry. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UsercentricsConsentHistoryEntry.Companion")))
 @interface UsercentricsUsercentricsConsentHistoryEntryCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/**  The consent history entry. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsUsercentricsConsentHistoryEntryCompanion *shared __attribute__((swift_name("shared")));
-
-/**  The consent history entry. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -496,8 +434,7 @@ __attribute__((swift_name("UsercentricsInternalHelper")))
 @end
 
 
-/** CMP configuration. Use the empty or [settingsId] constructor for convenience.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -511,45 +448,23 @@ __attribute__((swift_name("UsercentricsOptions")))
 @property (class, readonly, getter=companion) UsercentricsUsercentricsOptionsCompanion *companion __attribute__((swift_name("companion")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** The [consentMediation] enables the feature of consent mediation, this feature works with a set of selected SDKs that you can find in the documentation. */
 @property BOOL consentMediation __attribute__((swift_name("consentMediation")));
-
-/** The [defaultLanguage] sets the default language in the language selection hierarchy. E.g. "en", "de", "fr". The default value is empty. */
 @property NSString *defaultLanguage __attribute__((swift_name("defaultLanguage")));
-
-/** The [loggerLevel] provides a set of logs in the standard output depending on the Level: [.debug] (most detailed logs, includes every other level), [.warning] (non-problematic operations) and [.error] (relevant logs to any blocking problems). The default value is [.none]. */
 @property UsercentricsUsercentricsLoggerLevel *loggerLevel __attribute__((swift_name("loggerLevel")));
-
-/** The [networkMode] sets the network operation mode. Be careful, use this option only if we have confirmed that it is ready to use because it has a significant impact on the whole system's performance. The default value is "world". */
 @property UsercentricsNetworkMode *networkMode __attribute__((swift_name("networkMode")));
-
-/** The [ruleSetId] is a Usercentrics generated ID, used to identify a set of CMP configurations. */
 @property NSString *ruleSetId __attribute__((swift_name("ruleSetId")));
-
-/** The [settingsId] is a Usercentrics generated ID, used to identify a unique CMP configuration. */
 @property NSString *settingsId __attribute__((swift_name("settingsId")));
-
-/** The [timeoutMillis] sets a timeout for network requests in milliseconds. The default value is 10000 milliseconds. */
 @property int64_t timeoutMillis __attribute__((swift_name("timeoutMillis")));
-
-/** The [version] freezes the configuration version shown to your users, you may pass a specific version here. E.g. "3.0.4". The default value is "latest". */
 @property NSString *version __attribute__((swift_name("version")));
 @end
 
-
-/** CMP configuration. Use the empty or [settingsId] constructor for convenience. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UsercentricsOptions.Companion")))
 @interface UsercentricsUsercentricsOptionsCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** CMP configuration. Use the empty or [settingsId] constructor for convenience. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsUsercentricsOptionsCompanion *shared __attribute__((swift_name("shared")));
-
-/** CMP configuration. Use the empty or [settingsId] constructor for convenience. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -567,17 +482,9 @@ __attribute__((swift_name("UsercentricsReadyStatus")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** List of services with consent choices. */
 @property (readonly) NSArray<UsercentricsUsercentricsServiceConsent *> *consents __attribute__((swift_name("consents")));
-
-/** Object containing information about Geolocation Rulesets, when enabled in the account */
 @property (readonly) UsercentricsGeolocationRuleset * _Nullable geolocationRuleset __attribute__((swift_name("geolocationRuleset")));
-
-/** Current location of User */
 @property (readonly) UsercentricsUsercentricsLocation *location __attribute__((swift_name("location")));
-
-/** True, if consent has never been collected or some service has changed thus requiring a consent update. False, if consent has been collected and no update is required. */
 @property (readonly) BOOL shouldCollectConsent __attribute__((swift_name("shouldCollectConsent")));
 @end
 
@@ -595,83 +502,34 @@ __attribute__((swift_name("UsercentricsSDK")))
 @interface UsercentricsUsercentricsSDK : UsercentricsBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-
-/** Accept all services. */
 - (NSArray<UsercentricsUsercentricsServiceConsent *> *)acceptAllConsentType:(UsercentricsUsercentricsConsentType *)consentType __attribute__((swift_name("acceptAll(consentType:)")));
-
-/** Accept all services and TCF. */
 - (NSArray<UsercentricsUsercentricsServiceConsent *> *)acceptAllForTCFFromLayer:(UsercentricsTCFDecisionUILayer *)fromLayer consentType:(UsercentricsUsercentricsConsentType *)consentType __attribute__((swift_name("acceptAllForTCF(fromLayer:consentType:)")));
-
-/** Change the CMP language. */
 - (void)changeLanguageLanguage:(NSString *)language onSuccess:(void (^)(void))onSuccess onFailure:(void (^)(NSError *))onFailure __attribute__((swift_name("changeLanguage(language:onSuccess:onFailure:)")));
-
-/** Clears current user session without needing to initialize the SDK again **/
 - (void)clearUserSessionOnSuccess:(void (^)(UsercentricsUsercentricsReadyStatus *))onSuccess onError:(void (^)(NSError *))onError __attribute__((swift_name("clearUserSession(onSuccess:onError:)")));
-
-/** Deny all services. */
 - (NSArray<UsercentricsUsercentricsServiceConsent *> *)denyAllConsentType:(UsercentricsUsercentricsConsentType *)consentType __attribute__((swift_name("denyAll(consentType:)")));
-
-/** Deny all services and TCF. */
 - (NSArray<UsercentricsUsercentricsServiceConsent *> *)denyAllForTCFFromLayer:(UsercentricsTCFDecisionUILayer *)fromLayer consentType:(UsercentricsUsercentricsConsentType *)consentType __attribute__((swift_name("denyAllForTCF(fromLayer:consentType:)")));
-
-/** Get the A/B testing active variant of the CMP. */
 - (NSString * _Nullable)getABTestingVariant __attribute__((swift_name("getABTestingVariant()")));
-
-/** Get Google's Additional Consent Mode Data */
 - (UsercentricsAdditionalConsentModeData *)getAdditionalConsentModeData __attribute__((swift_name("getAdditionalConsentModeData()")));
-
-/** Get all the CMP Data. Use this data to build a custom UI CMP frontend. */
 - (UsercentricsUsercentricsCMPData *)getCMPData __attribute__((swift_name("getCMPData()")));
-
-/** List of services with consent choices. */
 - (NSArray<UsercentricsUsercentricsServiceConsent *> *)getConsents __attribute__((swift_name("getConsents()")));
-
-/** Get a Usercentrics generated ID, used to identify a user's consent history. */
 - (NSString *)getControllerId __attribute__((swift_name("getControllerId()")));
-
-/** Get the data that needs to be disclosed to the end-user if TCF is enabled. */
 - (void)getTCFDataCallback:(void (^)(UsercentricsTCFData *))callback __attribute__((swift_name("getTCFData(callback:)")));
-
-/** Internal */
 - (UsercentricsPredefinedUIApplicationManager *)getUIApplicationPredefinedUIVariant:(UsercentricsPredefinedUIVariant *)predefinedUIVariant __attribute__((swift_name("getUIApplication(predefinedUIVariant:)")));
-
-/** Internal */
-- (void)getUIFactoryHolderViewContext:(UsercentricsUsercentricsContext * _Nullable)viewContext abTestingVariant:(NSString * _Nullable)abTestingVariant predefinedUIVariant:(UsercentricsPredefinedUIVariant * _Nullable)predefinedUIVariant callback:(void (^)(UsercentricsPredefinedUIFactoryHolder *))callback __attribute__((swift_name("getUIFactoryHolder(viewContext:abTestingVariant:predefinedUIVariant:callback:)")));
-
-/** Get the User's CCPA consent data. */
+- (void)getUIFactoryHolderAbTestingVariant:(NSString * _Nullable)abTestingVariant predefinedUIVariant:(UsercentricsPredefinedUIVariant * _Nullable)predefinedUIVariant callback:(void (^)(UsercentricsPredefinedUIFactoryHolder *))callback __attribute__((swift_name("getUIFactoryHolder(abTestingVariant:predefinedUIVariant:callback:)")));
 - (UsercentricsCCPAData *)getUSPData __attribute__((swift_name("getUSPData()")));
-
-/** Get the User's Session Data that can be injected in a WebView with Usercentrics Browser SDK. */
 - (NSString *)getUserSessionData __attribute__((swift_name("getUserSessionData()")));
-
-/** Restore a user session from another Usercentrics supported platform. */
 - (void)restoreUserSessionControllerId:(NSString *)controllerId onSuccess:(void (^)(UsercentricsUsercentricsReadyStatus *))onSuccess onFailure:(void (^)(NSError *))onFailure __attribute__((swift_name("restoreUserSession(controllerId:onSuccess:onFailure:)")));
-
-/** Save service decisions. */
 - (NSArray<UsercentricsUsercentricsServiceConsent *> *)saveDecisionsDecisions:(NSArray<UsercentricsUserDecision *> *)decisions consentType:(UsercentricsUsercentricsConsentType *)consentType __attribute__((swift_name("saveDecisions(decisions:consentType:)")));
-
-/** Save service and TCF decisions. */
 - (NSArray<UsercentricsUsercentricsServiceConsent *> *)saveDecisionsForTCFTcfDecisions:(UsercentricsTCFUserDecisions *)tcfDecisions fromLayer:(UsercentricsTCFDecisionUILayer *)fromLayer serviceDecisions:(NSArray<UsercentricsUserDecision *> *)serviceDecisions consentType:(UsercentricsUsercentricsConsentType *)consentType __attribute__((swift_name("saveDecisionsForTCF(tcfDecisions:fromLayer:serviceDecisions:consentType:)")));
-
-/** Save service and CCPA decisions. */
 - (NSArray<UsercentricsUsercentricsServiceConsent *> *)saveOptOutForCCPAIsOptedOut:(BOOL)isOptedOut consentType:(UsercentricsUsercentricsConsentType *)consentType __attribute__((swift_name("saveOptOutForCCPA(isOptedOut:consentType:)")));
-
-/** Set the A/B testing active variant of the CMP. */
 - (void)setABTestingVariantVariantName:(NSString *)variantName __attribute__((swift_name("setABTestingVariant(variantName:)")));
-
-/** Set the CMP ID value required by IAB for custom UI. */
 - (void)setCMPIdId:(int32_t)id __attribute__((swift_name("setCMPId(id:)")));
-
-/** True, if consent has never been collected or some service has changed thus requiring a consent update. False, if consent has been collected and no update is required. */
 - (BOOL)shouldCollectConsent __attribute__((swift_name("shouldCollectConsent()")));
-
-/** Track a CMP [event] from a custom UI CMP frontend. */
 - (void)trackEvent:(UsercentricsUsercentricsAnalyticsEventType *)event __attribute__((swift_name("track(event:)")));
 @end
 
 
-/** The current status of a service.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -680,54 +538,26 @@ __attribute__((swift_name("UsercentricsServiceConsent")))
 @interface UsercentricsUsercentricsServiceConsent : UsercentricsBase
 - (instancetype)initWithTemplateId:(NSString *)templateId status:(BOOL)status history:(NSArray<UsercentricsUsercentricsConsentHistoryEntry *> *)history type:(UsercentricsUsercentricsConsentType * _Nullable)type dataProcessor:(NSString *)dataProcessor version:(NSString *)version isEssential:(BOOL)isEssential __attribute__((swift_name("init(templateId:status:history:type:dataProcessor:version:isEssential:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsUsercentricsServiceConsentCompanion *companion __attribute__((swift_name("companion")));
-
-/** The current status of a service. */
 - (UsercentricsUsercentricsServiceConsent *)doCopyTemplateId:(NSString *)templateId status:(BOOL)status history:(NSArray<UsercentricsUsercentricsConsentHistoryEntry *> *)history type:(UsercentricsUsercentricsConsentType * _Nullable)type dataProcessor:(NSString *)dataProcessor version:(NSString *)version isEssential:(BOOL)isEssential __attribute__((swift_name("doCopy(templateId:status:history:type:dataProcessor:version:isEssential:)")));
-
-/** The current status of a service. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** The current status of a service. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** The current status of a service. */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** The data controller that determines the purposes and the means of the processed data.The data processor is usually a third party external to the company. */
 @property (readonly) NSString *dataProcessor __attribute__((swift_name("dataProcessor")));
-
-/** The consent history chronologically ordered. */
 @property (readonly) NSArray<UsercentricsUsercentricsConsentHistoryEntry *> *history __attribute__((swift_name("history")));
-
-/** True if the service is essential, False if not. */
 @property (readonly) BOOL isEssential __attribute__((swift_name("isEssential")));
-
-/** True if consent was given, False if not. */
 @property (readonly) BOOL status __attribute__((swift_name("status")));
-
-/** A unique ID that represents the legal specifications of the service. */
 @property (readonly) NSString *templateId __attribute__((swift_name("templateId")));
-
-/** The type of the current consent status. E.g. 'Explicit'. */
 @property (readonly) UsercentricsUsercentricsConsentType * _Nullable type __attribute__((swift_name("type")));
-
-/** The configuration version of the service. */
 @property (readonly) NSString *version __attribute__((swift_name("version")));
 @end
 
-
-/** The current status of a service. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UsercentricsServiceConsent.Companion")))
 @interface UsercentricsUsercentricsServiceConsentCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** The current status of a service. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsUsercentricsServiceConsentCompanion *shared __attribute__((swift_name("shared")));
-
-/** The current status of a service. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -877,14 +707,10 @@ __attribute__((swift_name("UsercentricsMediation.Adjust")))
 @property NSString *yahooJapanSearchTemplateId __attribute__((swift_name("yahooJapanSearchTemplateId")));
 @end
 
-
-/** Enum which defines from where the network calls would be made */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("NetworkMode")))
 @interface UsercentricsNetworkMode : UsercentricsKotlinEnum<UsercentricsNetworkMode *>
 + (instancetype)alloc __attribute__((unavailable));
-
-/** Enum which defines from where the network calls would be made */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly) UsercentricsNetworkMode *world __attribute__((swift_name("world")));
@@ -907,14 +733,10 @@ __attribute__((swift_name("UsercentricsLoggerLevel")))
 @property (class, readonly) NSArray<UsercentricsUsercentricsLoggerLevel *> *entries __attribute__((swift_name("entries")));
 @end
 
-
-/** All the different UI variants  */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UsercentricsVariant")))
 @interface UsercentricsUsercentricsVariant : UsercentricsKotlinEnum<UsercentricsUsercentricsVariant *>
 + (instancetype)alloc __attribute__((unavailable));
-
-/** All the different UI variants  */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly) UsercentricsUsercentricsVariant *default_ __attribute__((swift_name("default_")));
@@ -2142,23 +1964,13 @@ __attribute__((swift_name("UsercentricsTCFSettings")))
 - (void)setExcludedVendorsVendorIds:(NSArray<UsercentricsInt *> *)vendorIds __attribute__((swift_name("setExcludedVendors(vendorIds:)")));
 @end
 
-
-/** A user's consent decision on Google Ad Tech Providers */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AdTechProviderDecision")))
 @interface UsercentricsAdTechProviderDecision : UsercentricsBase
 - (instancetype)initWithId:(int32_t)id consent:(BOOL)consent __attribute__((swift_name("init(id:consent:)"))) __attribute__((objc_designated_initializer));
-
-/** A user's consent decision on Google Ad Tech Providers */
 - (UsercentricsAdTechProviderDecision *)doCopyId:(int32_t)id consent:(BOOL)consent __attribute__((swift_name("doCopy(id:consent:)")));
-
-/** A user's consent decision on Google Ad Tech Providers */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A user's consent decision on Google Ad Tech Providers */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A user's consent decision on Google Ad Tech Providers */
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) BOOL consent __attribute__((swift_name("consent")));
 @property (readonly) int32_t id __attribute__((swift_name("id")));
@@ -2167,11 +1979,7 @@ __attribute__((swift_name("AdTechProviderDecision")))
 __attribute__((swift_name("BaseTCFUserDecision")))
 @protocol UsercentricsBaseTCFUserDecision
 @required
-
-/** Indicates if the user gave consent (true) or denied consent (false) */
 @property UsercentricsBoolean * _Nullable consent __attribute__((swift_name("consent")));
-
-/** The id of the purpose/vendor the consent decision belongs to */
 @property int32_t id __attribute__((swift_name("id")));
 @end
 
@@ -2235,14 +2043,11 @@ __attribute__((swift_name("IdAndName.Companion")))
 __attribute__((swift_name("TCFConsentWithLegitimateInterestDecision")))
 @protocol UsercentricsTCFConsentWithLegitimateInterestDecision <UsercentricsBaseTCFUserDecision>
 @required
-
-/** Indicates if the user gave legitimate interest consent (true) or denied consent (false) */
 @property UsercentricsBoolean * _Nullable legitimateInterestConsent __attribute__((swift_name("legitimateInterestConsent")));
 @end
 
 
-/** All the data that needs to be disclosed to the end-user if TCF is enabled.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -2251,70 +2056,32 @@ __attribute__((swift_name("TCFData")))
 @interface UsercentricsTCFData : UsercentricsBase
 - (instancetype)initWithFeatures:(NSArray<UsercentricsTCFFeature *> *)features purposes:(NSArray<UsercentricsTCFPurpose *> *)purposes specialFeatures:(NSArray<UsercentricsTCFSpecialFeature *> *)specialFeatures specialPurposes:(NSArray<UsercentricsTCFSpecialPurpose *> *)specialPurposes stacks:(NSArray<UsercentricsTCFStack *> *)stacks vendors:(NSArray<UsercentricsTCFVendor *> *)vendors tcString:(NSString *)tcString thirdPartyCount:(int32_t)thirdPartyCount __attribute__((swift_name("init(features:purposes:specialFeatures:specialPurposes:stacks:vendors:tcString:thirdPartyCount:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCFDataCompanion *companion __attribute__((swift_name("companion")));
-
-/** All the data that needs to be disclosed to the end-user if TCF is enabled. */
 - (UsercentricsTCFData *)doCopyFeatures:(NSArray<UsercentricsTCFFeature *> *)features purposes:(NSArray<UsercentricsTCFPurpose *> *)purposes specialFeatures:(NSArray<UsercentricsTCFSpecialFeature *> *)specialFeatures specialPurposes:(NSArray<UsercentricsTCFSpecialPurpose *> *)specialPurposes stacks:(NSArray<UsercentricsTCFStack *> *)stacks vendors:(NSArray<UsercentricsTCFVendor *> *)vendors tcString:(NSString *)tcString thirdPartyCount:(int32_t)thirdPartyCount __attribute__((swift_name("doCopy(features:purposes:specialFeatures:specialPurposes:stacks:vendors:tcString:thirdPartyCount:)")));
-
-/** All the data that needs to be disclosed to the end-user if TCF is enabled. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** All the data that needs to be disclosed to the end-user if TCF is enabled. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** All the data that needs to be disclosed to the end-user if TCF is enabled. */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** A list of all the TCF features that need to be disclosed to the end-user if TCF is enabled */
 @property (readonly) NSArray<UsercentricsTCFFeature *> *features __attribute__((swift_name("features")));
-
-/** A list of all the TCF purposes that need to be disclosed to the end-user if TCF is enabled */
 @property (readonly) NSArray<UsercentricsTCFPurpose *> *purposes __attribute__((swift_name("purposes")));
-
-/** A list of all the TCF special features that need to be disclosed to the end-user if TCF is enabled */
 @property (readonly) NSArray<UsercentricsTCFSpecialFeature *> *specialFeatures __attribute__((swift_name("specialFeatures")));
-
-/** A list of all the TCF special purposes that need to be disclosed to the end-user if TCF is enabled */
 @property (readonly) NSArray<UsercentricsTCFSpecialPurpose *> *specialPurposes __attribute__((swift_name("specialPurposes")));
-
-/**
- * A list of all TCF stacks that need to be disclosed to the end-user if TCF is enabled. On the first layer of a
- * TCF UI, stacks may be shown as alternative its comprising purposes and special features. However, on the second
- * layer, this is not allowed according to the IAB TCF v.2.0 guidelines. Also on the first layer, a purpose or special
- * feature may not be shown if a stack containing this purpose or special feature is already displayed. Note, that all
- * purposes and special features that are part of stacks will still be listed in the TCFData purposes and special
- * features fields, but they will be flagged with isPartOfASelectedStack = true and include a non-null stackId.
- */
 @property (readonly) NSArray<UsercentricsTCFStack *> *stacks __attribute__((swift_name("stacks")));
-
-/** The TCF string */
 @property (readonly) NSString *tcString __attribute__((swift_name("tcString")));
-
-/** The total of vendors and services */
 @property (readonly) int32_t thirdPartyCount __attribute__((swift_name("thirdPartyCount")));
-
-/** A list of all TCF vendors that need to be disclosed to the end-user if TCF is enabled */
 @property (readonly) NSArray<UsercentricsTCFVendor *> *vendors __attribute__((swift_name("vendors")));
 @end
 
-
-/** All the data that needs to be disclosed to the end-user if TCF is enabled. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFData.Companion")))
 @interface UsercentricsTCFDataCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** All the data that needs to be disclosed to the end-user if TCF is enabled. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCFDataCompanion *shared __attribute__((swift_name("shared")));
-
-/** All the data that needs to be disclosed to the end-user if TCF is enabled. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
-/** A TCF feature that needs to be disclosed to the end-user.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -2323,51 +2090,28 @@ __attribute__((swift_name("TCFFeature")))
 @interface UsercentricsTCFFeature : UsercentricsBase
 - (instancetype)initWithPurposeDescription:(NSString *)purposeDescription illustrations:(NSArray<NSString *> *)illustrations id:(int32_t)id name:(NSString *)name __attribute__((swift_name("init(purposeDescription:illustrations:id:name:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCFFeatureCompanion *companion __attribute__((swift_name("companion")));
-
-/** A TCF feature that needs to be disclosed to the end-user. */
 - (UsercentricsTCFFeature *)doCopyPurposeDescription:(NSString *)purposeDescription illustrations:(NSArray<NSString *> *)illustrations id:(int32_t)id name:(NSString *)name __attribute__((swift_name("doCopy(purposeDescription:illustrations:id:name:)")));
-
-/** A TCF feature that needs to be disclosed to the end-user. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A TCF feature that needs to be disclosed to the end-user. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A TCF feature that needs to be disclosed to the end-user. */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** The unique id as defined in the IAB global vendor list. */
 @property (readonly) int32_t id __attribute__((swift_name("id")));
-
-/** An official legal list of illustrations that needs to be disclosed to the end-user. */
 @property (readonly) NSArray<NSString *> *illustrations __attribute__((swift_name("illustrations")));
-
-/** The name as defined in the IAB global vendor list. */
 @property (readonly) NSString *name __attribute__((swift_name("name")));
-
-/** A user-friendly short description that needs to be disclosed to the end-user. */
 @property (readonly) NSString *purposeDescription __attribute__((swift_name("purposeDescription")));
 @end
 
-
-/** A TCF feature that needs to be disclosed to the end-user. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFFeature.Companion")))
 @interface UsercentricsTCFFeatureCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** A TCF feature that needs to be disclosed to the end-user. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCFFeatureCompanion *shared __attribute__((swift_name("shared")));
-
-/** A TCF feature that needs to be disclosed to the end-user. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
-/** TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -2376,78 +2120,35 @@ __attribute__((swift_name("TCFPurpose")))
 @interface UsercentricsTCFPurpose : UsercentricsBase
 - (instancetype)initWithPurposeDescription:(NSString *)purposeDescription illustrations:(NSArray<NSString *> *)illustrations id:(int32_t)id name:(NSString *)name consent:(UsercentricsBoolean * _Nullable)consent isPartOfASelectedStack:(BOOL)isPartOfASelectedStack legitimateInterestConsent:(UsercentricsBoolean * _Nullable)legitimateInterestConsent showConsentToggle:(BOOL)showConsentToggle showLegitimateInterestToggle:(BOOL)showLegitimateInterestToggle stackId:(UsercentricsInt * _Nullable)stackId numberOfVendors:(UsercentricsInt * _Nullable)numberOfVendors __attribute__((swift_name("init(purposeDescription:illustrations:id:name:consent:isPartOfASelectedStack:legitimateInterestConsent:showConsentToggle:showLegitimateInterestToggle:stackId:numberOfVendors:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCFPurposeCompanion *companion __attribute__((swift_name("companion")));
-
-/** TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.*/
 - (UsercentricsTCFPurpose *)doCopyPurposeDescription:(NSString *)purposeDescription illustrations:(NSArray<NSString *> *)illustrations id:(int32_t)id name:(NSString *)name consent:(UsercentricsBoolean * _Nullable)consent isPartOfASelectedStack:(BOOL)isPartOfASelectedStack legitimateInterestConsent:(UsercentricsBoolean * _Nullable)legitimateInterestConsent showConsentToggle:(BOOL)showConsentToggle showLegitimateInterestToggle:(BOOL)showLegitimateInterestToggle stackId:(UsercentricsInt * _Nullable)stackId numberOfVendors:(UsercentricsInt * _Nullable)numberOfVendors __attribute__((swift_name("doCopy(purposeDescription:illustrations:id:name:consent:isPartOfASelectedStack:legitimateInterestConsent:showConsentToggle:showLegitimateInterestToggle:stackId:numberOfVendors:)")));
-
-/** TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.*/
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.*/
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.*/
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** A boolean value which indicates whether the user gave or refused consent, or did not take
- * action yet (null) for this TCF model. */
 @property (readonly) UsercentricsBoolean * _Nullable consent __attribute__((swift_name("consent")));
-
-/** The unique id as defined in the IAB global vendor list. */
 @property (readonly) int32_t id __attribute__((swift_name("id")));
-
-/** An official legal list of illustrations that needs to be disclosed to the end-user. */
 @property (readonly) NSArray<NSString *> *illustrations __attribute__((swift_name("illustrations")));
-
-/** A boolean value which indicates whether the TCF purpose is part of a selected TCF stack.
- * Stacks can be chosen in the admin interface. */
 @property (readonly) BOOL isPartOfASelectedStack __attribute__((swift_name("isPartOfASelectedStack")));
-
-/** A boolean value which indicates whether the user gave or refused legitimate interest, or
- * did not take action yet (null) for this TCF model. */
 @property (readonly) UsercentricsBoolean * _Nullable legitimateInterestConsent __attribute__((swift_name("legitimateInterestConsent")));
-
-/** The name as defined in the IAB global vendor list. */
 @property (readonly) NSString *name __attribute__((swift_name("name")));
-
-/** The number of vendors that use the TCF Purpose*/
 @property (readonly) UsercentricsInt * _Nullable numberOfVendors __attribute__((swift_name("numberOfVendors")));
-
-/** A user-friendly short description that needs to be disclosed to the end-user. */
 @property (readonly) NSString *purposeDescription __attribute__((swift_name("purposeDescription")));
-
-/** A boolean value which indicates whether the purpose toggle needs to be displayed in the
- * TCF second layer. */
 @property (readonly) BOOL showConsentToggle __attribute__((swift_name("showConsentToggle")));
-
-/** A boolean value which indicates whether the legitimate interest toggle needs to be
- * displayed in the TCF second layer. */
 @property (readonly) BOOL showLegitimateInterestToggle __attribute__((swift_name("showLegitimateInterestToggle")));
-
-/** The id of the selected TCF stack that this purpose is a part of. Is always null if
- * isPartOfASelectedStack is false and always a number otherwise */
 @property (readonly) UsercentricsInt * _Nullable stackId __attribute__((swift_name("stackId")));
 @end
 
-
-/** TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.*/
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFPurpose.Companion")))
 @interface UsercentricsTCFPurposeCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.*/
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCFPurposeCompanion *shared __attribute__((swift_name("shared")));
-
-/** TCF purpose that needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.*/
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
-/** A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -2456,66 +2157,32 @@ __attribute__((swift_name("TCFSpecialFeature")))
 @interface UsercentricsTCFSpecialFeature : UsercentricsBase
 - (instancetype)initWithPurposeDescription:(NSString *)purposeDescription illustrations:(NSArray<NSString *> *)illustrations id:(int32_t)id name:(NSString *)name consent:(UsercentricsBoolean * _Nullable)consent isPartOfASelectedStack:(BOOL)isPartOfASelectedStack stackId:(UsercentricsInt * _Nullable)stackId showConsentToggle:(BOOL)showConsentToggle __attribute__((swift_name("init(purposeDescription:illustrations:id:name:consent:isPartOfASelectedStack:stackId:showConsentToggle:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCFSpecialFeatureCompanion *companion __attribute__((swift_name("companion")));
-
-/** A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent. */
 - (UsercentricsTCFSpecialFeature *)doCopyPurposeDescription:(NSString *)purposeDescription illustrations:(NSArray<NSString *> *)illustrations id:(int32_t)id name:(NSString *)name consent:(UsercentricsBoolean * _Nullable)consent isPartOfASelectedStack:(BOOL)isPartOfASelectedStack stackId:(UsercentricsInt * _Nullable)stackId showConsentToggle:(BOOL)showConsentToggle __attribute__((swift_name("doCopy(purposeDescription:illustrations:id:name:consent:isPartOfASelectedStack:stackId:showConsentToggle:)")));
-
-/** A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent. */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** A boolean value which indicates whether the user gave or refused consent, or did not take
- * action yet (null) for this TCF special feature. */
 @property (readonly) UsercentricsBoolean * _Nullable consent __attribute__((swift_name("consent")));
-
-/** The unique id as defined in the IAB global vendor list. */
 @property (readonly) int32_t id __attribute__((swift_name("id")));
-
-/** An official legal list of illustrations that needs to be disclosed to the end-user. */
 @property (readonly) NSArray<NSString *> *illustrations __attribute__((swift_name("illustrations")));
-
-/** A boolean value which indicates whether the TCF special feature is part of a selected TCF
- * stack. Stacks can be chosen in the admin interface. */
 @property (readonly) BOOL isPartOfASelectedStack __attribute__((swift_name("isPartOfASelectedStack")));
-
-/** The name as defined in the IAB global vendor list. */
 @property (readonly) NSString *name __attribute__((swift_name("name")));
-
-/** A user-friendly short description that needs to be disclosed to the end-user. */
 @property (readonly) NSString *purposeDescription __attribute__((swift_name("purposeDescription")));
-
-/** A boolean value which indicates whether the special feature toggle needs to be displayed in the TCF second layer. */
 @property (readonly) BOOL showConsentToggle __attribute__((swift_name("showConsentToggle")));
-
-/** The id of the selected TCF stack that this special feature is a part of. Is always null
- * if isPartOfASelectedStack is false and always a number otherwise */
 @property (readonly) UsercentricsInt * _Nullable stackId __attribute__((swift_name("stackId")));
 @end
 
-
-/** A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFSpecialFeature.Companion")))
 @interface UsercentricsTCFSpecialFeatureCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCFSpecialFeatureCompanion *shared __attribute__((swift_name("shared")));
-
-/** A TCF special feature that needs to be disclosed to the end-user and requires the end-user's consent. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
-/** A TCF special purpose that needs to be disclosed to the end-user.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -2524,53 +2191,28 @@ __attribute__((swift_name("TCFSpecialPurpose")))
 @interface UsercentricsTCFSpecialPurpose : UsercentricsBase
 - (instancetype)initWithPurposeDescription:(NSString *)purposeDescription illustrations:(NSArray<NSString *> *)illustrations id:(int32_t)id name:(NSString *)name __attribute__((swift_name("init(purposeDescription:illustrations:id:name:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCFSpecialPurposeCompanion *companion __attribute__((swift_name("companion")));
-
-/** A TCF special purpose that needs to be disclosed to the end-user. */
 - (UsercentricsTCFSpecialPurpose *)doCopyPurposeDescription:(NSString *)purposeDescription illustrations:(NSArray<NSString *> *)illustrations id:(int32_t)id name:(NSString *)name __attribute__((swift_name("doCopy(purposeDescription:illustrations:id:name:)")));
-
-/** A TCF special purpose that needs to be disclosed to the end-user. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A TCF special purpose that needs to be disclosed to the end-user. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A TCF special purpose that needs to be disclosed to the end-user. */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** The unique id as defined in the IAB global vendor list. */
 @property (readonly) int32_t id __attribute__((swift_name("id")));
-
-/** An official legal list of illustrations that needs to be disclosed to the end-user. */
 @property (readonly) NSArray<NSString *> *illustrations __attribute__((swift_name("illustrations")));
-
-/** The name as defined in the IAB global vendor list. */
 @property (readonly) NSString *name __attribute__((swift_name("name")));
-
-/** A user-friendly short description that needs to be disclosed to the end-user. */
 @property (readonly) NSString *purposeDescription __attribute__((swift_name("purposeDescription")));
 @end
 
-
-/** A TCF special purpose that needs to be disclosed to the end-user. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFSpecialPurpose.Companion")))
 @interface UsercentricsTCFSpecialPurposeCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** A TCF special purpose that needs to be disclosed to the end-user. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCFSpecialPurposeCompanion *shared __attribute__((swift_name("shared")));
-
-/** A TCF special purpose that needs to be disclosed to the end-user. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
 /**
- * A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
- * first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.
- *
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -2579,179 +2221,81 @@ __attribute__((swift_name("TCFStack")))
 @interface UsercentricsTCFStack : UsercentricsBase
 - (instancetype)initWithDescription:(NSString *)description id:(int32_t)id name:(NSString *)name purposeIds:(NSArray<UsercentricsInt *> *)purposeIds specialFeatureIds:(NSArray<UsercentricsInt *> *)specialFeatureIds __attribute__((swift_name("init(description:id:name:purposeIds:specialFeatureIds:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCFStackCompanion *companion __attribute__((swift_name("companion")));
-
-/**
- * A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
- * first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.
- */
 - (UsercentricsTCFStack *)doCopyDescription:(NSString *)description id:(int32_t)id name:(NSString *)name purposeIds:(NSArray<UsercentricsInt *> *)purposeIds specialFeatureIds:(NSArray<UsercentricsInt *> *)specialFeatureIds __attribute__((swift_name("doCopy(description:id:name:purposeIds:specialFeatureIds:)")));
-
-/**
- * A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
- * first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.
- */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
- * first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.
- */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
- * first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.
- */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** A user-friendly short description that needs to be disclosed to the end-user. It summarizes
- * all comprising purposes' and special features' descriptions. */
 @property (readonly) NSString *description_ __attribute__((swift_name("description_")));
-
-/** This TCF stack's unique id as defined in the IAB global vendor list. */
 @property (readonly) int32_t id __attribute__((swift_name("id")));
-
-/** This TCF stack's name as defined in the IAB global vendor list. It summarizes all
- * comprising purposes' and special features' names. */
 @property (readonly) NSString *name __attribute__((swift_name("name")));
-
-/** All the ids of the TCF purposes that are included in this TCF stack. */
 @property (readonly) NSArray<UsercentricsInt *> *purposeIds __attribute__((swift_name("purposeIds")));
-
-/** All the ids of the TCF special features that are included in this TCF stack */
 @property (readonly) NSArray<UsercentricsInt *> *specialFeatureIds __attribute__((swift_name("specialFeatureIds")));
 @end
 
-
-/**
- * A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
- * first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.
- */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFStack.Companion")))
 @interface UsercentricsTCFStackCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/**
- * A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
- * first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.
- */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCFStackCompanion *shared __attribute__((swift_name("shared")));
-
-/**
- * A TCF stack is a collection of multiple TCF purposes and TCF special features, with one shared description. On the
- * first layer of a TCF UI, stacks may be shown as alternative to the included single purposes and special features.
- */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
-
-/** A user's consent decision for a single purpose */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFUserDecisionOnPurpose")))
 @interface UsercentricsTCFUserDecisionOnPurpose : UsercentricsBase <UsercentricsBaseTCFUserDecision, UsercentricsTCFConsentWithLegitimateInterestDecision>
 - (instancetype)initWithId:(int32_t)id consent:(UsercentricsBoolean * _Nullable)consent legitimateInterestConsent:(UsercentricsBoolean * _Nullable)legitimateInterestConsent __attribute__((swift_name("init(id:consent:legitimateInterestConsent:)"))) __attribute__((objc_designated_initializer));
-
-/** A user's consent decision for a single purpose */
 - (UsercentricsTCFUserDecisionOnPurpose *)doCopyId:(int32_t)id consent:(UsercentricsBoolean * _Nullable)consent legitimateInterestConsent:(UsercentricsBoolean * _Nullable)legitimateInterestConsent __attribute__((swift_name("doCopy(id:consent:legitimateInterestConsent:)")));
-
-/** A user's consent decision for a single purpose */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A user's consent decision for a single purpose */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A user's consent decision for a single purpose */
 - (NSString *)description __attribute__((swift_name("description()")));
 @property UsercentricsBoolean * _Nullable consent __attribute__((swift_name("consent")));
 @property int32_t id __attribute__((swift_name("id")));
 @property UsercentricsBoolean * _Nullable legitimateInterestConsent __attribute__((swift_name("legitimateInterestConsent")));
 @end
 
-
-/** A user's consent decision for a single special feature */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFUserDecisionOnSpecialFeature")))
 @interface UsercentricsTCFUserDecisionOnSpecialFeature : UsercentricsBase <UsercentricsBaseTCFUserDecision>
 - (instancetype)initWithId:(int32_t)id consent:(UsercentricsBoolean * _Nullable)consent __attribute__((swift_name("init(id:consent:)"))) __attribute__((objc_designated_initializer));
-
-/** A user's consent decision for a single special feature */
 - (UsercentricsTCFUserDecisionOnSpecialFeature *)doCopyId:(int32_t)id consent:(UsercentricsBoolean * _Nullable)consent __attribute__((swift_name("doCopy(id:consent:)")));
-
-/** A user's consent decision for a single special feature */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A user's consent decision for a single special feature */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A user's consent decision for a single special feature */
 - (NSString *)description __attribute__((swift_name("description()")));
 @property UsercentricsBoolean * _Nullable consent __attribute__((swift_name("consent")));
 @property int32_t id __attribute__((swift_name("id")));
 @end
 
-
-/** A user's consent decision for a single vendor */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFUserDecisionOnVendor")))
 @interface UsercentricsTCFUserDecisionOnVendor : UsercentricsBase <UsercentricsBaseTCFUserDecision, UsercentricsTCFConsentWithLegitimateInterestDecision>
 - (instancetype)initWithId:(int32_t)id consent:(UsercentricsBoolean * _Nullable)consent legitimateInterestConsent:(UsercentricsBoolean * _Nullable)legitimateInterestConsent __attribute__((swift_name("init(id:consent:legitimateInterestConsent:)"))) __attribute__((objc_designated_initializer));
-
-/** A user's consent decision for a single vendor */
 - (UsercentricsTCFUserDecisionOnVendor *)doCopyId:(int32_t)id consent:(UsercentricsBoolean * _Nullable)consent legitimateInterestConsent:(UsercentricsBoolean * _Nullable)legitimateInterestConsent __attribute__((swift_name("doCopy(id:consent:legitimateInterestConsent:)")));
-
-/** A user's consent decision for a single vendor */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A user's consent decision for a single vendor */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A user's consent decision for a single vendor */
 - (NSString *)description __attribute__((swift_name("description()")));
 @property UsercentricsBoolean * _Nullable consent __attribute__((swift_name("consent")));
 @property int32_t id __attribute__((swift_name("id")));
 @property UsercentricsBoolean * _Nullable legitimateInterestConsent __attribute__((swift_name("legitimateInterestConsent")));
 @end
 
-
-/** A user's consent decision on all TCF options */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFUserDecisions")))
 @interface UsercentricsTCFUserDecisions : UsercentricsBase
 - (instancetype)initWithPurposes:(NSArray<UsercentricsTCFUserDecisionOnPurpose *> * _Nullable)purposes specialFeatures:(NSArray<UsercentricsTCFUserDecisionOnSpecialFeature *> * _Nullable)specialFeatures vendors:(NSArray<UsercentricsTCFUserDecisionOnVendor *> * _Nullable)vendors adTechProviders:(NSArray<UsercentricsAdTechProviderDecision *> *)adTechProviders __attribute__((swift_name("init(purposes:specialFeatures:vendors:adTechProviders:)"))) __attribute__((objc_designated_initializer));
-
-/** A user's consent decision on all TCF options */
 - (UsercentricsTCFUserDecisions *)doCopyPurposes:(NSArray<UsercentricsTCFUserDecisionOnPurpose *> * _Nullable)purposes specialFeatures:(NSArray<UsercentricsTCFUserDecisionOnSpecialFeature *> * _Nullable)specialFeatures vendors:(NSArray<UsercentricsTCFUserDecisionOnVendor *> * _Nullable)vendors adTechProviders:(NSArray<UsercentricsAdTechProviderDecision *> *)adTechProviders __attribute__((swift_name("doCopy(purposes:specialFeatures:vendors:adTechProviders:)")));
-
-/** A user's consent decision on all TCF options */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A user's consent decision on all TCF options */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A user's consent decision on all TCF options */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** A user's consent decision on Google Ad Tech Providers */
 @property (readonly) NSArray<UsercentricsAdTechProviderDecision *> *adTechProviders __attribute__((swift_name("adTechProviders")));
-
-/** A user's consent decision on TCF purposes */
 @property (readonly) NSArray<UsercentricsTCFUserDecisionOnPurpose *> * _Nullable purposes __attribute__((swift_name("purposes")));
-
-/** A user's consent decision on TCF special features */
 @property (readonly) NSArray<UsercentricsTCFUserDecisionOnSpecialFeature *> * _Nullable specialFeatures __attribute__((swift_name("specialFeatures")));
-
-/** A user's consent decision on TCF vendors */
 @property (readonly) NSArray<UsercentricsTCFUserDecisionOnVendor *> * _Nullable vendors __attribute__((swift_name("vendors")));
 @end
 
 
 /**
- * A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
- * A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- *
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -2760,144 +2304,47 @@ __attribute__((swift_name("TCFVendor")))
 @interface UsercentricsTCFVendor : UsercentricsBase
 - (instancetype)initWithConsent:(UsercentricsBoolean * _Nullable)consent features:(NSArray<UsercentricsIdAndName *> *)features flexiblePurposes:(NSArray<UsercentricsIdAndName *> *)flexiblePurposes id:(int32_t)id legitimateInterestConsent:(UsercentricsBoolean * _Nullable)legitimateInterestConsent legitimateInterestPurposes:(NSArray<UsercentricsIdAndName *> *)legitimateInterestPurposes name:(NSString *)name policyUrl:(NSString *)policyUrl purposes:(NSArray<UsercentricsIdAndName *> *)purposes restrictions:(NSArray<UsercentricsTCFVendorRestriction *> *)restrictions specialFeatures:(NSArray<UsercentricsIdAndName *> *)specialFeatures specialPurposes:(NSArray<UsercentricsIdAndName *> *)specialPurposes showConsentToggle:(BOOL)showConsentToggle showLegitimateInterestToggle:(BOOL)showLegitimateInterestToggle cookieMaxAgeSeconds:(UsercentricsDouble * _Nullable)cookieMaxAgeSeconds usesNonCookieAccess:(BOOL)usesNonCookieAccess deviceStorageDisclosureUrl:(NSString * _Nullable)deviceStorageDisclosureUrl usesCookies:(BOOL)usesCookies cookieRefresh:(UsercentricsBoolean * _Nullable)cookieRefresh dataSharedOutsideEU:(UsercentricsBoolean * _Nullable)dataSharedOutsideEU dataRetention:(UsercentricsDataRetention * _Nullable)dataRetention dataCategories:(NSArray<UsercentricsIdAndName *> *)dataCategories vendorUrls:(NSArray<UsercentricsVendorUrl *> *)vendorUrls __attribute__((swift_name("init(consent:features:flexiblePurposes:id:legitimateInterestConsent:legitimateInterestPurposes:name:policyUrl:purposes:restrictions:specialFeatures:specialPurposes:showConsentToggle:showLegitimateInterestToggle:cookieMaxAgeSeconds:usesNonCookieAccess:deviceStorageDisclosureUrl:usesCookies:cookieRefresh:dataSharedOutsideEU:dataRetention:dataCategories:vendorUrls:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCFVendorCompanion *companion __attribute__((swift_name("companion")));
-
-/**
- * A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
- * A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- */
 - (UsercentricsTCFVendor *)doCopyConsent:(UsercentricsBoolean * _Nullable)consent features:(NSArray<UsercentricsIdAndName *> *)features flexiblePurposes:(NSArray<UsercentricsIdAndName *> *)flexiblePurposes id:(int32_t)id legitimateInterestConsent:(UsercentricsBoolean * _Nullable)legitimateInterestConsent legitimateInterestPurposes:(NSArray<UsercentricsIdAndName *> *)legitimateInterestPurposes name:(NSString *)name policyUrl:(NSString *)policyUrl purposes:(NSArray<UsercentricsIdAndName *> *)purposes restrictions:(NSArray<UsercentricsTCFVendorRestriction *> *)restrictions specialFeatures:(NSArray<UsercentricsIdAndName *> *)specialFeatures specialPurposes:(NSArray<UsercentricsIdAndName *> *)specialPurposes showConsentToggle:(BOOL)showConsentToggle showLegitimateInterestToggle:(BOOL)showLegitimateInterestToggle cookieMaxAgeSeconds:(UsercentricsDouble * _Nullable)cookieMaxAgeSeconds usesNonCookieAccess:(BOOL)usesNonCookieAccess deviceStorageDisclosureUrl:(NSString * _Nullable)deviceStorageDisclosureUrl usesCookies:(BOOL)usesCookies cookieRefresh:(UsercentricsBoolean * _Nullable)cookieRefresh dataSharedOutsideEU:(UsercentricsBoolean * _Nullable)dataSharedOutsideEU dataRetention:(UsercentricsDataRetention * _Nullable)dataRetention dataCategories:(NSArray<UsercentricsIdAndName *> *)dataCategories vendorUrls:(NSArray<UsercentricsVendorUrl *> *)vendorUrls __attribute__((swift_name("doCopy(consent:features:flexiblePurposes:id:legitimateInterestConsent:legitimateInterestPurposes:name:policyUrl:purposes:restrictions:specialFeatures:specialPurposes:showConsentToggle:showLegitimateInterestToggle:cookieMaxAgeSeconds:usesNonCookieAccess:deviceStorageDisclosureUrl:usesCookies:cookieRefresh:dataSharedOutsideEU:dataRetention:dataCategories:vendorUrls:)")));
-
-/**
- * A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
- * A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
- * A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
- * A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** A boolean value which indicates whether the user gave or refused consent, or did not take
- * action yet (null) for this TCF model. */
 @property (readonly) UsercentricsBoolean * _Nullable consent __attribute__((swift_name("consent")));
-
-/** The number, in seconds, of the longest potential duration for storage on a device, as set
- * when using the cookie method of storage. A negative number or a 0 indicate session storage
- * similar to the Set-Cookie spec. If a vendor only uses non-cookie storage the value should
- * not be positive. Note: this only includes what is declared when the storage is set and does
- * not consider duration extensions should storage be refreshed. */
 @property (readonly) UsercentricsDouble * _Nullable cookieMaxAgeSeconds __attribute__((swift_name("cookieMaxAgeSeconds")));
-
-/** Indicates the vendor’s refreshing a cookie */
 @property (readonly) UsercentricsBoolean * _Nullable cookieRefresh __attribute__((swift_name("cookieRefresh")));
-
-/** A list of both name and id of all TCF data categories that this TCF vendor uses as defined in the IAB global vendor list. */
 @property (readonly) NSArray<UsercentricsIdAndName *> *dataCategories __attribute__((swift_name("dataCategories")));
-
-/** Indicates the retention period that vendor's will keep for purposes */
 @property (readonly) UsercentricsDataRetention * _Nullable dataRetention __attribute__((swift_name("dataRetention")));
-
-/** Indicates the vendor’s is sharing data outside the European Union */
 @property (readonly) UsercentricsBoolean * _Nullable dataSharedOutsideEU __attribute__((swift_name("dataSharedOutsideEU")));
-
-/** Location of vendor-hosted deviceStorage.json file */
 @property (readonly) NSString * _Nullable deviceStorageDisclosureUrl __attribute__((swift_name("deviceStorageDisclosureUrl")));
-
-/** A list of both name and id of all TCF features that this TCF vendor uses as defined in the
- * IAB global vendor list. */
 @property (readonly) NSArray<UsercentricsIdAndName *> *features __attribute__((swift_name("features")));
-
-/** TCF flexible purposes are not supported yet. This list is currently always empty. */
 @property (readonly) NSArray<UsercentricsIdAndName *> *flexiblePurposes __attribute__((swift_name("flexiblePurposes")));
-
-/** This TCF vendor's unique id as defined in the IAB global vendor list. */
 @property (readonly) int32_t id __attribute__((swift_name("id")));
-
-/** A boolean value which indicates whether the user gave or refused legitimate interest, or
- * did not take action yet (null) for this TCF model. */
 @property (readonly) UsercentricsBoolean * _Nullable legitimateInterestConsent __attribute__((swift_name("legitimateInterestConsent")));
-
-/** A list of both name and id of all TCF purposes that this TCF vendor uses by legitimate
- * interest as defined in the IAB global vendor list. */
 @property (readonly) NSArray<UsercentricsIdAndName *> *legitimateInterestPurposes __attribute__((swift_name("legitimateInterestPurposes")));
-
-/** This TCF vendor's name as defined in the IAB global vendor list. */
 @property (readonly) NSString *name __attribute__((swift_name("name")));
-
-/** This TCF vendor's link to it's privacy policy website as defined in the IAB global vendor list. */
 @property (readonly) NSString *policyUrl __attribute__((swift_name("policyUrl")));
-
-/** A list of both name and id of all TCF purposes that this TCF vendor uses as defined in the
- * IAB global vendor list. */
 @property (readonly) NSArray<UsercentricsIdAndName *> *purposes __attribute__((swift_name("purposes")));
-
-/** A list of all publisher restrictions for this vendors purposes */
 @property (readonly) NSArray<UsercentricsTCFVendorRestriction *> *restrictions __attribute__((swift_name("restrictions")));
-
-/** A boolean value which indicates whether consent toggle needs to be displayed in the TCF
- * second layer for the vendor. Is true if purposes are processed by consent. */
 @property (readonly) BOOL showConsentToggle __attribute__((swift_name("showConsentToggle")));
-
-/** A boolean value which indicates whether the legitimate interest toggle needs to be
- * displayed in the TCF second layer. */
 @property (readonly) BOOL showLegitimateInterestToggle __attribute__((swift_name("showLegitimateInterestToggle")));
-
-/** A list of both name and id of all TCF special purposes that this TCF vendor uses as defined
- * in the IAB global vendor list. */
 @property (readonly) NSArray<UsercentricsIdAndName *> *specialFeatures __attribute__((swift_name("specialFeatures")));
-
-/** A list of both name and id of all TCF special purposes that this TCF vendor uses as defined
- * in the IAB global vendor list. */
 @property (readonly) NSArray<UsercentricsIdAndName *> *specialPurposes __attribute__((swift_name("specialPurposes")));
-
-/** Indicates whether the vendor uses cookie storage (session or otherwise). */
 @property (readonly) BOOL usesCookies __attribute__((swift_name("usesCookies")));
-
-/** Indicates the vendor’s use of non-cookie storage and access to information already stored
- * on a user’s device. True indicates non-cookie access is used. False indicates only cookie
- * storage and access are used. */
 @property (readonly) BOOL usesNonCookieAccess __attribute__((swift_name("usesNonCookieAccess")));
-
-/** A list that contains the urls that this TCF vendor uses for privacy and legitimate interest */
 @property (readonly) NSArray<UsercentricsVendorUrl *> *vendorUrls __attribute__((swift_name("vendorUrls")));
 @end
 
-
-/**
- * A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
- * A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFVendor.Companion")))
 @interface UsercentricsTCFVendorCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/**
- * A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
- * A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCFVendorCompanion *shared __attribute__((swift_name("shared")));
-
-/**
- * A TCF vendor (aka. advertiser, tracking service, third party) that is registered with the IAB global vendor list.
- * A TCF vendor needs to be disclosed to the end-user and requires the end-user's consent and legitimate interest consent.
- */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
-/** A TCF vendor restriction for a flexible purpose
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -2906,39 +2353,21 @@ __attribute__((swift_name("TCFVendorRestriction")))
 @interface UsercentricsTCFVendorRestriction : UsercentricsBase
 - (instancetype)initWithPurposeId:(int32_t)purposeId restrictionType:(UsercentricsRestrictionType *)restrictionType __attribute__((swift_name("init(purposeId:restrictionType:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCFVendorRestrictionCompanion *companion __attribute__((swift_name("companion")));
-
-/** A TCF vendor restriction for a flexible purpose */
 - (UsercentricsTCFVendorRestriction *)doCopyPurposeId:(int32_t)purposeId restrictionType:(UsercentricsRestrictionType *)restrictionType __attribute__((swift_name("doCopy(purposeId:restrictionType:)")));
-
-/** A TCF vendor restriction for a flexible purpose */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A TCF vendor restriction for a flexible purpose */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A TCF vendor restriction for a flexible purpose */
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** The purpose id */
 @property (readonly) int32_t purposeId __attribute__((swift_name("purposeId")));
-
-/** The restriction type */
 @property (readonly) UsercentricsRestrictionType *restrictionType __attribute__((swift_name("restrictionType")));
 @end
 
-
-/** A TCF vendor restriction for a flexible purpose */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCFVendorRestriction.Companion")))
 @interface UsercentricsTCFVendorRestrictionCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** A TCF vendor restriction for a flexible purpose */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCFVendorRestrictionCompanion *shared __attribute__((swift_name("shared")));
-
-/** A TCF vendor restriction for a flexible purpose */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -2963,13 +2392,12 @@ __attribute__((swift_name("PredefinedUIFactoryHolder")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PredefinedUIHolder")))
 @interface UsercentricsPredefinedUIHolder : UsercentricsBase
-- (instancetype)initWithContext:(UsercentricsUsercentricsContext * _Nullable)context data:(UsercentricsPredefinedUIViewData *)data consentManager:(id<UsercentricsPredefinedUIConsentManager>)consentManager viewHandlers:(UsercentricsPredefinedUIViewHandlers *)viewHandlers __attribute__((swift_name("init(context:data:consentManager:viewHandlers:)"))) __attribute__((objc_designated_initializer));
-- (UsercentricsPredefinedUIHolder *)doCopyContext:(UsercentricsUsercentricsContext * _Nullable)context data:(UsercentricsPredefinedUIViewData *)data consentManager:(id<UsercentricsPredefinedUIConsentManager>)consentManager viewHandlers:(UsercentricsPredefinedUIViewHandlers *)viewHandlers __attribute__((swift_name("doCopy(context:data:consentManager:viewHandlers:)")));
+- (instancetype)initWithData:(UsercentricsPredefinedUIViewData *)data consentManager:(id<UsercentricsPredefinedUIConsentManager>)consentManager viewHandlers:(UsercentricsPredefinedUIViewHandlers *)viewHandlers __attribute__((swift_name("init(data:consentManager:viewHandlers:)"))) __attribute__((objc_designated_initializer));
+- (UsercentricsPredefinedUIHolder *)doCopyData:(UsercentricsPredefinedUIViewData *)data consentManager:(id<UsercentricsPredefinedUIConsentManager>)consentManager viewHandlers:(UsercentricsPredefinedUIViewHandlers *)viewHandlers __attribute__((swift_name("doCopy(data:consentManager:viewHandlers:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) id<UsercentricsPredefinedUIConsentManager> consentManager __attribute__((swift_name("consentManager")));
-@property (readonly) UsercentricsUsercentricsContext * _Nullable context __attribute__((swift_name("context")));
 @property (readonly) UsercentricsPredefinedUIViewData *data __attribute__((swift_name("data")));
 @property (readonly) UsercentricsPredefinedUIViewHandlers *viewHandlers __attribute__((swift_name("viewHandlers")));
 @end
@@ -3066,330 +2494,6 @@ __attribute__((swift_name("UsercentricsShadedColor.Companion")))
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsUsercentricsShadedColorCompanion *shared __attribute__((swift_name("shared")));
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-__attribute__((swift_name("IUnityUsercentricsInstanceProvider")))
-@protocol UsercentricsIUnityUsercentricsInstanceProvider
-@required
-- (UsercentricsUsercentricsSDK *)provide __attribute__((swift_name("provide()")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UsercentricsUnity")))
-@interface UsercentricsUsercentricsUnity : UsercentricsBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@property (class, readonly, getter=companion) UsercentricsUsercentricsUnityCompanion *companion __attribute__((swift_name("companion")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UsercentricsUnity.Companion")))
-@interface UsercentricsUsercentricsUnityCompanion : UsercentricsBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UsercentricsUsercentricsUnityCompanion *shared __attribute__((swift_name("shared")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)acceptAllFirstLayerForTCF __attribute__((swift_name("acceptAllFirstLayerForTCF()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)clearUserSession __attribute__((swift_name("clearUserSession()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)denyAllFirstLayerForTCF __attribute__((swift_name("denyAllFirstLayerForTCF()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)disposeOnConsentMediationSubscription __attribute__((swift_name("disposeOnConsentMediationSubscription()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)disposeOnConsentUpdatedSubscription __attribute__((swift_name("disposeOnConsentUpdatedSubscription()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (NSString * _Nullable)getABTestingVariant __attribute__((swift_name("getABTestingVariant()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (NSString *)getAdditionalConsentModeData __attribute__((swift_name("getAdditionalConsentModeData()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (NSString *)getCmpData __attribute__((swift_name("getCmpData()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (NSString *)getConsents __attribute__((swift_name("getConsents()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (NSString *)getControllerId __attribute__((swift_name("getControllerId()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (NSString * _Nullable)getFirstLayerSettings __attribute__((swift_name("getFirstLayerSettings()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)getTCFData __attribute__((swift_name("getTCFData()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (NSString *)getUSPData __attribute__((swift_name("getUSPData()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)handleBannerResponsePredefinedUIResponse:(UsercentricsUnityPredefinedUIResponse * _Nullable)predefinedUIResponse __attribute__((swift_name("handleBannerResponse(predefinedUIResponse:)")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)doInitAppContext:(UsercentricsUsercentricsContext * _Nullable)appContext rawUnityUserOptions:(NSString *)rawUnityUserOptions __attribute__((swift_name("doInit(appContext:rawUnityUserOptions:)")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)restoreUserSessionControllerId:(NSString *)controllerId __attribute__((swift_name("restoreUserSession(controllerId:)")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)setABTestingVariantVariantName:(NSString *)variantName __attribute__((swift_name("setABTestingVariant(variantName:)")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)setCmpIdCmpId:(int32_t)cmpId __attribute__((swift_name("setCmpId(cmpId:)")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)subscribeOnConsentMediation __attribute__((swift_name("subscribeOnConsentMediation()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)subscribeOnConsentUpdated __attribute__((swift_name("subscribeOnConsentUpdated()")));
-
-/**
- * @note annotations
- *   kotlin.jvm.JvmStatic
-*/
-- (void)trackEventTypeEnumIndex:(int32_t)eventTypeEnumIndex __attribute__((swift_name("track(eventTypeEnumIndex:)")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityDataRetention")))
-@interface UsercentricsUnityDataRetention : UsercentricsBase
-- (instancetype)initWithDataRetention:(UsercentricsDataRetention *)dataRetention __attribute__((swift_name("init(dataRetention:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithPurposes:(UsercentricsRetentionPeriod *)purposes specialPurposes:(UsercentricsRetentionPeriod *)specialPurposes _stdRetention:(NSString * _Nullable)_stdRetention __attribute__((swift_name("init(purposes:specialPurposes:_stdRetention:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) UsercentricsUnityDataRetentionCompanion *companion __attribute__((swift_name("companion")));
-- (UsercentricsUnityDataRetention *)doCopyPurposes:(UsercentricsRetentionPeriod *)purposes specialPurposes:(UsercentricsRetentionPeriod *)specialPurposes _stdRetention:(NSString * _Nullable)_stdRetention __attribute__((swift_name("doCopy(purposes:specialPurposes:_stdRetention:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable _stdRetention __attribute__((swift_name("_stdRetention")));
-@property (readonly) UsercentricsRetentionPeriod *purposes __attribute__((swift_name("purposes")));
-@property (readonly) UsercentricsRetentionPeriod *specialPurposes __attribute__((swift_name("specialPurposes")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityDataRetention.Companion")))
-@interface UsercentricsUnityDataRetentionCompanion : UsercentricsBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UsercentricsUnityDataRetentionCompanion *shared __attribute__((swift_name("shared")));
-- (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityFirstLayerSettings")))
-@interface UsercentricsUnityFirstLayerSettings : UsercentricsBase
-- (instancetype)initWithTitle:(NSString *)title description:(NSString * _Nullable)description additionalInfo:(NSString * _Nullable)additionalInfo resurfaceNote:(NSString * _Nullable)resurfaceNote vendorListLinkTitle:(NSString *)vendorListLinkTitle manageSettingsLinkTitle:(NSString *)manageSettingsLinkTitle purposesLabel:(NSString *)purposesLabel featuresLabel:(NSString *)featuresLabel acceptAllButton:(NSString *)acceptAllButton denyAllButton:(NSString *)denyAllButton saveButton:(NSString *)saveButton __attribute__((swift_name("init(title:description:additionalInfo:resurfaceNote:vendorListLinkTitle:manageSettingsLinkTitle:purposesLabel:featuresLabel:acceptAllButton:denyAllButton:saveButton:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) UsercentricsUnityFirstLayerSettingsCompanion *companion __attribute__((swift_name("companion")));
-- (UsercentricsUnityFirstLayerSettings *)doCopyTitle:(NSString *)title description:(NSString * _Nullable)description additionalInfo:(NSString * _Nullable)additionalInfo resurfaceNote:(NSString * _Nullable)resurfaceNote vendorListLinkTitle:(NSString *)vendorListLinkTitle manageSettingsLinkTitle:(NSString *)manageSettingsLinkTitle purposesLabel:(NSString *)purposesLabel featuresLabel:(NSString *)featuresLabel acceptAllButton:(NSString *)acceptAllButton denyAllButton:(NSString *)denyAllButton saveButton:(NSString *)saveButton __attribute__((swift_name("doCopy(title:description:additionalInfo:resurfaceNote:vendorListLinkTitle:manageSettingsLinkTitle:purposesLabel:featuresLabel:acceptAllButton:denyAllButton:saveButton:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *acceptAllButton __attribute__((swift_name("acceptAllButton")));
-@property (readonly) NSString * _Nullable additionalInfo __attribute__((swift_name("additionalInfo")));
-@property (readonly) NSString *denyAllButton __attribute__((swift_name("denyAllButton")));
-@property (readonly) NSString * _Nullable description_ __attribute__((swift_name("description_")));
-@property (readonly) NSString *featuresLabel __attribute__((swift_name("featuresLabel")));
-@property (readonly) NSString *manageSettingsLinkTitle __attribute__((swift_name("manageSettingsLinkTitle")));
-@property (readonly) NSString *purposesLabel __attribute__((swift_name("purposesLabel")));
-@property (readonly) NSString * _Nullable resurfaceNote __attribute__((swift_name("resurfaceNote")));
-@property (readonly) NSString *saveButton __attribute__((swift_name("saveButton")));
-@property (readonly) NSString *title __attribute__((swift_name("title")));
-@property (readonly) NSString *vendorListLinkTitle __attribute__((swift_name("vendorListLinkTitle")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityFirstLayerSettings.Companion")))
-@interface UsercentricsUnityFirstLayerSettingsCompanion : UsercentricsBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UsercentricsUnityFirstLayerSettingsCompanion *shared __attribute__((swift_name("shared")));
-- (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityPredefinedUIResponse")))
-@interface UsercentricsUnityPredefinedUIResponse : UsercentricsBase
-- (instancetype)initWithUserInteraction:(UsercentricsPredefinedUIInteraction *)userInteraction consents:(NSArray<UsercentricsUnityServiceConsent *> *)consents controllerId:(NSString *)controllerId __attribute__((swift_name("init(userInteraction:consents:controllerId:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) UsercentricsUnityPredefinedUIResponseCompanion *companion __attribute__((swift_name("companion")));
-- (UsercentricsUnityPredefinedUIResponse *)doCopyUserInteraction:(UsercentricsPredefinedUIInteraction *)userInteraction consents:(NSArray<UsercentricsUnityServiceConsent *> *)consents controllerId:(NSString *)controllerId __attribute__((swift_name("doCopy(userInteraction:consents:controllerId:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSArray<UsercentricsUnityServiceConsent *> *consents __attribute__((swift_name("consents")));
-@property (readonly) NSString *controllerId __attribute__((swift_name("controllerId")));
-@property (readonly) UsercentricsPredefinedUIInteraction *userInteraction __attribute__((swift_name("userInteraction")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityPredefinedUIResponse.Companion")))
-@interface UsercentricsUnityPredefinedUIResponseCompanion : UsercentricsBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UsercentricsUnityPredefinedUIResponseCompanion *shared __attribute__((swift_name("shared")));
-- (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityServiceConsent")))
-@interface UsercentricsUnityServiceConsent : UsercentricsBase
-- (instancetype)initWithServiceConsent:(UsercentricsUsercentricsServiceConsent *)serviceConsent __attribute__((swift_name("init(serviceConsent:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithTemplateId:(NSString *)templateId status:(BOOL)status history:(NSArray<UsercentricsUsercentricsConsentHistoryEntry *> *)history dataProcessor:(NSString *)dataProcessor version:(NSString *)version isEssential:(BOOL)isEssential _type:(NSString *)_type __attribute__((swift_name("init(templateId:status:history:dataProcessor:version:isEssential:_type:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) UsercentricsUnityServiceConsentCompanion *companion __attribute__((swift_name("companion")));
-- (UsercentricsUnityServiceConsent *)doCopyTemplateId:(NSString *)templateId status:(BOOL)status history:(NSArray<UsercentricsUsercentricsConsentHistoryEntry *> *)history dataProcessor:(NSString *)dataProcessor version:(NSString *)version isEssential:(BOOL)isEssential _type:(NSString *)_type __attribute__((swift_name("doCopy(templateId:status:history:dataProcessor:version:isEssential:_type:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *_type __attribute__((swift_name("_type")));
-@property (readonly) NSString *dataProcessor __attribute__((swift_name("dataProcessor")));
-@property (readonly) NSArray<UsercentricsUsercentricsConsentHistoryEntry *> *history __attribute__((swift_name("history")));
-@property (readonly) BOOL isEssential __attribute__((swift_name("isEssential")));
-@property (readonly) BOOL status __attribute__((swift_name("status")));
-@property (readonly) NSString *templateId __attribute__((swift_name("templateId")));
-@property (readonly) NSString *version __attribute__((swift_name("version")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityServiceConsent.Companion")))
-@interface UsercentricsUnityServiceConsentCompanion : UsercentricsBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UsercentricsUnityServiceConsentCompanion *shared __attribute__((swift_name("shared")));
-- (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-
-/**
- * @note annotations
- *   kotlinx.serialization.Serializable
-*/
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityUpdatedConsentPayload")))
-@interface UsercentricsUnityUpdatedConsentPayload : UsercentricsBase
-- (instancetype)initWithPayload:(UsercentricsUpdatedConsentPayload *)payload __attribute__((swift_name("init(payload:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)initWithConsents:(NSArray<UsercentricsUnityServiceConsent *> *)consents controllerId:(NSString *)controllerId tcString:(NSString * _Nullable)tcString uspString:(NSString * _Nullable)uspString acString:(NSString * _Nullable)acString __attribute__((swift_name("init(consents:controllerId:tcString:uspString:acString:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) UsercentricsUnityUpdatedConsentPayloadCompanion *companion __attribute__((swift_name("companion")));
-- (UsercentricsUnityUpdatedConsentPayload *)doCopyConsents:(NSArray<UsercentricsUnityServiceConsent *> *)consents controllerId:(NSString *)controllerId tcString:(NSString * _Nullable)tcString uspString:(NSString * _Nullable)uspString acString:(NSString * _Nullable)acString __attribute__((swift_name("doCopy(consents:controllerId:tcString:uspString:acString:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable acString __attribute__((swift_name("acString")));
-@property (readonly) NSArray<UsercentricsUnityServiceConsent *> *consents __attribute__((swift_name("consents")));
-@property (readonly) NSString *controllerId __attribute__((swift_name("controllerId")));
-@property (readonly) NSString * _Nullable tcString __attribute__((swift_name("tcString")));
-@property (readonly) NSString * _Nullable uspString __attribute__((swift_name("uspString")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnityUpdatedConsentPayload.Companion")))
-@interface UsercentricsUnityUpdatedConsentPayloadCompanion : UsercentricsBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UsercentricsUnityUpdatedConsentPayloadCompanion *shared __attribute__((swift_name("shared")));
-- (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
-@end
-
-__attribute__((swift_name("UnityMessageProvider")))
-@interface UsercentricsUnityMessageProvider : UsercentricsBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (id<UsercentricsUnityMessageSender>)provide __attribute__((swift_name("provide()")));
-@end
-
-__attribute__((swift_name("UnityMessageSender")))
-@protocol UsercentricsUnityMessageSender
-@required
-- (void)sendUnityMessageGameObjectName:(NSString *)gameObjectName receiver:(NSString *)receiver content:(NSString *)content __attribute__((swift_name("sendUnityMessage(gameObjectName:receiver:content:)")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -3959,13 +3063,6 @@ __attribute__((swift_name("SubConsentTemplate.Companion")))
 
 
 /**
- * This feature is known as Flexible Purposes.
- * Within the Service-Specific Scope the customer can decide which Legal Basis
- * should be applied on a Purpose level.
- * The customer decision will only come into effect for Purposes which Vendors
- * have been marked as flexible via the Global Vendor List (GVL).
- * @suppress
- *
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -3974,85 +3071,22 @@ __attribute__((swift_name("TCF2ChangedPurposes")))
 @interface UsercentricsTCF2ChangedPurposes : UsercentricsBase
 - (instancetype)initWithPurposes:(NSArray<UsercentricsInt *> *)purposes legIntPurposes:(NSArray<UsercentricsInt *> *)legIntPurposes notAllowedPurposes:(NSArray<UsercentricsInt *> *)notAllowedPurposes __attribute__((swift_name("init(purposes:legIntPurposes:notAllowedPurposes:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsTCF2ChangedPurposesCompanion *companion __attribute__((swift_name("companion")));
-
-/**
- * This feature is known as Flexible Purposes.
- * Within the Service-Specific Scope the customer can decide which Legal Basis
- * should be applied on a Purpose level.
- * The customer decision will only come into effect for Purposes which Vendors
- * have been marked as flexible via the Global Vendor List (GVL).
- * @suppress
- */
 - (UsercentricsTCF2ChangedPurposes *)doCopyPurposes:(NSArray<UsercentricsInt *> *)purposes legIntPurposes:(NSArray<UsercentricsInt *> *)legIntPurposes notAllowedPurposes:(NSArray<UsercentricsInt *> *)notAllowedPurposes __attribute__((swift_name("doCopy(purposes:legIntPurposes:notAllowedPurposes:)")));
-
-/**
- * This feature is known as Flexible Purposes.
- * Within the Service-Specific Scope the customer can decide which Legal Basis
- * should be applied on a Purpose level.
- * The customer decision will only come into effect for Purposes which Vendors
- * have been marked as flexible via the Global Vendor List (GVL).
- * @suppress
- */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/**
- * This feature is known as Flexible Purposes.
- * Within the Service-Specific Scope the customer can decide which Legal Basis
- * should be applied on a Purpose level.
- * The customer decision will only come into effect for Purposes which Vendors
- * have been marked as flexible via the Global Vendor List (GVL).
- * @suppress
- */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/**
- * This feature is known as Flexible Purposes.
- * Within the Service-Specific Scope the customer can decide which Legal Basis
- * should be applied on a Purpose level.
- * The customer decision will only come into effect for Purposes which Vendors
- * have been marked as flexible via the Global Vendor List (GVL).
- * @suppress
- */
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSArray<UsercentricsInt *> *legIntPurposes __attribute__((swift_name("legIntPurposes")));
 @property (readonly) NSArray<UsercentricsInt *> *notAllowedPurposes __attribute__((swift_name("notAllowedPurposes")));
 @property (readonly) NSArray<UsercentricsInt *> *purposes __attribute__((swift_name("purposes")));
 @end
 
-
-/**
- * This feature is known as Flexible Purposes.
- * Within the Service-Specific Scope the customer can decide which Legal Basis
- * should be applied on a Purpose level.
- * The customer decision will only come into effect for Purposes which Vendors
- * have been marked as flexible via the Global Vendor List (GVL).
- * @suppress
- */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCF2ChangedPurposes.Companion")))
 @interface UsercentricsTCF2ChangedPurposesCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/**
- * This feature is known as Flexible Purposes.
- * Within the Service-Specific Scope the customer can decide which Legal Basis
- * should be applied on a Purpose level.
- * The customer decision will only come into effect for Purposes which Vendors
- * have been marked as flexible via the Global Vendor List (GVL).
- * @suppress
- */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsTCF2ChangedPurposesCompanion *shared __attribute__((swift_name("shared")));
-
-/**
- * This feature is known as Flexible Purposes.
- * Within the Service-Specific Scope the customer can decide which Legal Basis
- * should be applied on a Purpose level.
- * The customer decision will only come into effect for Purposes which Vendors
- * have been marked as flexible via the Global Vendor List (GVL).
- * @suppress
- */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -4170,20 +3204,10 @@ __attribute__((swift_name("UsercentricsCategory")))
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/** The category slug identifier. */
 @property (readonly) NSString *categorySlug __attribute__((swift_name("categorySlug")));
-
-/** The description of the category if any. */
 @property (readonly) NSString * _Nullable description_ __attribute__((swift_name("description_")));
-
-/** True, if it is an essential category. False, if not. */
 @property (readonly) BOOL isEssential __attribute__((swift_name("isEssential")));
-
-/** True, if the category is hidden. False, if not. */
 @property (readonly) BOOL isHidden __attribute__((swift_name("isHidden")));
-
-/** The label of the category if any. */
 @property (readonly) NSString *label __attribute__((swift_name("label")));
 @end
 
@@ -4345,8 +3369,7 @@ __attribute__((swift_name("UsercentricsLabels.Companion")))
 @end
 
 
-/** A Usercentrics DPS service.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -4355,22 +3378,12 @@ __attribute__((swift_name("UsercentricsService")))
 @interface UsercentricsUsercentricsService : UsercentricsBase
 - (instancetype)initWithTemplateId:(NSString * _Nullable)templateId version:(NSString * _Nullable)version type:(NSString * _Nullable)type adminSettingsId:(NSArray<NSString *> * _Nullable)adminSettingsId dataProcessor:(NSString * _Nullable)dataProcessor dataPurposes:(NSArray<NSString *> *)dataPurposes processingCompany:(NSString * _Nullable)processingCompany nameOfProcessingCompany:(NSString *)nameOfProcessingCompany addressOfProcessingCompany:(NSString *)addressOfProcessingCompany descriptionOfService:(NSString *)descriptionOfService technologyUsed:(NSArray<NSString *> *)technologyUsed languagesAvailable:(NSArray<NSString *> *)languagesAvailable dataCollectedList:(NSArray<NSString *> *)dataCollectedList dataPurposesList:(NSArray<NSString *> *)dataPurposesList dataRecipientsList:(NSArray<NSString *> *)dataRecipientsList legalBasisList:(NSArray<NSString *> *)legalBasisList retentionPeriodList:(NSArray<NSString *> *)retentionPeriodList subConsents:(NSArray<NSString *> * _Nullable)subConsents language:(NSString *)language createdBy:(NSString * _Nullable)createdBy updatedBy:(NSString * _Nullable)updatedBy isLatest:(UsercentricsBoolean * _Nullable)isLatest linkToDpa:(NSString *)linkToDpa legalGround:(NSString *)legalGround optOutUrl:(NSString *)optOutUrl policyOfProcessorUrl:(NSString *)policyOfProcessorUrl categorySlug:(NSString * _Nullable)categorySlug recordsOfProcessingActivities:(NSString * _Nullable)recordsOfProcessingActivities retentionPeriodDescription:(NSString *)retentionPeriodDescription dataProtectionOfficer:(NSString *)dataProtectionOfficer privacyPolicyURL:(NSString *)privacyPolicyURL cookiePolicyURL:(NSString *)cookiePolicyURL locationOfProcessing:(NSString *)locationOfProcessing dataCollectedDescription:(NSString * _Nullable)dataCollectedDescription thirdCountryTransfer:(NSString *)thirdCountryTransfer description:(NSString * _Nullable)description cookieMaxAgeSeconds:(UsercentricsLong * _Nullable)cookieMaxAgeSeconds usesNonCookieAccess:(UsercentricsBoolean * _Nullable)usesNonCookieAccess deviceStorageDisclosureUrl:(NSString * _Nullable)deviceStorageDisclosureUrl deviceStorage:(UsercentricsConsentDisclosureObject *)deviceStorage dpsDisplayFormat:(NSString * _Nullable)dpsDisplayFormat isHidden:(BOOL)isHidden framework:(NSString * _Nullable)framework isDeactivated:(UsercentricsBoolean * _Nullable)isDeactivated isAutoUpdateAllowed:(UsercentricsBoolean * _Nullable)isAutoUpdateAllowed disableLegalBasis:(UsercentricsBoolean * _Nullable)disableLegalBasis isEssential:(BOOL)isEssential __attribute__((swift_name("init(templateId:version:type:adminSettingsId:dataProcessor:dataPurposes:processingCompany:nameOfProcessingCompany:addressOfProcessingCompany:descriptionOfService:technologyUsed:languagesAvailable:dataCollectedList:dataPurposesList:dataRecipientsList:legalBasisList:retentionPeriodList:subConsents:language:createdBy:updatedBy:isLatest:linkToDpa:legalGround:optOutUrl:policyOfProcessorUrl:categorySlug:recordsOfProcessingActivities:retentionPeriodDescription:dataProtectionOfficer:privacyPolicyURL:cookiePolicyURL:locationOfProcessing:dataCollectedDescription:thirdCountryTransfer:description:cookieMaxAgeSeconds:usesNonCookieAccess:deviceStorageDisclosureUrl:deviceStorage:dpsDisplayFormat:isHidden:framework:isDeactivated:isAutoUpdateAllowed:disableLegalBasis:isEssential:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsUsercentricsServiceCompanion *companion __attribute__((swift_name("companion")));
-
-/** A Usercentrics DPS service. */
 - (UsercentricsUsercentricsService *)doCopyTemplateId:(NSString * _Nullable)templateId version:(NSString * _Nullable)version type:(NSString * _Nullable)type adminSettingsId:(NSArray<NSString *> * _Nullable)adminSettingsId dataProcessor:(NSString * _Nullable)dataProcessor dataPurposes:(NSArray<NSString *> *)dataPurposes processingCompany:(NSString * _Nullable)processingCompany nameOfProcessingCompany:(NSString *)nameOfProcessingCompany addressOfProcessingCompany:(NSString *)addressOfProcessingCompany descriptionOfService:(NSString *)descriptionOfService technologyUsed:(NSArray<NSString *> *)technologyUsed languagesAvailable:(NSArray<NSString *> *)languagesAvailable dataCollectedList:(NSArray<NSString *> *)dataCollectedList dataPurposesList:(NSArray<NSString *> *)dataPurposesList dataRecipientsList:(NSArray<NSString *> *)dataRecipientsList legalBasisList:(NSArray<NSString *> *)legalBasisList retentionPeriodList:(NSArray<NSString *> *)retentionPeriodList subConsents:(NSArray<NSString *> * _Nullable)subConsents language:(NSString *)language createdBy:(NSString * _Nullable)createdBy updatedBy:(NSString * _Nullable)updatedBy isLatest:(UsercentricsBoolean * _Nullable)isLatest linkToDpa:(NSString *)linkToDpa legalGround:(NSString *)legalGround optOutUrl:(NSString *)optOutUrl policyOfProcessorUrl:(NSString *)policyOfProcessorUrl categorySlug:(NSString * _Nullable)categorySlug recordsOfProcessingActivities:(NSString * _Nullable)recordsOfProcessingActivities retentionPeriodDescription:(NSString *)retentionPeriodDescription dataProtectionOfficer:(NSString *)dataProtectionOfficer privacyPolicyURL:(NSString *)privacyPolicyURL cookiePolicyURL:(NSString *)cookiePolicyURL locationOfProcessing:(NSString *)locationOfProcessing dataCollectedDescription:(NSString * _Nullable)dataCollectedDescription thirdCountryTransfer:(NSString *)thirdCountryTransfer description:(NSString * _Nullable)description cookieMaxAgeSeconds:(UsercentricsLong * _Nullable)cookieMaxAgeSeconds usesNonCookieAccess:(UsercentricsBoolean * _Nullable)usesNonCookieAccess deviceStorageDisclosureUrl:(NSString * _Nullable)deviceStorageDisclosureUrl deviceStorage:(UsercentricsConsentDisclosureObject *)deviceStorage dpsDisplayFormat:(NSString * _Nullable)dpsDisplayFormat isHidden:(BOOL)isHidden framework:(NSString * _Nullable)framework isDeactivated:(UsercentricsBoolean * _Nullable)isDeactivated isAutoUpdateAllowed:(UsercentricsBoolean * _Nullable)isAutoUpdateAllowed disableLegalBasis:(UsercentricsBoolean * _Nullable)disableLegalBasis isEssential:(BOOL)isEssential __attribute__((swift_name("doCopy(templateId:version:type:adminSettingsId:dataProcessor:dataPurposes:processingCompany:nameOfProcessingCompany:addressOfProcessingCompany:descriptionOfService:technologyUsed:languagesAvailable:dataCollectedList:dataPurposesList:dataRecipientsList:legalBasisList:retentionPeriodList:subConsents:language:createdBy:updatedBy:isLatest:linkToDpa:legalGround:optOutUrl:policyOfProcessorUrl:categorySlug:recordsOfProcessingActivities:retentionPeriodDescription:dataProtectionOfficer:privacyPolicyURL:cookiePolicyURL:locationOfProcessing:dataCollectedDescription:thirdCountryTransfer:description:cookieMaxAgeSeconds:usesNonCookieAccess:deviceStorageDisclosureUrl:deviceStorage:dpsDisplayFormat:isHidden:framework:isDeactivated:isAutoUpdateAllowed:disableLegalBasis:isEssential:)")));
-
-/** A Usercentrics DPS service. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** A Usercentrics DPS service. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** A Usercentrics DPS service. */
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) NSString *addressOfProcessingCompany __attribute__((swift_name("addressOfProcessingCompany")));
 @property (readonly) NSArray<NSString *> * _Nullable adminSettingsId __attribute__((swift_name("adminSettingsId")));
-
-/** The category slug identifier of the service. */
 @property (readonly) NSString * _Nullable categorySlug __attribute__((swift_name("categorySlug")));
 @property (readonly) UsercentricsLong * _Nullable cookieMaxAgeSeconds __attribute__((swift_name("cookieMaxAgeSeconds")));
 @property (readonly) NSString *cookiePolicyURL __attribute__((swift_name("cookiePolicyURL")));
@@ -4430,37 +3443,26 @@ __attribute__((swift_name("UsercentricsService")))
  *   kotlinx.serialization.Serializable(with=NormalClass(value=com/usercentrics/sdk/models/api/StringOrListSerializer))
 */
 @property (readonly) NSArray<NSString *> *technologyUsed __attribute__((swift_name("technologyUsed")));
-
-/** The template ID of the service. */
 @property (readonly) NSString * _Nullable templateId __attribute__((swift_name("templateId")));
 @property (readonly) NSString *thirdCountryTransfer __attribute__((swift_name("thirdCountryTransfer")));
 @property (readonly) NSString * _Nullable type __attribute__((swift_name("type")));
 @property (readonly) NSString * _Nullable updatedBy __attribute__((swift_name("updatedBy")));
 @property (readonly) UsercentricsBoolean * _Nullable usesNonCookieAccess __attribute__((swift_name("usesNonCookieAccess")));
-
-/** The version of the service. */
 @property (readonly) NSString * _Nullable version __attribute__((swift_name("version")));
 @end
 
-
-/** A Usercentrics DPS service. */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UsercentricsService.Companion")))
 @interface UsercentricsUsercentricsServiceCompanion : UsercentricsBase
 + (instancetype)alloc __attribute__((unavailable));
-
-/** A Usercentrics DPS service. */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UsercentricsUsercentricsServiceCompanion *shared __attribute__((swift_name("shared")));
-
-/** A Usercentrics DPS service. */
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
-/** The general settings defined for the settingsId.
- *
+/**
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
@@ -4469,17 +3471,9 @@ __attribute__((swift_name("UsercentricsSettings")))
 @interface UsercentricsUsercentricsSettings : UsercentricsBase
 - (instancetype)initWithLabels:(UsercentricsUsercentricsLabels *)labels secondLayer:(UsercentricsSecondLayer *)secondLayer version:(NSString *)version language:(NSString *)language imprintUrl:(NSString * _Nullable)imprintUrl privacyPolicyUrl:(NSString * _Nullable)privacyPolicyUrl cookiePolicyUrl:(NSString * _Nullable)cookiePolicyUrl firstLayerDescriptionHtml:(NSString * _Nullable)firstLayerDescriptionHtml firstLayerMobileDescriptionHtml:(NSString * _Nullable)firstLayerMobileDescriptionHtml settingsId:(NSString *)settingsId bannerMobileDescriptionIsActive:(BOOL)bannerMobileDescriptionIsActive enablePoweredBy:(BOOL)enablePoweredBy displayOnlyForEU:(BOOL)displayOnlyForEU tcf2Enabled:(BOOL)tcf2Enabled reshowBanner:(UsercentricsInt * _Nullable)reshowBanner editableLanguages:(NSArray<NSString *> *)editableLanguages languagesAvailable:(NSArray<NSString *> *)languagesAvailable showInitialViewForVersionChange:(NSArray<NSString *> *)showInitialViewForVersionChange ccpa:(UsercentricsCCPASettings * _Nullable)ccpa tcf2:(UsercentricsTCF2Settings * _Nullable)tcf2 customization:(UsercentricsUsercentricsCustomization * _Nullable)customization firstLayer:(UsercentricsFirstLayer * _Nullable)firstLayer styles:(UsercentricsUsercentricsStyles * _Nullable)styles interactionAnalytics:(BOOL)interactionAnalytics consentAnalytics:(BOOL)consentAnalytics consentXDevice:(BOOL)consentXDevice variants:(UsercentricsVariantsSettings * _Nullable)variants dpsDisplayFormat:(UsercentricsDpsDisplayFormat * _Nullable)dpsDisplayFormat framework:(UsercentricsUSAFrameworks * _Nullable)framework publishedApps:(NSArray<UsercentricsPublishedApp *> * _Nullable)publishedApps consentTemplates:(NSArray<UsercentricsServiceConsentTemplate *> *)consentTemplates categories:(NSArray<UsercentricsUsercentricsCategory *> * _Nullable)categories __attribute__((swift_name("init(labels:secondLayer:version:language:imprintUrl:privacyPolicyUrl:cookiePolicyUrl:firstLayerDescriptionHtml:firstLayerMobileDescriptionHtml:settingsId:bannerMobileDescriptionIsActive:enablePoweredBy:displayOnlyForEU:tcf2Enabled:reshowBanner:editableLanguages:languagesAvailable:showInitialViewForVersionChange:ccpa:tcf2:customization:firstLayer:styles:interactionAnalytics:consentAnalytics:consentXDevice:variants:dpsDisplayFormat:framework:publishedApps:consentTemplates:categories:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) UsercentricsUsercentricsSettingsCompanion *companion __attribute__((swift_name("companion")));
-
-/** The general settings defined for the settingsId. */
 - (UsercentricsUsercentricsSettings *)doCopyLabels:(UsercentricsUsercentricsLabels *)labels secondLayer:(UsercentricsSecondLayer *)secondLayer version:(NSString *)version language:(NSString *)language imprintUrl:(NSString * _Nullable)imprintUrl privacyPolicyUrl:(NSString * _Nullable)privacyPolicyUrl cookiePolicyUrl:(NSString * _Nullable)cookiePolicyUrl firstLayerDescriptionHtml:(NSString * _Nullable)firstLayerDescriptionHtml firstLayerMobileDescriptionHtml:(NSString * _Nullable)firstLayerMobileDescriptionHtml settingsId:(NSString *)settingsId bannerMobileDescriptionIsActive:(BOOL)bannerMobileDescriptionIsActive enablePoweredBy:(BOOL)enablePoweredBy displayOnlyForEU:(BOOL)displayOnlyForEU tcf2Enabled:(BOOL)tcf2Enabled reshowBanner:(UsercentricsInt * _Nullable)reshowBanner editableLanguages:(NSArray<NSString *> *)editableLanguages languagesAvailable:(NSArray<NSString *> *)languagesAvailable showInitialViewForVersionChange:(NSArray<NSString *> *)showInitialViewForVersionChange ccpa:(UsercentricsCCPASettings * _Nullable)ccpa tcf2:(UsercentricsTCF2Settings * _Nullable)tcf2 customization:(UsercentricsUsercentricsCustomization * _Nullable)customization firstLayer:(UsercentricsFirstLayer * _Nullable)firstLayer styles:(UsercentricsUsercentricsStyles * _Nullable)styles interactionAnalytics:(BOOL)interactionAnalytics consentAnalytics:(BOOL)consentAnalytics consentXDevice:(BOOL)consentXDevice variants:(UsercentricsVariantsSettings * _Nullable)variants dpsDisplayFormat:(UsercentricsDpsDisplayFormat * _Nullable)dpsDisplayFormat framework:(UsercentricsUSAFrameworks * _Nullable)framework publishedApps:(NSArray<UsercentricsPublishedApp *> * _Nullable)publishedApps consentTemplates:(NSArray<UsercentricsServiceConsentTemplate *> *)consentTemplates categories:(NSArray<UsercentricsUsercentricsCategory *> * _Nullable)categories __attribute__((swift_name("doCopy(labels:secondLayer:version:language:imprintUrl:privacyPolicyUrl:cookiePolicyUrl:firstLayerDescriptionHtml:firstLayerMobileDescriptionHtml:settingsId:bannerMobileDescriptionIsActive:enablePoweredBy:displayOnlyForEU:tcf2Enabled:reshowBanner:editableLanguages:languagesAvailable:showInitialViewForVersionChange:ccpa:tcf2:customization:firstLayer:styles:interactionAnalytics:consentAnalytics:consentXDevice:variants:dpsDisplayFormat:framework:publishedApps:consentTemplates:categories:)")));
-
-/** The general settings defined for the settingsId. */
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-
-/** The general settings defined for the settingsId. */
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-
-/** The general settings defined for the settingsId. */
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) BOOL bannerMobileDescriptionIsActive __attribute__((swift_name("bannerMobileDescriptionIsActive")));
 @property (readonly) UsercentricsCCPASettings * _Nullable ccpa __attribute__((swift_name("ccpa")));
@@ -4683,25 +3677,10 @@ __attribute__((swift_name("TranslationAriaLabels.Companion")))
 - (id<UsercentricsKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
-
-/**
- * Main class for encoding and decoding a
- * TCF Transparency and Consent String
- */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("TCString")))
 @interface UsercentricsTCString : UsercentricsBase
-
-/**
- * Main class for encoding and decoding a
- * TCF Transparency and Consent String
- */
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-
-/**
- * Main class for encoding and decoding a
- * TCF Transparency and Consent String
- */
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 @property (class, readonly, getter=companion) UsercentricsTCStringCompanion *companion __attribute__((swift_name("companion")));
 @end
@@ -4715,22 +3694,10 @@ __attribute__((swift_name("TCString.Companion")))
 @property (class, readonly, getter=shared) UsercentricsTCStringCompanion *shared __attribute__((swift_name("shared")));
 @end
 
-
-/**
- * if a Vendor has declared flexible purposes (see: [[Vendor]] under
- * `flexiblePurposeIds`) on the Global Vendor List ([[Declarations]]) a CMP may
- * change their legal basis for processing in the encoding.
- */
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RestrictionType")))
 @interface UsercentricsRestrictionType : UsercentricsKotlinEnum<UsercentricsRestrictionType *>
 + (instancetype)alloc __attribute__((unavailable));
-
-/**
- * if a Vendor has declared flexible purposes (see: [[Vendor]] under
- * `flexiblePurposeIds`) on the Global Vendor List ([[Declarations]]) a CMP may
- * change their legal basis for processing in the encoding.
- */
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly, getter=companion) UsercentricsRestrictionTypeCompanion *companion __attribute__((swift_name("companion")));
@@ -4897,16 +3864,8 @@ __attribute__((swift_name("TCfVendorUrlsKt")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UsercentricsCore")))
 @interface UsercentricsUsercentricsKt : UsercentricsBase
-
-/**
- * Configure Usercentrics. Call this method only once in the whole life of the application. If you want to change the configuration, please use the [UsercentricsCore.shared.clearUserSession] method before.
- */
 + (void)configureOptions:(UsercentricsUsercentricsOptions *)options __attribute__((swift_name("configure(options:)")));
-
-/** Wait until Usercentrics is ready. It answers with the [UsercentricsReadyStatus] with the consent status of the user. */
 + (void)isReadyOnSuccess:(void (^)(UsercentricsUsercentricsReadyStatus *))onSuccess onFailure:(void (^)(NSError *))onFailure __attribute__((swift_name("isReady(onSuccess:onFailure:)")));
-
-/** Usercentrics shared singleton. Please, use it only when Usercentrics [isReady]. */
 @property (class, readonly) UsercentricsUsercentricsSDK *shared __attribute__((swift_name("shared")));
 @end
 

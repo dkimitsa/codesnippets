@@ -32,24 +32,29 @@ import org.robovm.apple.uikit.*;
 /*</imports>*/
 
 /*<javadoc>*/
-/*</javadoc>*/
-/*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ class /*<name>*/UsercentricsUnityMessageSenderAdapter/*</name>*/ 
-    extends /*<extends>*/NSObject/*</extends>*/ 
-    /*<implements>*/implements UsercentricsUnityMessageSender/*</implements>*/ {
 
-    /*<ptr>*/
-    /*</ptr>*/
-    /*<bind>*/
-    /*</bind>*/
+/*</javadoc>*/
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass/*</annotations>*/
+/*<visibility>*/public/*</visibility>*/ class /*<name>*/UsercentricsRvm/*</name>*/ 
+    extends /*<extends>*/NSObject/*</extends>*/ 
+    /*<implements>*//*</implements>*/ {
+
+    /*<ptr>*/public static class UsercentricsRvmPtr extends Ptr<UsercentricsRvm, UsercentricsRvmPtr> {}/*</ptr>*/
+    /*<bind>*/static { ObjCRuntime.bind(UsercentricsRvm.class); }/*</bind>*/
     /*<constants>*//*</constants>*/
-    /*<constructors>*//*</constructors>*/
+    /*<constructors>*/
+    protected UsercentricsRvm() {}
+    protected UsercentricsRvm(Handle h, long handle) { super(h, handle); }
+    protected UsercentricsRvm(SkipInit skipInit) { super(skipInit); }
+    /*</constructors>*/
     /*<properties>*/
     
     /*</properties>*/
     /*<members>*//*</members>*/
     /*<methods>*/
-    @NotImplemented("sendUnityMessageGameObjectName:receiver:content:")
-    public void sendUnityMessage(String gameObjectName, String receiver, String content) {}
+    @Method(selector = "showFirstLayerWithHostView:completion:")
+    public static native void showFirstLayer(UIViewController hostView, @Block VoidBlock1<UsercentricsConsentUserResponseRvm> completion);
+    @Method(selector = "showSecondLayerWithHostView:completion:")
+    public static native void showSecondLayer(UIViewController hostView, @Block VoidBlock1<UsercentricsConsentUserResponseRvm> completion);
     /*</methods>*/
 }

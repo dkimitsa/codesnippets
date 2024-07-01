@@ -46,14 +46,12 @@ import org.robovm.apple.uikit.*;
     protected UsercentricsPredefinedUIHolder() {}
     protected UsercentricsPredefinedUIHolder(Handle h, long handle) { super(h, handle); }
     protected UsercentricsPredefinedUIHolder(SkipInit skipInit) { super(skipInit); }
-    @Method(selector = "initWithContext:data:consentManager:viewHandlers:")
-    public UsercentricsPredefinedUIHolder(UsercentricsContext context, UsercentricsPredefinedUIViewData data, UsercentricsPredefinedUIConsentManager consentManager, UsercentricsPredefinedUIViewHandlers viewHandlers) { super((SkipInit) null); initObject(init(context, data, consentManager, viewHandlers)); }
+    @Method(selector = "initWithData:consentManager:viewHandlers:")
+    public UsercentricsPredefinedUIHolder(UsercentricsPredefinedUIViewData data, UsercentricsPredefinedUIConsentManager consentManager, UsercentricsPredefinedUIViewHandlers viewHandlers) { super((SkipInit) null); initObject(init(data, consentManager, viewHandlers)); }
     /*</constructors>*/
     /*<properties>*/
     @Property(selector = "consentManager")
     public native UsercentricsPredefinedUIConsentManager getConsentManager();
-    @Property(selector = "context")
-    public native UsercentricsContext getContext();
     @Property(selector = "data")
     public native UsercentricsPredefinedUIViewData getData();
     @Property(selector = "viewHandlers")
@@ -61,10 +59,10 @@ import org.robovm.apple.uikit.*;
     /*</properties>*/
     /*<members>*//*</members>*/
     /*<methods>*/
-    @Method(selector = "initWithContext:data:consentManager:viewHandlers:")
-    protected native @Pointer long init(UsercentricsContext context, UsercentricsPredefinedUIViewData data, UsercentricsPredefinedUIConsentManager consentManager, UsercentricsPredefinedUIViewHandlers viewHandlers);
-    @Method(selector = "doCopyContext:data:consentManager:viewHandlers:")
-    public native UsercentricsPredefinedUIHolder doCopy(UsercentricsContext context, UsercentricsPredefinedUIViewData data, UsercentricsPredefinedUIConsentManager consentManager, UsercentricsPredefinedUIViewHandlers viewHandlers);
+    @Method(selector = "initWithData:consentManager:viewHandlers:")
+    protected native @Pointer long init(UsercentricsPredefinedUIViewData data, UsercentricsPredefinedUIConsentManager consentManager, UsercentricsPredefinedUIViewHandlers viewHandlers);
+    @Method(selector = "doCopyData:consentManager:viewHandlers:")
+    public native UsercentricsPredefinedUIHolder doCopy(UsercentricsPredefinedUIViewData data, UsercentricsPredefinedUIConsentManager consentManager, UsercentricsPredefinedUIViewHandlers viewHandlers);
     @Method(selector = "isEqual:")
     public native boolean isEqual(NSObject other);
     @Method(selector = "hash")

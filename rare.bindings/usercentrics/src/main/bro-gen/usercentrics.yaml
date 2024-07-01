@@ -4,33 +4,25 @@ clang_args: [ '-x', 'objective-c' ]
 framework: Usercentrics
 internal_frameworks:
     - UsercentricsUI
+    - UserCentricRvm
 
 headers:
     - Usercentrics.h
     - "#import <UsercentricsUI/UsercentricsUI-Swift.h>"
+    - "#import <UsercentricsRvm/UsercentricsRvm-Swift.h>"
 
 typedefs:
 
 private_typedefs:
 
 enums:
+    # Rvm wrappers
+    UsercentricsUserInteractionRvm: {}
 
 classes:
     # exclude all companions
     '.*Companion':
         exclude: true
-
-    # UsercentricsUI.framework
-    UsercentricsResourceLoader: { }
-    UsercentricsUnityBanner:
-        name: UsercentricsBanner
-        methods:
-            '-showFirstLayerWithHostView:bannerSettings:':
-                name: showFirstLayer
-            '-showSecondLayerWithHostView:bannerSettings:':
-                name: showSecondLayer
-
-    # UsercentricsUI.framework
 
     # exclude all companion properties
     UsercentricsBase:
@@ -434,9 +426,9 @@ classes:
                 name: doCopy
     UsercentricsPredefinedUIHolder:
         methods:
-            '-initWithContext:data:consentManager:viewHandlers:':
+            '-initWithData:consentManager:viewHandlers:':
                 name: init
-            '-doCopyContext:data:consentManager:viewHandlers:':
+            '-doCopyData:consentManager:viewHandlers:':
                 name: doCopy
     UsercentricsPredefinedUIHtmlLinkType: { }
     UsercentricsPredefinedUIHyperlinkServiceContent:
@@ -858,6 +850,8 @@ classes:
                 name: denyAll
             '-getUIFactoryHolderViewContext:abTestingVariant:predefinedUIVariant:callback:':
                 name: getUIFactoryHolderViewContext
+            '-getUIFactoryHolderAbTestingVariant:predefinedUIVariant:callback:':
+                name: getUIFactoryHolderAbTestingVariant
             '-restoreUserSessionControllerId:onSuccess:onFailure:':
                 name: restoreUserSessionControllerId
             '-saveDecisionsDecisions:consentType:':
@@ -919,47 +913,19 @@ classes:
                 name: init
             '-doCopyLangId:privacy:legIntClaim:':
                 name: doCopy
-    UsercentricsUnityDataRetention:
+    UsercentricsResourceLoader: { }
+
+    #
+    # Rvm wrappers
+    #
+    UsercentricsConsentUserResponseRvm: {}
+    UsercentricsRvm:
         methods:
-            '-initWithDataRetention:':
-                name: init
-            '-initWithPurposes:specialPurposes:_stdRetention:':
-                name: init
-            '-doCopyPurposes:specialPurposes:_stdRetention:':
-                name: doCopy
-    UsercentricsUnityFirstLayerSettings:
-        methods:
-            '-initWithTitle:description:additionalInfo:resurfaceNote:vendorListLinkTitle:manageSettingsLinkTitle:purposesLabel:featuresLabel:acceptAllButton:denyAllButton:saveButton:':
-                name: init
-            '-doCopyTitle:description:additionalInfo:resurfaceNote:vendorListLinkTitle:manageSettingsLinkTitle:purposesLabel:featuresLabel:acceptAllButton:denyAllButton:saveButton:':
-                name: doCopy
-    UsercentricsUnityMessageProvider:
-        methods:
-            '+new': { exclude: true }
-    UsercentricsUnityPredefinedUIResponse:
-        methods:
-            '-initWithUserInteraction:consents:controllerId:':
-                name: init
-            '-doCopyUserInteraction:consents:controllerId:':
-                name: doCopy
-    UsercentricsUnityServiceConsent:
-        methods:
-            '-initWithServiceConsent:':
-                name: init
-            '-initWithTemplateId:status:history:dataProcessor:version:isEssential:_type:':
-                name: init
-            '-doCopyTemplateId:status:history:dataProcessor:version:isEssential:_type:':
-                name: doCopy
-    UsercentricsUnityUpdatedConsentPayload:
-        methods:
-            '-initWithPayload:':
-                name: init
-            '-initWithConsents:controllerId:tcString:uspString:acString:':
-                name: init
-            '-doCopyConsents:controllerId:tcString:uspString:acString:':
-                name: doCopy
-    UsercentricsUsercentricsUnity:
-        exclude: true
+            '+showFirstLayerWithHostView:completion:':
+                name: showFirstLayer
+            '+showSecondLayerWithHostView:completion:':
+                name: showSecondLayer
+
 protocols:
     UsercentricsBannerViewDataService: { }
     UsercentricsBaseTCFUserDecision: { }
@@ -1023,11 +989,6 @@ protocols:
             '-warningMessage:cause:':
                 name: warningMessage
 
-    UsercentricsIUnityUsercentricsInstanceProvider: { }
-    UsercentricsUnityMessageSender:
-        methods:
-            '-sendUnityMessageGameObjectName:receiver:content:':
-                name: sendUnityMessage
 functions:
 
     # Make sure we don't miss any functions if new ones are introduced in a later version

@@ -34,25 +34,31 @@ import org.robovm.apple.uikit.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*/@Library(Library.INTERNAL) @NativeClass/*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ class /*<name>*/UsercentricsUnityMessageProvider/*</name>*/ 
-    extends /*<extends>*/UsercentricsBase/*</extends>*/ 
-    /*<implements>*//*</implements>*/ {
+/*<annotations>*/@Marshaler(ValuedEnum.AsMachineSizedSIntMarshaler.class)/*</annotations>*/
+public enum /*<name>*/UsercentricsUserInteractionRvm/*</name>*/ implements ValuedEnum {
+    /*<values>*/
+    AcceptAll(0L),
+    DenyAll(1L),
+    Granular(2L),
+    NoInteraction(3L);
+    /*</values>*/
 
-    /*<ptr>*/public static class UsercentricsUnityMessageProviderPtr extends Ptr<UsercentricsUnityMessageProvider, UsercentricsUnityMessageProviderPtr> {}/*</ptr>*/
-    /*<bind>*/static { ObjCRuntime.bind(UsercentricsUnityMessageProvider.class); }/*</bind>*/
+    /*<bind>*/
+    /*</bind>*/
     /*<constants>*//*</constants>*/
-    /*<constructors>*/
-    public UsercentricsUnityMessageProvider() {}
-    protected UsercentricsUnityMessageProvider(Handle h, long handle) { super(h, handle); }
-    protected UsercentricsUnityMessageProvider(SkipInit skipInit) { super(skipInit); }
-    /*</constructors>*/
-    /*<properties>*/
-    
-    /*</properties>*/
-    /*<members>*//*</members>*/
-    /*<methods>*/
-    @Method(selector = "provide")
-    public native UsercentricsUnityMessageSender provide();
-    /*</methods>*/
+    /*<methods>*//*</methods>*/
+
+    private final long n;
+
+    private /*<name>*/UsercentricsUserInteractionRvm/*</name>*/(long n) { this.n = n; }
+    public long value() { return n; }
+    public static /*<name>*/UsercentricsUserInteractionRvm/*</name>*/ valueOf(long n) {
+        for (/*<name>*/UsercentricsUserInteractionRvm/*</name>*/ v : values()) {
+            if (v.n == n) {
+                return v;
+            }
+        }
+        throw new IllegalArgumentException("No constant with value " + n + " found in " 
+            + /*<name>*/UsercentricsUserInteractionRvm/*</name>*/.class.getName());
+    }
 }

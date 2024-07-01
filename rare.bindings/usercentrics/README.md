@@ -9,7 +9,12 @@
 ## Install Instructions
 
 ### 3rd party native framework
-This RoboPod requires you to add the native `Usercentrics.xcframework`.
+This RoboPod requires you to add the native frameworks:
+- `Usercentrics.xcframework`.
+- `UsercentricsUI.xcframework`.
+- `UsercentricsRvm.xcframework`.
+
+Use `cocoapods/fetch.sh` to build these.
 
 ### to use this pod configure your `robovm.xml`
 

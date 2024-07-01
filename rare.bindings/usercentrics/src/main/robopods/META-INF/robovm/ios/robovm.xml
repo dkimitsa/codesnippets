@@ -1,5 +1,6 @@
 <config>
     <frameworks>
+        <framework>UsercentricsRvm</framework>
         <framework>Usercentrics</framework>
         <framework>UsercentricsUI</framework>
     </frameworks>

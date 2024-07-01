@@ -78,8 +78,8 @@ import org.robovm.apple.uikit.*;
     public native void getTCFDataCallback(@Block VoidBlock1<UsercentricsTCFData> callback);
     @Method(selector = "getUIApplicationPredefinedUIVariant:")
     public native UsercentricsPredefinedUIApplicationManager getUIApplicationPredefinedUIVariant(UsercentricsPredefinedUIVariant predefinedUIVariant);
-    @Method(selector = "getUIFactoryHolderViewContext:abTestingVariant:predefinedUIVariant:callback:")
-    public native void getUIFactoryHolderViewContext(UsercentricsContext viewContext, String abTestingVariant, UsercentricsPredefinedUIVariant predefinedUIVariant, @Block VoidBlock1<UsercentricsPredefinedUIFactoryHolder> callback);
+    @Method(selector = "getUIFactoryHolderAbTestingVariant:predefinedUIVariant:callback:")
+    public native void getUIFactoryHolderAbTestingVariant(String abTestingVariant, UsercentricsPredefinedUIVariant predefinedUIVariant, @Block VoidBlock1<UsercentricsPredefinedUIFactoryHolder> callback);
     @Method(selector = "getUSPData")
     public native UsercentricsCCPAData getUSPData();
     @Method(selector = "getUserSessionData")

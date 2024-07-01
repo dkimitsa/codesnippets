@@ -34,22 +34,29 @@ import org.robovm.apple.uikit.*;
 /*<javadoc>*/
 
 /*</javadoc>*/
-/*<annotations>*//*</annotations>*/
-/*<visibility>*/public/*</visibility>*/ interface /*<name>*/UsercentricsIUnityUsercentricsInstanceProvider/*</name>*/ 
-    /*<implements>*/extends NSObjectProtocol/*</implements>*/ {
+/*<annotations>*/@Library(Library.INTERNAL) @NativeClass/*</annotations>*/
+/*<visibility>*/public/*</visibility>*/ class /*<name>*/UsercentricsConsentUserResponseRvm/*</name>*/ 
+    extends /*<extends>*/NSObject/*</extends>*/ 
+    /*<implements>*//*</implements>*/ {
 
-    /*<ptr>*/
-    /*</ptr>*/
-    /*<bind>*/
-    /*</bind>*/
+    /*<ptr>*/public static class UsercentricsConsentUserResponseRvmPtr extends Ptr<UsercentricsConsentUserResponseRvm, UsercentricsConsentUserResponseRvmPtr> {}/*</ptr>*/
+    /*<bind>*/static { ObjCRuntime.bind(UsercentricsConsentUserResponseRvm.class); }/*</bind>*/
     /*<constants>*//*</constants>*/
+    /*<constructors>*/
+    protected UsercentricsConsentUserResponseRvm() {}
+    protected UsercentricsConsentUserResponseRvm(Handle h, long handle) { super(h, handle); }
+    protected UsercentricsConsentUserResponseRvm(SkipInit skipInit) { super(skipInit); }
+    /*</constructors>*/
     /*<properties>*/
-    
+    @Property(selector = "consents")
+    public native NSArray<UsercentricsServiceConsent> getConsents();
+    @Property(selector = "controllerId")
+    public native String getControllerId();
+    @Property(selector = "userInteraction")
+    public native UsercentricsUserInteractionRvm getUserInteraction();
     /*</properties>*/
+    /*<members>*//*</members>*/
     /*<methods>*/
-    @Method(selector = "provide")
-    UsercentricsSDK provide();
+    
     /*</methods>*/
-    /*<adapter>*/
-    /*</adapter>*/
 }

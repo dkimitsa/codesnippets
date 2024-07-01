@@ -2,9 +2,9 @@ package io.github.dkimitsa.tests;
 
 
 import org.robovm.apple.uikit.UIViewController;
-import org.robovm.pods.usercentrics.UsercentricsBanner;
 import org.robovm.pods.usercentrics.UsercentricsCore;
 import org.robovm.pods.usercentrics.UsercentricsOptions;
+import org.robovm.pods.usercentrics.UsercentricsRvm;
 
 public class DemoUserCentrics {
 
@@ -28,7 +28,9 @@ public class DemoUserCentrics {
         UsercentricsCore.isReady(
                 readyStatus -> {
                     System.out.println("ready  " + readyStatus);
-                    new UsercentricsBanner().showFirstLayer(vc, "");
+                    UsercentricsRvm.showFirstLayer(vc, status -> {
+                        System.out.println("showFirstLayer status  " + readyStatus);
+                    });
                 },
                 nsError -> System.out.println("error  " + nsError)
         );

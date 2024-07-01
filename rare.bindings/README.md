@@ -23,9 +23,9 @@
 | Name                                     |        |
 |------------------------------------------|--------|
 | [Amazon Pub.Services](amznpubservices/)  | 4.9.2  |
-| [AppHarbrSDK](appharbrsdk/)              |   - AppHarbrSDK (1.14.3|
+| [AppHarbrSDK](appharbrsdk/)              | 1.14.3 |
 | [BitLabs](bitlabs/)                      | 3.2.1  |
 | [IubendaMobileSDK](iubenda/)             | 2.6.8  |
 | [NeftaSDK](neftasdk/)                    | 3.3.0  |
-| [Usercentrics](usercentrics/)            | 2.15.1 |
+| [Usercentrics](usercentrics/)            | 2.15.2 |
 | [YabbiADs](yabbiads/)                    | 1.6.0  |

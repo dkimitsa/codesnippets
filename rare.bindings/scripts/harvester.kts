@@ -138,40 +138,51 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
     "Usercentrics" to { framework ->
         val artifact = "$framework.framework"
         val artifactLocation = downloadFolder.extend("Usercentrics/Usercentrics.xcframework/ios-arm64/$artifact")
+        fun podfileversion(): String {
+            // extracts version from Podfile.lock file
+            val f = Path.of("usercentrics/cocoapods/Podfile.lock").toFile()
+            return f.readLines().find { it.startsWith("  - Usercentrics (") }
+                ?.substringAfter("(")?.removeSuffix(")")
+                ?: error("Version not found in ${readmeFile.canonicalPath}")
+        }
         processFramework(
             artifact = artifact,
             moduleFolder = "usercentrics/",
             sourceHeadersDir = downloadFolder,
             destinationHeadersDir = Path.of("usercentrics", "src", "main", "bro-gen").toFile(),
             yaml = "usercentrics.yaml",
-            version = { downloadFolder.extend("Usercentrics/version/").readText() },
+            version = { podfileversion() },
             instruction = """
-                1. download latest Usercentrics-???-unity-static.xcframework.zip from https://usercentrics.com/docs/apps/integration/install/
-                2. unpack rename to Usercentrics-unity-static
-                3. download latest UsercentricsUI-???-unity-static.xcframework.zip from https://usercentrics.com/docs/apps/integration/install/
-                4. unpack and rename to UsercentricsUI-unity-static
-                5. create a file ${downloadFolder.extend("Usercentrics/version")} and put verions there, e.g. 11.0.4 
-                6. expected location ${downloadFolder.extend("Usercentrics-unity-static/Usercentrics.xcframework/ios-arm64/Usercentrics.framework")} 
-                                     ${downloadFolder.extend("UsercentricsUI-unity-static/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework")} 
+                0. run usercentrics/cocoatouch/fetch.sh to fetch and build from cocotouch 
+                6. expected location ${Path.of("usercentrics/cocoapods/Usercentrics.xcframework/ios-arm64/Usercentrics.framework").toFile()} 
+                                     ${Path.of("usercentrics/cocoapods/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework").toFile()} 
+                                     ${Path.of("usercentrics/cocoapods/UsercentricsRvm.xcframework/ios-arm64/UserCentricRvm.framework").toFile()} 
             """.trimIndent(),
             headerFolderCleaner = { _, dst ->
                 cleanUpHeaders("Usercentrics", dst.extend("Usercentrics.framework"))
                 cleanUpHeaders("UsercentricsUI", dst.extend("UsercentricsUI.framework"))
+                cleanUpHeaders("UsercentricsRvm", dst.extend("UsercentricsRvm.framework"))
             },
             headersCopier = { _, src, dst ->
                 copyHeaders("Usercentrics.framework",
-                    src.extend("Usercentrics-unity-static/Usercentrics.xcframework/ios-arm64/Usercentrics.framework/Headers"),
+                    Path.of("usercentrics/cocoapods/Usercentrics.xcframework/ios-arm64/Usercentrics.framework").toFile().headers,
                     dst.extend("Usercentrics.framework/Headers"))
                 copyHeaders("UsercentricsUI.framework",
-                    src.extend("UsercentricsUI-unity-static/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework/Headers"),
+                    Path.of("usercentrics/cocoapods/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework").toFile().headers,
                     dst.extend("UsercentricsUI.framework/Headers"))
+                copyHeaders("UsercentricsRvm.framework",
+                    Path.of("usercentrics/cocoapods/UsercentricsRvm.xcframework/ios-arm64/UsercentricsRvm.framework").toFile().headers,
+                    dst.extend("UsercentricsRvm.framework/Headers"))
             } ,
             interactiveValidateHeaderFolder = { _, src, instruction, optional ->
                 interactiveValidateHeaderFolder("Usercentrics.framework",
-                    src.extend("Usercentrics-unity-static/Usercentrics.xcframework/ios-arm64/Usercentrics.framework/Headers"),
+                    Path.of("usercentrics/cocoapods/Usercentrics.xcframework/ios-arm64/Usercentrics.framework").toFile().headers,
                     instruction, optional)
                 interactiveValidateHeaderFolder("UsercentricsUI.framework",
-                    src.extend("UsercentricsUI-unity-static/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework/Headers"),
+                    Path.of("usercentrics/cocoapods/UsercentricsUI.xcframework/ios-arm64/UsercentricsUI.framework").toFile().headers,
+                    instruction, optional)
+                interactiveValidateHeaderFolder("UsercentricsRvm.framework",
+                    Path.of("usercentrics/cocoapods/UsercentricsRvm.xcframework/ios-arm64/UsercentricsRvm.framework").toFile().headers,
                     instruction, optional)
             }
         )
