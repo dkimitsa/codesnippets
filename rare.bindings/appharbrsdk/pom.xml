@@ -9,7 +9,7 @@
     <artifactId>robopods-appharbrsdk-ios</artifactId>
     <name>RoboPods AppHarbrSDK iOS</name>
     <packaging>jar</packaging>
-    <version>  - AppHarbrSDK (1.14.3.0-SNAPSHOT</version>
+    <version>1.14.3.0-SNAPSHOT</version>
 
     <licenses>
         <license>

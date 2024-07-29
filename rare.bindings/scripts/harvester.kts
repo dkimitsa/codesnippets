@@ -195,7 +195,7 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
             // extracts version from Podfile.lock file
             val f = Path.of("appharbrsdk/cocoapods/Podfile.lock").toFile()
             return f.readLines().find { it.startsWith("  - AppHarbrSDK (") }
-                ?.substringAfter("(`")?.removeSuffix(")")
+                ?.substringAfter("(")?.substringBefore(")")
                 ?: error("Version not found in ${readmeFile.canonicalPath}")
         }
         processFramework(
