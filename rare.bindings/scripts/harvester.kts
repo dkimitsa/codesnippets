@@ -107,7 +107,7 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
             yaml = "neftasdk.yaml",
             version = { downloadFolder.extend("NeftaSDK.xcframework").infoPlist.extractVersion(key = "Version") },
             instruction = """
-                1. download latest release from https://github.com/Nefta-io/NeftaSDK-iOS/releases                 2. get link from cocoaspec 
+                1. download latest release from https://github.com/Nefta-io/NeftaSDK-iOS/releases 
                 2. expected location ${artifactLocation} 
             """.trimIndent()
         )
@@ -207,6 +207,22 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
             instruction = """
                 0. run appharbrsdk/cocoatouch/fetch.sh to fetch and build from cocotouch 
                 1. expected location ${artifactLocation}
+            """.trimIndent()
+        )
+    },
+    "brdsdk" to { framework ->
+        val artifact = "$framework.framework"
+        val artifactLocation = downloadFolder.extend("bright_sdk_ios/brdsdk.xcframework/ios-arm64/$artifact")
+        processFramework(
+            artifact = artifact,
+            moduleFolder = "brightsdk/",
+            sourceHeadersDir = artifactLocation.headers,
+            yaml = "brdsdk.yaml",
+            version = { extractVersionFromPlist(artifactLocation.infoPlist) },
+            instruction = """
+                1. download latest bright_sdk_ios-????.zip from https://bright-sdk.com/cp/releases/ios?app_uuid=all
+                2. unpack and rename to bright_sdk_ios
+                2. expected location ${artifactLocation} 
             """.trimIndent()
         )
     },

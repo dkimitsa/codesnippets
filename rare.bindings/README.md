@@ -8,24 +8,26 @@
 
 ## List of Rare-Pods
 
-| Name                                    | Description                                            |
-|-----------------------------------------|--------------------------------------------------------|
-| [Amazon Pub.Services](amznpubservices/) | Anazob Publisher Services                              |
-| [AppHarbrSDK](appharbrsdk/)             | Secure, High-Quality Ads for Optimal User Experience   |
-| [BitLabs](bitlabs/)                     | BitLabs - Game Monetization with Rewarded Surveys      |
-| [IubendaMobileSDK](iubenda/)            | Framework that makes implementing in-app subscriptions |
-| [NeftaSDK](neftasdk/)                   | SDK for Nefta Ad Network                               |
-| [Usercentrics](usercentrics/)           | Consent Management Platform                            |
-| [YabbiADs](yabbiads/)                   | YabbiAds SDK for mobile advertising                    |
+| Name                                    | Description                                                         |
+|-----------------------------------------|---------------------------------------------------------------------|
+| [Amazon Pub.Services](amznpubservices/) | Anazob Publisher Services                                           |
+| [AppHarbrSDK](appharbrsdk/)             | Secure, High-Quality Ads for Optimal User Experience                |
+| [BitLabs](bitlabs/)                     | BitLabs - Game Monetization with Rewarded Surveys                   |
+| [BrightSDK](brightsdk/)                 | Bright SDK pays a fixed daily rate, on top of your existing revenue |
+| [IubendaMobileSDK](iubenda/)            | Framework that makes implementing in-app subscriptions              |
+| [NeftaSDK](neftasdk/)                   | SDK for Nefta Ad Network                                            |
+| [Usercentrics](usercentrics/)           | Consent Management Platform                                         |
+| [YabbiADs](yabbiads/)                   | YabbiAds SDK for mobile advertising                                 |
 
 ## Version of AltPods to framework version mapping
 
-| Name                                     |        |
-|------------------------------------------|--------|
-| [Amazon Pub.Services](amznpubservices/)  | 4.9.2  |
-| [AppHarbrSDK](appharbrsdk/)              | 1.14.3 |
-| [BitLabs](bitlabs/)                      | 3.2.1  |
-| [IubendaMobileSDK](iubenda/)             | 2.6.8  |
-| [NeftaSDK](neftasdk/)                    | 3.3.0  |
-| [Usercentrics](usercentrics/)            | 2.15.2 |
-| [YabbiADs](yabbiads/)                    | 1.6.0  |
+| Name                                    |          |
+|-----------------------------------------|----------|
+| [Amazon Pub.Services](amznpubservices/) | 4.9.2    |
+| [AppHarbrSDK](appharbrsdk/)             | 1.14.3   |
+| [BitLabs](bitlabs/)                     | 3.2.1    |
+| [BrightSDK](brightsdk/)                 | 1.486.56 |
+| [IubendaMobileSDK](iubenda/)            | 2.6.8    |
+| [NeftaSDK](neftasdk/)                   | 3.3.0    |
+| [Usercentrics](usercentrics/)           | 2.15.2   |
+| [YabbiADs](yabbiads/)                   | 1.6.0    |

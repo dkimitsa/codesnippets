@@ -1,0 +1,98 @@
+package: org.robovm.pods.brightsdk
+include: [foundation, uikit, coregraphics, coreanimation]
+framework: brdsdk
+clang_args: ['-x', 'objective-c']
+headers:
+    - "#import <UIKit/UIKit.h>"
+    - brdsdk-Swift.h
+
+private_typedefs: {}
+
+typedefs: {}
+
+enums:
+    BrightAPIChoice: { }
+    BrightAPIChoiceTriggerType: { }
+    BrightAPIConsentPresentationStyle: { }
+    BrightAPIAuthorizationStatus: { }
+
+classes:
+    ColorSettings:
+        methods:
+            '-initWithBackground_color:title_color:consent_text_color:consent_links_color:privacy_text_color:privacy_links_color:qr_foreground_color:qr_background_color:icons_foreground_color:icons_background_color:':
+                name: init
+    ConsentActionInfo:
+        methods:
+            '-initWithBackgroundImage:textImage:backgroundColor:textColor:':
+                name: init
+            '-initWithBackgroundName:textName:in:':
+                name: init
+    ConsentBackgroundImage:
+        methods:
+            '-initWithPortrait:landscape:scaleMode:':
+                name: init
+            '-initWithPortraitName:landscapeName:scaleMode:in:':
+                name: init
+    ConsentFontsInfo:
+        methods:
+            '-initWithTitleText:mainText:licenseText:iconsText:buttonsText:':
+                name: init
+            '-setTitleTextWithNameOrPath:size:':
+                name: setTitleText
+            '-setMainTextWithNameOrPath:size:':
+                name: setMainText
+            '-setLicenseTextWithNameOrPath:size:':
+                name: setLicenseText
+            '-setIconsTextWithNameOrPath:size:':
+                name: setIconsText
+            '-setButtonsTextWithNameOrPath:size:':
+                name: setButtonsText
+    brd_api: #since 13.0
+        name: BrdApi
+        methods:
+            '-initWithBenefit:agree_btn:disagree_btn:opt_out_instructions:appicon:cwd:sys_app_id:language:colors:background_image:opt_in_info:opt_out_info:fonts:skip_consent:campaign:error:on_choice_change:':
+                name: init
+            '+externalOptInFrom:error:':
+                throws: NSErrorException
+                name: externalOptIn
+            '+show_consent:benefit:agree_btn:disagree_btn:language:presentationStyle:':
+                name: showConsent
+            '+get_uuid':
+                name: getUuid
+            '+clear_choice':
+                name: clearChoice
+            '+get_choice':
+                name: getChoice
+            '+consent_shown':
+                name: isConsentShown
+            '+external_opt_inAndReturnError:':
+                name: externalOptInAndReturn
+                throws: NSErrorException
+            '+opt_out':
+                name: optOut
+protocols:
+
+functions:
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    SWIFT_(.*):
+        exclude: true
+
+    BrightAPIAuthorizationStatusDomain:
+        class: BrightAPIAuthorizationStatus
+        name: AuthorizationStatusDomain
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: '#{g[0]}'
