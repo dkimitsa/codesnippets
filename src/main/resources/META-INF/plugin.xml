@@ -1,0 +1,32 @@
+<idea-plugin>
+    <id>com.robovmx.build.maven4devkit</id>
+    <version>1.0.0</version>
+
+    <name>Support for Maven Based DevKit Projects</name>
+    <category>UI</category>
+
+    <vendor email="demyan.kimitsa@gmail.com" url="https://dkimitsa.github.io">Demyan Kimitsa</vendor>
+
+    <idea-version since-build="222"/>
+
+    <description>
+        <![CDATA[
+            Support for importing Maven based DevKit Plugin projects.<br>
+            Hacks module type from `JAVA_MODULE` to `PLUGIN_MODULE`
+        ]]>
+    </description>
+
+    <change-notes>
+        <![CDATA[
+            Tested with Idea 2023.1 Beta
+        ]]>
+    </change-notes>
+
+    <depends>org.jetbrains.idea.maven</depends>
+    <depends>DevKit</depends>
+
+    <extensions defaultExtensionNs="org.jetbrains.idea.maven">
+        <importer implementation="com.robovmx.idea.DevKitPluginMavenModuleImporter"/>
+    </extensions>
+
+</idea-plugin>
