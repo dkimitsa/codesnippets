@@ -1,2 +1,4 @@
-# codesnippets
-contains different code/projects to demonstrace specific cases, mostly RoboVM related
+# codesnippets -- various/unsorted 
+Collection of unsorted snippets, used to demonstrate/investigate issue/feature. 
+Check individual folder for README.md for description (if there is any)
+ 
