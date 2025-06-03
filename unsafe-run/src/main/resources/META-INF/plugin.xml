@@ -1,0 +1,29 @@
+<idea-plugin url="https://github.com/dkimitsa/codesnippets/tree/idea/plugin/unsafe-run">
+    <id>com.robovmx.build.unsaferun</id>
+    <version>1.0.0</version>
+
+    <name>Unsafe run Kotlin function</name>
+    <vendor email="demyan.kimitsa@gmail.com" url="https://dkimitsa.github.io">Demyan Kimitsa</vendor>
+
+    <idea-version since-build="232.8660.185"/>
+
+    <description>
+        <![CDATA[
+            Unsafely runs Kotlin function, previews Intellij Idea UI DSL
+        ]]>
+    </description>
+
+    <change-notes>
+        <![CDATA[
+        ]]>
+    </change-notes>
+
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.lineMarkerProvider language="kotlin" implementationClass="com.robovmx.idea.UnsafeRunLineMarkerProvider"/>
+        <notificationGroup id="UnsafeRunNotificationsId" displayType="BALLOON" bundle="messages.TaskBundle" key="notification.group.tasks"/>
+    </extensions>
+
+</idea-plugin>
