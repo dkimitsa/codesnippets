@@ -9,6 +9,7 @@
 
 gradle/
 .idea/
+.intellijPlatform/
 .gradle/
 gradlew
 gradlew.bat

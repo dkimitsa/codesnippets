@@ -1,6 +1,10 @@
+@file:Suppress("UnstableApiUsage")
+
 package com.robovmx.idea
 
+import com.intellij.openapi.application.invokeAndWaitIfNeeded
 import com.intellij.openapi.application.invokeLater
+import com.intellij.openapi.application.runReadAction
 import com.intellij.openapi.compiler.CompilerManager
 import com.intellij.openapi.progress.ProgressIndicator
 import com.intellij.openapi.progress.ProgressManager
@@ -17,60 +21,65 @@ import kotlin.time.measureTime
 
 internal object UnsafeRunFunctionRunner {
 
-    fun runFunction(function: KtNamedFunction) = function.runWithContext { ctx ->
+    fun runFunction(function: KtNamedFunction) = runBackgroundTask(function.project) { progress ->
+        val ctx = runReadAction { function.getRunContext() }
+
         // get tool window early to clean it up and focus while busy
-        val toolwindow = ctx.project.getUnsafeRunToolWindow()
-        val consoleView = toolwindow.addConsoleView()
+        val (toolwindow, consoleView) = invokeAndWaitIfNeeded {
+            val toolwindow = ctx.project.getUnsafeRunToolWindow()
+            val consoleView = toolwindow.addConsoleView()
+            toolwindow to consoleView
+        }
 
         // start build while at EDT
         val future = CompletableFuture<Boolean>()
-        val compilerManager = CompilerManager.getInstance(ctx.project)
-        compilerManager.make(ctx.module) { aborted, errors, _, _ ->
-            future.complete(!aborted && errors == 0)
+        invokeAndWaitIfNeeded {
+            val compilerManager = CompilerManager.getInstance(ctx.project)
+            compilerManager.make(ctx.module) { aborted, errors, _, _ ->
+                future.complete(!aborted && errors == 0)
+            }
         }
 
-        runBackgroundTask(function.project) { progress ->
-            progress.text = "Building module ${ctx.module.name}"
+        progress.text = "Building module ${ctx.module.name}"
 
-            // wait for compile result
-            if (!future.get()) throw IllegalStateException("Build failed or canceled!")
+        // wait for compile result
+        if (!future.get()) throw IllegalStateException("Build failed or canceled!")
 
-            // prepare for reflection run (class path, method etc)
-            val launchLambda = ctx.prepareReflectionRun()
+        // prepare for reflection run (class path, method etc)
+        val launchLambda = ctx.prepareReflectionRun()
 
-            // Invoke the function dynamically
-            consoleView.captureOutputOf {
-                val invokeThread = thread {
-                    try {
-                        progress.text = "Running function ${ctx.jvmMethodName}"
-                        println("--- Launching function ${ctx.jvmMethodName}")
-                        println("--- JVM class name: ${ctx.jvmMethodName}")
+        // Invoke the function dynamically
+        consoleView.captureOutputOf {
+            val invokeThread = thread {
+                try {
+                    progress.text = "Running function ${ctx.jvmMethodName}"
+                    println("--- Launching function ${ctx.jvmMethodName}")
+                    println("--- JVM class name: ${ctx.jvmClassName}")
 
-                        val result: Any?
-                        val executionTime = measureTime { result = launchLambda() }
-                        println("--- finished running in $executionTime")
-                        if (result is Component) {
-                            println("--- result is a AWT UI component, displaying in panel...")
-                            invokeLater {
-                                toolwindow.attachUiPreview(result)
-                            }
+                    val result: Any?
+                    val executionTime = measureTime { result = launchLambda() }
+                    println("--- finished running in $executionTime")
+                    if (result is Component) {
+                        println("--- result is a AWT UI component, displaying in panel...")
+                        invokeLater {
+                            toolwindow.attachUiPreview(result)
                         }
-                    } catch (e: Exception) {
-                        // consider as execution of target function exception, print to output
-                        e.printStackTrace()
                     }
+                } catch (e: Exception) {
+                    // consider as execution of target function exception, print to output
+                    e.printStackTrace()
                 }
-                // support canceling
-                while (invokeThread.isAlive) {
-                    if (progress.isCanceled) {
-                        progress.text = "Canceling function ${ctx.jvmMethodName}"
-                        invokeThread.interrupt()
-                        break
-                    }
-                    Thread.sleep(50)
-                }
-                invokeThread.join()
             }
+            // support canceling
+            while (invokeThread.isAlive) {
+                if (progress.isCanceled) {
+                    progress.text = "Canceling function ${ctx.jvmMethodName}"
+                    invokeThread.interrupt()
+                    break
+                }
+                Thread.sleep(50)
+            }
+            invokeThread.join()
         }
     }
 
