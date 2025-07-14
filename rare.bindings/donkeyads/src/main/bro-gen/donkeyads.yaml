@@ -1,0 +1,244 @@
+package: org.robovm.pods.donkeyads
+include: [foundation, uikit, coregraphics, coreanimation]
+framework: DonkeyAdsSDKKitRvm
+clang_args: ['-x', 'objective-c']
+headers:
+    - "#import <UIKit/UIKit.h>"
+    - DonkeyAdsSDKKitStubs.h
+    - DonkeyAdsSDKKitRvm-Swift.h
+
+private_typedefs: {}
+
+typedefs: {}
+
+enums:
+    AssetTypeRvm: { name: AssetType }
+    QuestionTypeRvm: { name: QuestionType }
+    SurveyErrorCodeRvm: { name: SurveyError, nserror: true }
+    CompletionStatusRvm: { name: CompletionStatus }
+    SurveyThemeManagerRvm_Theme: { name: SurveyThemeManager_Theme } # to be moved manually inside SurveyThemeManager
+    ValidationErrorTypeRvm: { name: ValidationErrorType}
+classes:
+    AdAssetRvm:
+        name: AdAsset
+    AdListResponseRvm:
+        name: AdListResponse
+    AdSdkRvm:
+        name: AdSdk
+        methods:
+            '+configureWithToken:':
+                name: configure
+            '+configureWithToken:userId:':
+                name: configure
+            '+isNamedAdAvailableWithName:':
+                name: isNamedAdAvailable
+            '+showNamedAdFrom:name:overrideUrl:externalTracker:':
+                name: showNamedAd
+            '+showNamedAdFrom:name:overrideUrl:':
+                name: showNamedAd
+            '+checkLoadedAssetsWithNamedOnly:':
+                name: checkLoadedAssets
+            '+checkLoadedAssetIdsWithNamedOnly:':
+                name: checkLoadedAssetIds
+    AnswerRvm:
+        name: Answer
+    AnswerStateRvm:
+        name: AnswerState
+        methods:
+            '-setAnswerWithQuestionId:answer:':
+                name: setAnswer
+            '-getAnswerWithQuestionId:':
+                name: getAnswer
+            '-hasAnswerWithQuestionId:':
+                name: hasAnswer
+            '-removeAnswerWithQuestionId:':
+                name: removeAnswer
+            '-startQuestionTimingWithQuestionId:':
+                name: startQuestionTiming
+            '-stopQuestionTimingWithQuestionId:':
+                name: stopQuestionTiming
+            '-getQuestionTimeSpentWithQuestionId:':
+                name: getQuestionTimeSpent
+            '-setAnswerTimestampWithQuestionId:timestamp:':
+                name: setAnswerTimestamp
+            '-getAnswerTimestampWithQuestionId:':
+                name: getAnswerTimestamp
+            '-setAnswerWithTimingWithQuestionId:answer:':
+                name: setAnswerWithTiming
+    BaseQuestionCard: {}
+    CacheManagerRvm:
+        name: CacheManager
+        methods:
+            '-updateAssetListWith:':
+                name: updateAssetList
+            '-updateAssetListAndCleanupOutdatedWith:':
+                name: updateAssetListAndCleanupOutdated
+            '-finalizeDownloadWithAsset:sourceURL:isSourceHoldingURL:':
+                name: finalizeDownload
+            '-markDownloadFailedWithAssetId:':
+                name: markDownloadFailed
+            '-getLoadedAssetsWithNamedOnly:':
+                name: getLoadedAssets
+            '-namedAdWithName:':
+                name: getNamedAd
+            '-markDownloadSkippedDueToNetworkWithAssetId:':
+                name: markDownloadSkippedDueToNetwork
+            '-getLatestAssetWithId:':
+                name: getLatestAsset
+    CacheManagerRvm_CacheStats:
+        name: CacheManager_CacheStats # to be moved inside CacheManager.CacheStats
+    DonkeyAdsLoggerRvm:
+        name: DonkeyAdsLogger
+        methods:
+            '+log:from:':
+                name: log
+    ImpressionHasherRvm:
+        name: ImpressionHasher
+        methods:
+            '+generateImpressionHashWithAssetId:timestamp:':
+                name: generateImpressionHash
+    LocalizationManagerRvm:
+        name: LocalizationManager
+        methods:
+            '-localizedStringFor:params:':
+                name: getLocalizedString
+    MultiChoiceQuestionView: {}
+    OptionRvm:
+        name: Option
+    QuestionRvm:
+        name: Question
+    QuestionViewFactoryRvm:
+        name: QuestionViewFactory
+    RatingQuestionView: {}
+    ResponseDataRvm:
+        name: ResponseData
+    ScaleQuestionView: {}
+    SectionDescriptionView: {}
+    SectionRvm:
+        name: Section
+    SingleChoiceQuestionView: {}
+    SurveyManagerRvm:
+        name: SurveyManager
+        methods:
+            '-getCachedSurveyWithId:':
+                name: getCachedSurvey
+            '-isSurveyAvailableWithId:':
+                name: isSurveyAvailable
+    SurveyNetworkClientRvm:
+        name: SurveyNetworkClient
+        methods:
+            '-testMultipleEndpointsWithCompletion:':
+                name: testMultipleEndpoints
+            '-testConnectivityWithCompletion:':
+                name: testConnectivity
+            '-fetchSurveyWithExternalKey:apiToken:completion:':
+                name: fetchSurvey
+            '-listAvailableSurveysWithApiToken:completion:':
+                name: listAvailableSurveys
+            '-submitSurveyResponseWithResponse:apiToken:completion:':
+                name: submitSurveyResponse
+    SurveyProgressTrackerRvm:
+        name: SurveyProgressTracker
+    SurveyResponseRvm:
+        name: SurveyResponse
+    SurveyRvm:
+        name: Survey
+    SurveySDKRvm:
+        name: SurveySDK
+        methods:
+            '+initialize:apiToken:':
+                name: initialize
+            '+testNetworkConnectivityWithCallback:':
+                name: testNetworkConnectivity
+            '+debugNetworkConnectivityWithCallback:':
+                name: debugNetworkConnectivity
+            '+fetchSurveyFromBackendWithExternalKey:skipConnectivityTest:callback:':
+                name: fetchSurveyFromBackend
+            '+listAvailableSurveysWithCallback:':
+                name: listAvailableSurveys
+            '+startSurveyFrom:surveyId:reportingKey:customReward:themeOverride:orientationOverride:':
+                name: startSurveyFromSurveyId
+            '+startSurveyFrom:externalKey:reportingKey:customReward:themeOverride:orientationOverride:':
+                name: startSurveyFromExternalKey
+            '+submitSurveyResponse:completion:':
+                name: submitSurveyResponse
+            '+createSurveyResponseWithSurvey:answers:reportingKey:customReward:startTime:userId:':
+                name: createSurveyResponse
+            '+createSurveyResponseWithSurvey:answerState:reportingKey:customReward:startTime:userId:':
+                name: createSurveyResponse
+    SurveySummaryRvm:
+        name: SurveySummary
+    SurveyThemeManagerRvm:
+        name: SurveyThemeManager
+        methods:
+            '-applyTheme:to:':
+                name: applyTheme
+    SurveyValidationHelperRvm:
+        name: SurveyValidationHelper
+        methods:
+            '+validateAnswerState:for:':
+                name: validateAnswerState
+    SurveyViewController: {}
+    TextQuestionView: {}
+    ValidationErrorRvm:
+        name: ValidationErrorRvm
+
+protocols:
+    DonkeyAdsDelegateRvm:
+        name: DonkeyAdsDelegate
+        methods:
+            '-adDidShow:impressionHash:':
+                name: adDidShow
+            '-adDidClick:impressionHash:':
+                name: adDidClick
+            '-adDidClose:impressionHash:':
+                name: adDidClose
+    QuestionViewDelegateRvm:
+        name: QuestionViewDelegate
+        skip_adapter: true
+        methods:
+            '-questionView:didUpdateAnswer:for:':
+                name: didUpdateAnswer
+    QuestionViewRvm:
+        name: QuestionView
+        skip_adapter: true
+        properties:
+            'rvm_delegate':
+                name: delegate
+        methods:
+            '-rvm_configureWithQuestion:answerState:':
+                name: configure
+            '-rvm_saveAnswer':
+                name: saveAnswer
+    SurveyLifecycleListenerRvm:
+        name: SurveyLifecycleListener
+        methods:
+            '-onSurveyStepAnswered::':
+                name: onSurveyStepAnswered
+            '-onSurveyCompleted:rewardPoints::':
+                name: onSurveyCompleted
+            '-onSurveyCancelled::':
+                name: onSurveyCancelled
+            '-onSurveyFailed:error::':
+                name: onSurveyFailed
+
+functions:
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    SWIFT_(.*):
+        exclude: true
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: '#{g[0]}'

@@ -1,0 +1,5 @@
+<config>
+    <frameworks>
+        <framework>brdsdk</framework>
+    </frameworks>
+</config>
