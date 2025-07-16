@@ -1,5 +1,6 @@
 <config>
     <frameworks>
-        <framework>brdsdk</framework>
+        <framework>DonkeyAdsSDKKit</framework>
+        <framework>DonkeyAdsSDKKitRvm</framework>
     </frameworks>
 </config>
