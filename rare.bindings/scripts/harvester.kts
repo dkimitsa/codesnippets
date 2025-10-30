@@ -226,6 +226,29 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
             """.trimIndent()
         )
     },
+    "AdjustSdk" to { framework ->
+        val artifact = "$framework.framework"
+        val artifactLocation = downloadFolder.extend("AdjustSdk-iOS-tvOS-xcframework/AdjustSdk.xcframework/ios-arm64/$artifact")
+        fun versionFromHeader(): String {
+            // extracts version from Podfile.lock file
+            val f = artifactLocation.extend("Headers/Adjust.h")
+            return f.readLines().find { it.startsWith("//  V") }
+                ?.substringAfter("V")
+                ?: error("Version not found in ${readmeFile.canonicalPath}")
+        }
+        processFramework(
+            artifact = artifact,
+            moduleFolder = "adjust/",
+            sourceHeadersDir = artifactLocation.headers,
+            yaml = "adjust.yaml",
+            version = { versionFromHeader() },
+            instruction = """
+                1. download latest AdjustSdk-iOS-tvOS-Dynamic-?.?.?.xcframework.zip from https://github.com/adjust/ios_sdk/releases
+                2. unpack 
+                2. expected location ${artifactLocation} 
+            """.trimIndent()
+        )
+    },
 
 )
 

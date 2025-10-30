@@ -10,6 +10,7 @@
 
 | Name                                    | Description                                                         |
 |-----------------------------------------|---------------------------------------------------------------------|
+| [AdjustSdk](adjust/)                    | end-to-end solution for every stage of the app marketing journey.   |
 | [Amazon Pub.Services](amznpubservices/) | Anazob Publisher Services                                           |
 | [AppHarbrSDK](appharbrsdk/)             | Secure, High-Quality Ads for Optimal User Experience                |
 | [BitLabs](bitlabs/)                     | BitLabs - Game Monetization with Rewarded Surveys                   |
@@ -23,6 +24,7 @@
 
 | Name                                    |          |
 |-----------------------------------------|----------|
+| [AdjustSdk](adjust/)                    | 5.4.6    |
 | [Amazon Pub.Services](amznpubservices/) | 4.9.2    |
 | [AppHarbrSDK](appharbrsdk/)             | 1.14.3   |
 | [BitLabs](bitlabs/)                     | 3.2.1    |
