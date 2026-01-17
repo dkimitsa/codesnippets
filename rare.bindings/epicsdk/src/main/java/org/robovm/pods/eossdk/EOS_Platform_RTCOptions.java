@@ -1,0 +1,69 @@
+/*
+ * Copyright (C) 2013-2015 RoboVM AB
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.robovm.pods.eossdk;
+
+/*<imports>*/
+import java.io.*;
+import java.nio.*;
+import java.util.*;
+import org.robovm.objc.*;
+import org.robovm.objc.annotation.*;
+import org.robovm.objc.block.*;
+import org.robovm.rt.*;
+import org.robovm.rt.annotation.*;
+import org.robovm.rt.bro.*;
+import org.robovm.rt.bro.annotation.*;
+import org.robovm.rt.bro.ptr.*;
+import org.robovm.apple.foundation.*;
+import org.robovm.apple.uikit.*;
+import org.robovm.apple.coregraphics.*;
+import org.robovm.apple.coreanimation.*;
+/*</imports>*/
+
+/*<javadoc>*/
+
+/*</javadoc>*/
+/*<annotations>*//*</annotations>*/
+/*<visibility>*/public/*</visibility>*/ class /*<name>*/EOS_Platform_RTCOptions/*</name>*/ 
+    extends /*<extends>*/Struct<EOS_Platform_RTCOptions>/*</extends>*/ 
+    /*<implements>*//*</implements>*/ {
+
+    /*<ptr>*/public static class EOS_Platform_RTCOptionsPtr extends Ptr<EOS_Platform_RTCOptions, EOS_Platform_RTCOptionsPtr> {}/*</ptr>*/
+    /*<bind>*/
+    /*</bind>*/
+    /*<constants>*//*</constants>*/
+    /*<constructors>*/
+    public EOS_Platform_RTCOptions() {}
+    public EOS_Platform_RTCOptions(int ApiVersion, VoidPtr PlatformSpecificOptions, EOS_ERTCBackgroundMode BackgroundMode, VoidPtr Reserved) {
+        this.setApiVersion(ApiVersion);
+        this.setPlatformSpecificOptions(PlatformSpecificOptions);
+        this.setBackgroundMode(BackgroundMode);
+        this.setReserved(Reserved);
+    }
+    /*</constructors>*/
+    /*<properties>*//*</properties>*/
+    /*<members>*/
+    @StructMember(0) public native int getApiVersion();
+    @StructMember(0) public native EOS_Platform_RTCOptions setApiVersion(int ApiVersion);
+    @StructMember(1) public native VoidPtr getPlatformSpecificOptions();
+    @StructMember(1) public native EOS_Platform_RTCOptions setPlatformSpecificOptions(VoidPtr PlatformSpecificOptions);
+    @StructMember(2) public native EOS_ERTCBackgroundMode getBackgroundMode();
+    @StructMember(2) public native EOS_Platform_RTCOptions setBackgroundMode(EOS_ERTCBackgroundMode BackgroundMode);
+    @StructMember(3) public native VoidPtr getReserved();
+    @StructMember(3) public native EOS_Platform_RTCOptions setReserved(VoidPtr Reserved);
+    /*</members>*/
+    /*<methods>*//*</methods>*/
+}

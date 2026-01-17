@@ -1,0 +1,877 @@
+package: org.robovm.pods.eossdk
+include: [foundation, uikit, coregraphics, coreanimation]
+framework: EOSSDK
+clang_args: ['-x', 'objective-c']
+headers:
+    - eos_sdk.h
+    - eos_auth.h
+
+private_typedefs: {}
+
+typedefs: {}
+
+enums:
+    EOS_EResult: { }
+    EOS_ELoginStatus: { }
+    EOS_EAttributeType: { }
+    EOS_EComparisonOp: { }
+    EOS_ELogicalCombineOp: { }
+    EOS_EExternalAccountType: { }
+    EOS_EExternalCredentialType: { }
+    EOS_ELoginCredentialType: { }
+    EOS_EAuthTokenType: { }
+    EOS_EAuthScopeFlags: { }
+    EOS_ELinkAccountFlags: { }
+    EOS_EIntegratedPlatformManagementFlags: { }
+    EOS_EIntegratedPlatformPreLogoutAction: { }
+    EOS_ERTCBackgroundMode: { }
+    EOS_EApplicationStatus: { }
+    EOS_ENetworkStatus: { }
+    EOS_EDesktopCrossplayStatus: { }
+    EOS_EUserControllerType: { }
+    EOS_EMetricsAccountIdType: { }
+    EOS_EOwnershipStatus: { }
+    EOS_EEcomItemType: { }
+    EOS_ECheckoutOrientation: { }
+    EOS_UI_EKeyCombination: { }
+    EOS_UI_EInputStateButtonFlags: { }
+    EOS_UI_ENotificationLocation: { }
+    EOS_EFriendsStatus: { }
+    EOS_Presence_EStatus: { }
+    EOS_ENATType: { }
+    EOS_EPacketReliability: { }
+    EOS_EConnectionEstablishedType: { }
+    EOS_ENetworkConnectionType: { }
+    EOS_EConnectionClosedReason: { }
+    EOS_ERelayControl: { }
+    EOS_EOnlineSessionState: { }
+    EOS_ESessionAttributeAdvertisementType: { }
+    EOS_EOnlineSessionPermissionLevel: { }
+    EOS_ELobbyPermissionLevel: { }
+    EOS_ELobbyAttributeVisibility: { }
+    EOS_ELobbyMemberStatus: { }
+    EOS_ELobbyRTCRoomJoinActionType: { }
+    EOS_PlayerDataStorage_EReadResult: { }
+    EOS_PlayerDataStorage_EWriteResult: { }
+    EOS_TitleStorage_EReadResult: { }
+    EOS_ELeaderboardAggregation: { }
+    EOS_EModEnumerationType: { }
+    EOS_EAntiCheatCommonClientType: { }
+    EOS_EAntiCheatCommonClientPlatform: { }
+    EOS_EAntiCheatCommonClientAction: { }
+    EOS_EAntiCheatCommonClientActionReason: { }
+    EOS_EAntiCheatCommonClientAuthStatus: { }
+    EOS_EAntiCheatCommonClientFlags: { }
+    EOS_EAntiCheatCommonClientInput: { }
+    EOS_EAntiCheatCommonEventType: { }
+    EOS_EAntiCheatCommonEventParamType: { }
+    EOS_EAntiCheatCommonGameRoundCompetitionType: { }
+    EOS_EAntiCheatCommonPlayerMovementState: { }
+    EOS_EAntiCheatCommonPlayerTakeDamageSource: { }
+    EOS_EAntiCheatCommonPlayerTakeDamageType: { }
+    EOS_EAntiCheatCommonPlayerTakeDamageResult: { }
+    EOS_EAntiCheatClientMode: { }
+    EOS_EAntiCheatClientViolationType: { }
+    EOS_EPlayerReportsCategory: { }
+    EOS_ESanctionAppealReason: { }
+    EOS_EKWSPermissionStatus: { }
+    EOS_ERTCParticipantStatus: { }
+    EOS_ERequestToJoinResponse: { }
+
+classes:
+    # structs
+    EOS_AuthHandle: { }
+    EOS_ContinuanceTokenDetails: { }
+    EOS_EpicAccountIdDetails: { }
+    EOS_ProductUserIdDetails: { }
+    EOS_Auth_AccountFeatureRestrictedInfo: { }
+    EOS_Auth_Token: { }
+    EOS_Auth_Credentials: { }
+    EOS_Auth_PinGrantInfo: { }
+    EOS_Auth_LoginOptions: { }
+    EOS_Auth_LoginCallbackInfo: { }
+    EOS_Auth_LogoutOptions: { }
+    EOS_Auth_LogoutCallbackInfo: { }
+    EOS_Auth_LinkAccountOptions: { }
+    EOS_Auth_LinkAccountCallbackInfo: { }
+    EOS_Auth_VerifyUserAuthOptions: { }
+    EOS_Auth_VerifyUserAuthCallbackInfo: { }
+    EOS_Auth_CopyUserAuthTokenOptions: { }
+    EOS_Auth_CopyIdTokenOptions: { }
+    EOS_Auth_IdToken: { }
+    EOS_Auth_QueryIdTokenOptions: { }
+    EOS_Auth_QueryIdTokenCallbackInfo: { }
+    EOS_Auth_VerifyIdTokenOptions: { }
+    EOS_Auth_VerifyIdTokenCallbackInfo: { }
+    EOS_Auth_AddNotifyLoginStatusChangedOptions: { }
+    EOS_Auth_DeletePersistentAuthOptions: { }
+    EOS_Auth_DeletePersistentAuthCallbackInfo: { }
+    EOS_Auth_LoginStatusChangedCallbackInfo: { }
+    EOS_AchievementsHandle: { }
+    EOS_ActiveSessionHandle: { }
+    EOS_AntiCheatClientHandle: { }
+    EOS_AntiCheatServerHandle: { }
+    EOS_ConnectHandle: { }
+    EOS_CustomInvitesHandle: { }
+    EOS_EcomHandle: { }
+    EOS_Ecom_TransactionHandle: { }
+    EOS_FriendsHandle: { }
+    EOS_IntegratedPlatformHandle: { }
+    EOS_IntegratedPlatformOptionsContainerHandle: { }
+    EOS_KWSHandle: { }
+    EOS_LeaderboardsHandle: { }
+    EOS_LobbyDetailsHandle: { }
+    EOS_LobbyHandle: { }
+    EOS_LobbyModificationHandle: { }
+    EOS_LobbySearchHandle: { }
+    EOS_MetricsHandle: { }
+    EOS_ModsHandle: { }
+    EOS_P2PHandle: { }
+    EOS_PlatformHandle: { }
+    EOS_PlayerDataStorageFileTransferRequestHandle: { }
+    EOS_PlayerDataStorageHandle: { }
+    EOS_PresenceHandle: { }
+    EOS_PresenceModificationHandle: { }
+    EOS_ProgressionSnapshotHandle: { }
+    EOS_RTCAdminHandle: { }
+    EOS_RTCHandle: { }
+    EOS_ReportsHandle: { }
+    EOS_SanctionsHandle: { }
+    EOS_SessionDetailsHandle: { }
+    EOS_SessionModificationHandle: { }
+    EOS_SessionSearchHandle: { }
+    EOS_SessionsHandle: { }
+    EOS_StatsHandle: { }
+    EOS_TitleStorageFileTransferRequestHandle: { }
+    EOS_TitleStorageHandle: { }
+    EOS_UIHandle: { }
+    EOS_UserInfoHandle: { }
+    EOS_IntegratedPlatform_Options: { }
+    EOS_IntegratedPlatform_Steam_Options: { }
+    EOS_IntegratedPlatform_CreateIntegratedPlatformOptionsContainerOptions: { }
+    EOS_IntegratedPlatformOptionsContainer_AddOptions: { }
+    EOS_IntegratedPlatform_SetUserLoginStatusOptions: { }
+    EOS_IntegratedPlatform_AddNotifyUserLoginStatusChangedOptions: { }
+    EOS_IntegratedPlatform_UserLoginStatusChangedCallbackInfo: { }
+    EOS_IntegratedPlatform_SetUserPreLogoutCallbackOptions: { }
+    EOS_IntegratedPlatform_UserPreLogoutCallbackInfo: { }
+    EOS_IntegratedPlatform_ClearUserPreLogoutCallbackOptions: { }
+    EOS_IntegratedPlatform_FinalizeDeferredUserLogoutOptions: { }
+    EOS_Platform_ClientCredentials: { }
+    EOS_Platform_RTCOptions: { }
+    EOS_Platform_Options: { }
+    EOS_Platform_GetDesktopCrossplayStatusOptions: { }
+    EOS_Platform_DesktopCrossplayStatusInfo: { }
+    EOS_Initialize_ThreadAffinity: { }
+    EOS_InitializeOptions: { }
+    EOS_Metrics_BeginPlayerSessionOptions: { }
+    _tagEOS_Metrics_BeginPlayerSessionOptions$InnerStruct$1:
+        name: EOS_Metrics_BeginPlayerSessionOptions_AccountId
+    EOS_Metrics_EndPlayerSessionOptions: { }
+    _tagEOS_Metrics_EndPlayerSessionOptions$InnerStruct$1:
+        name: EOS_Metrics_EndPlayerSessionOptions_AccountId
+    EOS_Ecom_Entitlement: { }
+    EOS_Ecom_ItemOwnership: { }
+    EOS_Ecom_CatalogItem: { }
+    EOS_Ecom_CatalogOffer: { }
+    EOS_Ecom_KeyImageInfo: { }
+    EOS_Ecom_CatalogRelease: { }
+    EOS_Ecom_CheckoutEntry: { }
+    EOS_Ecom_QueryOwnershipOptions: { }
+    EOS_Ecom_QueryOwnershipCallbackInfo: { }
+    EOS_Ecom_QueryOwnershipBySandboxIdsOptions: { }
+    EOS_Ecom_SandboxIdItemOwnership: { }
+    EOS_Ecom_QueryOwnershipBySandboxIdsCallbackInfo: { }
+    EOS_Ecom_QueryOwnershipTokenOptions: { }
+    EOS_Ecom_QueryOwnershipTokenCallbackInfo: { }
+    EOS_Ecom_QueryEntitlementsOptions: { }
+    EOS_Ecom_QueryEntitlementsCallbackInfo: { }
+    EOS_Ecom_QueryEntitlementTokenOptions: { }
+    EOS_Ecom_QueryEntitlementTokenCallbackInfo: { }
+    EOS_Ecom_QueryOffersOptions: { }
+    EOS_Ecom_QueryOffersCallbackInfo: { }
+    EOS_Ecom_CheckoutOptions: { }
+    EOS_Ecom_CheckoutCallbackInfo: { }
+    EOS_Ecom_RedeemEntitlementsOptions: { }
+    EOS_Ecom_RedeemEntitlementsCallbackInfo: { }
+    EOS_Ecom_GetLastRedeemedEntitlementsCountOptions: { }
+    EOS_Ecom_CopyLastRedeemedEntitlementByIndexOptions: { }
+    EOS_Ecom_GetEntitlementsCountOptions: { }
+    EOS_Ecom_GetEntitlementsByNameCountOptions: { }
+    EOS_Ecom_CopyEntitlementByIndexOptions: { }
+    EOS_Ecom_CopyEntitlementByNameAndIndexOptions: { }
+    EOS_Ecom_CopyEntitlementByIdOptions: { }
+    EOS_Ecom_GetOfferCountOptions: { }
+    EOS_Ecom_CopyOfferByIndexOptions: { }
+    EOS_Ecom_CopyOfferByIdOptions: { }
+    EOS_Ecom_GetOfferItemCountOptions: { }
+    EOS_Ecom_CopyOfferItemByIndexOptions: { }
+    EOS_Ecom_CopyItemByIdOptions: { }
+    EOS_Ecom_GetOfferImageInfoCountOptions: { }
+    EOS_Ecom_CopyOfferImageInfoByIndexOptions: { }
+    EOS_Ecom_GetItemImageInfoCountOptions: { }
+    EOS_Ecom_CopyItemImageInfoByIndexOptions: { }
+    EOS_Ecom_GetItemReleaseCountOptions: { }
+    EOS_Ecom_CopyItemReleaseByIndexOptions: { }
+    EOS_Ecom_GetTransactionCountOptions: { }
+    EOS_Ecom_CopyTransactionByIndexOptions: { }
+    EOS_Ecom_CopyTransactionByIdOptions: { }
+    EOS_Ecom_Transaction_GetEntitlementsCountOptions: { }
+    EOS_Ecom_Transaction_CopyEntitlementByIndexOptions: { }
+    EOS_UI_ShowFriendsOptions: { }
+    EOS_UI_ShowFriendsCallbackInfo: { }
+    EOS_UI_HideFriendsOptions: { }
+    EOS_UI_HideFriendsCallbackInfo: { }
+    EOS_UI_GetFriendsVisibleOptions: { }
+    EOS_UI_GetFriendsExclusiveInputOptions: { }
+    EOS_UI_AddNotifyDisplaySettingsUpdatedOptions: { }
+    EOS_UI_OnDisplaySettingsUpdatedCallbackInfo: { }
+    EOS_UI_SetToggleFriendsKeyOptions: { }
+    EOS_UI_GetToggleFriendsKeyOptions: { }
+    EOS_UI_SetToggleFriendsButtonOptions: { }
+    EOS_UI_GetToggleFriendsButtonOptions: { }
+    EOS_UI_SetDisplayPreferenceOptions: { }
+    EOS_UI_AcknowledgeEventIdOptions: { }
+    EOS_UI_ReportInputStateOptions: { }
+    EOS_UI_PrePresentOptions: { }
+    EOS_UI_ShowBlockPlayerOptions: { }
+    EOS_UI_OnShowBlockPlayerCallbackInfo: { }
+    EOS_UI_ShowReportPlayerOptions: { }
+    EOS_UI_OnShowReportPlayerCallbackInfo: { }
+    EOS_UI_ShowNativeProfileOptions: { }
+    EOS_UI_ShowNativeProfileCallbackInfo: { }
+    EOS_UI_PauseSocialOverlayOptions: { }
+    EOS_UI_IsSocialOverlayPausedOptions: { }
+    EOS_UI_Rect: { }
+    EOS_UI_MemoryMonitorCallbackInfo: { }
+    EOS_UI_AddNotifyMemoryMonitorOptions: { }
+    EOS_Friends_QueryFriendsOptions: { }
+    EOS_Friends_QueryFriendsCallbackInfo: { }
+    EOS_Friends_SendInviteOptions: { }
+    EOS_Friends_SendInviteCallbackInfo: { }
+    EOS_Friends_AcceptInviteOptions: { }
+    EOS_Friends_AcceptInviteCallbackInfo: { }
+    EOS_Friends_RejectInviteOptions: { }
+    EOS_Friends_RejectInviteCallbackInfo: { }
+    EOS_Friends_GetFriendsCountOptions: { }
+    EOS_Friends_GetFriendAtIndexOptions: { }
+    EOS_Friends_GetStatusOptions: { }
+    EOS_Friends_AddNotifyFriendsUpdateOptions: { }
+    EOS_Friends_OnFriendsUpdateInfo: { }
+    EOS_Friends_GetBlockedUsersCountOptions: { }
+    EOS_Friends_GetBlockedUserAtIndexOptions: { }
+    EOS_Friends_AddNotifyBlockedUsersUpdateOptions: { }
+    EOS_Friends_OnBlockedUsersUpdateInfo: { }
+    EOS_Presence_DataRecord: { }
+    EOS_Presence_Info: { }
+    EOS_Presence_QueryPresenceOptions: { }
+    EOS_Presence_QueryPresenceCallbackInfo: { }
+    EOS_Presence_HasPresenceOptions: { }
+    EOS_Presence_CopyPresenceOptions: { }
+    EOS_Presence_CreatePresenceModificationOptions: { }
+    EOS_Presence_SetPresenceOptions: { }
+    EOS_Presence_SetPresenceCallbackInfo: { }
+    EOS_Presence_AddNotifyOnPresenceChangedOptions: { }
+    EOS_Presence_PresenceChangedCallbackInfo: { }
+    EOS_Presence_AddNotifyJoinGameAcceptedOptions: { }
+    EOS_Presence_JoinGameAcceptedCallbackInfo: { }
+    EOS_Presence_GetJoinInfoOptions: { }
+    EOS_PresenceModification_SetJoinInfoOptions: { }
+    EOS_PresenceModification_SetStatusOptions: { }
+    EOS_PresenceModification_SetRawRichTextOptions: { }
+    EOS_PresenceModification_SetDataOptions: { }
+    EOS_PresenceModification_DataRecordId: { }
+    EOS_PresenceModification_DeleteDataOptions: { }
+    EOS_P2P_SocketId: { }
+    EOS_P2P_SendPacketOptions: { }
+    EOS_P2P_GetNextReceivedPacketSizeOptions: { }
+    EOS_P2P_ReceivePacketOptions: { }
+    EOS_P2P_AddNotifyPeerConnectionRequestOptions: { }
+    EOS_P2P_OnIncomingConnectionRequestInfo: { }
+    EOS_P2P_AddNotifyPeerConnectionEstablishedOptions: { }
+    EOS_P2P_OnPeerConnectionEstablishedInfo: { }
+    EOS_P2P_AddNotifyPeerConnectionInterruptedOptions: { }
+    EOS_P2P_OnPeerConnectionInterruptedInfo: { }
+    EOS_P2P_AddNotifyPeerConnectionClosedOptions: { }
+    EOS_P2P_OnRemoteConnectionClosedInfo: { }
+    EOS_P2P_AcceptConnectionOptions: { }
+    EOS_P2P_CloseConnectionOptions: { }
+    EOS_P2P_CloseConnectionsOptions: { }
+    EOS_P2P_QueryNATTypeOptions: { }
+    EOS_P2P_OnQueryNATTypeCompleteInfo: { }
+    EOS_P2P_GetNATTypeOptions: { }
+    EOS_P2P_SetRelayControlOptions: { }
+    EOS_P2P_GetRelayControlOptions: { }
+    EOS_P2P_SetPortRangeOptions: { }
+    EOS_P2P_GetPortRangeOptions: { }
+    EOS_P2P_SetPacketQueueSizeOptions: { }
+    EOS_P2P_GetPacketQueueInfoOptions: { }
+    EOS_P2P_PacketQueueInfo: { }
+    EOS_P2P_AddNotifyIncomingPacketQueueFullOptions: { }
+    EOS_P2P_OnIncomingPacketQueueFullInfo: { }
+    EOS_P2P_ClearPacketQueueOptions: { }
+    EOS_Sessions_CreateSessionModificationOptions: { }
+    EOS_Sessions_UpdateSessionModificationOptions: { }
+    EOS_Sessions_SendInviteOptions: { }
+    EOS_Sessions_SendInviteCallbackInfo: { }
+    EOS_Sessions_RejectInviteOptions: { }
+    EOS_Sessions_RejectInviteCallbackInfo: { }
+    EOS_Sessions_QueryInvitesOptions: { }
+    EOS_Sessions_QueryInvitesCallbackInfo: { }
+    EOS_Sessions_GetInviteCountOptions: { }
+    EOS_Sessions_GetInviteIdByIndexOptions: { }
+    EOS_Sessions_CreateSessionSearchOptions: { }
+    EOS_Sessions_UpdateSessionOptions: { }
+    EOS_Sessions_UpdateSessionCallbackInfo: { }
+    EOS_Sessions_DestroySessionOptions: { }
+    EOS_Sessions_DestroySessionCallbackInfo: { }
+    EOS_Sessions_JoinSessionOptions: { }
+    EOS_Sessions_JoinSessionCallbackInfo: { }
+    EOS_Sessions_StartSessionOptions: { }
+    EOS_Sessions_StartSessionCallbackInfo: { }
+    EOS_Sessions_EndSessionOptions: { }
+    EOS_Sessions_EndSessionCallbackInfo: { }
+    EOS_Sessions_RegisterPlayersOptions: { }
+    EOS_Sessions_RegisterPlayersCallbackInfo: { }
+    EOS_Sessions_UnregisterPlayersOptions: { }
+    EOS_Sessions_UnregisterPlayersCallbackInfo: { }
+    EOS_SessionModification_SetBucketIdOptions: { }
+    EOS_SessionModification_SetHostAddressOptions: { }
+    EOS_SessionModification_SetPermissionLevelOptions: { }
+    EOS_SessionModification_SetJoinInProgressAllowedOptions: { }
+    EOS_SessionModification_SetMaxPlayersOptions: { }
+    EOS_SessionModification_SetInvitesAllowedOptions: { }
+    EOS_SessionModification_SetAllowedPlatformIdsOptions: { }
+    EOS_Sessions_AttributeData: { }
+    _tagEOS_Sessions_AttributeData$InnerStruct$1:
+        name: EOS_Sessions_AttributeData_Value
+    EOS_ActiveSession_CopyInfoOptions: { }
+    EOS_ActiveSession_GetRegisteredPlayerCountOptions: { }
+    EOS_ActiveSession_GetRegisteredPlayerByIndexOptions: { }
+    EOS_SessionDetails_Attribute: { }
+    EOS_SessionModification_AddAttributeOptions: { }
+    EOS_SessionModification_RemoveAttributeOptions: { }
+    EOS_SessionSearch_SetMaxResultsOptions: { }
+    EOS_SessionSearch_FindOptions: { }
+    EOS_SessionSearch_FindCallbackInfo: { }
+    EOS_SessionSearch_GetSearchResultCountOptions: { }
+    EOS_SessionSearch_CopySearchResultByIndexOptions: { }
+    EOS_SessionSearch_SetSessionIdOptions: { }
+    EOS_SessionSearch_SetTargetUserIdOptions: { }
+    EOS_SessionSearch_SetParameterOptions: { }
+    EOS_SessionSearch_RemoveParameterOptions: { }
+    EOS_SessionDetails_Settings: { }
+    EOS_SessionDetails_Info: { }
+    EOS_SessionDetails_CopyInfoOptions: { }
+    EOS_SessionDetails_GetSessionAttributeCountOptions: { }
+    EOS_SessionDetails_CopySessionAttributeByIndexOptions: { }
+    EOS_SessionDetails_CopySessionAttributeByKeyOptions: { }
+    EOS_ActiveSession_Info: { }
+    EOS_Sessions_CopyActiveSessionHandleOptions: { }
+    EOS_Sessions_AddNotifySessionInviteReceivedOptions: { }
+    EOS_Sessions_SessionInviteReceivedCallbackInfo: { }
+    EOS_Sessions_AddNotifySessionInviteAcceptedOptions: { }
+    EOS_Sessions_SessionInviteAcceptedCallbackInfo: { }
+    EOS_Sessions_AddNotifySessionInviteRejectedOptions: { }
+    EOS_Sessions_SessionInviteRejectedCallbackInfo: { }
+    EOS_Sessions_AddNotifyJoinSessionAcceptedOptions: { }
+    EOS_Sessions_JoinSessionAcceptedCallbackInfo: { }
+    EOS_Sessions_CopySessionHandleByInviteIdOptions: { }
+    EOS_Sessions_CopySessionHandleByUiEventIdOptions: { }
+    EOS_Sessions_CopySessionHandleForPresenceOptions: { }
+    EOS_Sessions_IsUserInSessionOptions: { }
+    EOS_Sessions_DumpSessionStateOptions: { }
+    EOS_Sessions_AddNotifyLeaveSessionRequestedOptions: { }
+    EOS_Sessions_LeaveSessionRequestedCallbackInfo: { }
+    EOS_Sessions_AddNotifySendSessionNativeInviteRequestedOptions: { }
+    EOS_Sessions_SendSessionNativeInviteRequestedCallbackInfo: { }
+    EOS_LobbyDetails_Info: { }
+    EOS_Lobby_LocalRTCOptions: { }
+    EOS_Lobby_CreateLobbyOptions: { }
+    EOS_Lobby_CreateLobbyCallbackInfo: { }
+    EOS_Lobby_DestroyLobbyOptions: { }
+    EOS_Lobby_DestroyLobbyCallbackInfo: { }
+    EOS_Lobby_JoinLobbyOptions: { }
+    EOS_Lobby_JoinLobbyCallbackInfo: { }
+    EOS_Lobby_JoinLobbyByIdOptions: { }
+    EOS_Lobby_JoinLobbyByIdCallbackInfo: { }
+    EOS_Lobby_LeaveLobbyOptions: { }
+    EOS_Lobby_LeaveLobbyCallbackInfo: { }
+    EOS_Lobby_UpdateLobbyModificationOptions: { }
+    EOS_Lobby_UpdateLobbyOptions: { }
+    EOS_Lobby_UpdateLobbyCallbackInfo: { }
+    EOS_Lobby_JoinRTCRoomOptions: { }
+    EOS_Lobby_JoinRTCRoomCallbackInfo: { }
+    EOS_Lobby_LeaveRTCRoomOptions: { }
+    EOS_Lobby_LeaveRTCRoomCallbackInfo: { }
+    EOS_Lobby_PromoteMemberOptions: { }
+    EOS_Lobby_PromoteMemberCallbackInfo: { }
+    EOS_Lobby_KickMemberOptions: { }
+    EOS_Lobby_KickMemberCallbackInfo: { }
+    EOS_Lobby_HardMuteMemberOptions: { }
+    EOS_Lobby_HardMuteMemberCallbackInfo: { }
+    EOS_Lobby_AddNotifyLobbyUpdateReceivedOptions: { }
+    EOS_Lobby_LobbyUpdateReceivedCallbackInfo: { }
+    EOS_Lobby_AddNotifyLobbyMemberUpdateReceivedOptions: { }
+    EOS_Lobby_LobbyMemberUpdateReceivedCallbackInfo: { }
+    EOS_Lobby_AddNotifyLobbyMemberStatusReceivedOptions: { }
+    EOS_Lobby_LobbyMemberStatusReceivedCallbackInfo: { }
+    EOS_Lobby_AddNotifyLobbyInviteReceivedOptions: { }
+    EOS_Lobby_LobbyInviteReceivedCallbackInfo: { }
+    EOS_Lobby_AddNotifyLobbyInviteAcceptedOptions: { }
+    EOS_Lobby_LobbyInviteAcceptedCallbackInfo: { }
+    EOS_Lobby_AddNotifyJoinLobbyAcceptedOptions: { }
+    EOS_Lobby_AddNotifyLobbyInviteRejectedOptions: { }
+    EOS_Lobby_LobbyInviteRejectedCallbackInfo: { }
+    EOS_Lobby_JoinLobbyAcceptedCallbackInfo: { }
+    EOS_Lobby_AddNotifySendLobbyNativeInviteRequestedOptions: { }
+    EOS_Lobby_SendLobbyNativeInviteRequestedCallbackInfo: { }
+    EOS_Lobby_CopyLobbyDetailsHandleByInviteIdOptions: { }
+    EOS_Lobby_CopyLobbyDetailsHandleByUiEventIdOptions: { }
+    EOS_Lobby_CreateLobbySearchOptions: { }
+    EOS_Lobby_SendInviteOptions: { }
+    EOS_Lobby_SendInviteCallbackInfo: { }
+    EOS_Lobby_RejectInviteOptions: { }
+    EOS_Lobby_RejectInviteCallbackInfo: { }
+    EOS_Lobby_QueryInvitesOptions: { }
+    EOS_Lobby_QueryInvitesCallbackInfo: { }
+    EOS_Lobby_GetInviteCountOptions: { }
+    EOS_Lobby_GetInviteIdByIndexOptions: { }
+    EOS_Lobby_CopyLobbyDetailsHandleOptions: { }
+    EOS_Lobby_GetRTCRoomNameOptions: { }
+    EOS_Lobby_IsRTCRoomConnectedOptions: { }
+    EOS_Lobby_AddNotifyRTCRoomConnectionChangedOptions: { }
+    EOS_Lobby_RTCRoomConnectionChangedCallbackInfo: { }
+    EOS_Lobby_AttributeData: { }
+    _tagEOS_Lobby_AttributeData$InnerStruct$1:
+        name: EOS_Lobby_AttributeData_Value
+    EOS_Lobby_Attribute: { }
+    EOS_Lobby_GetConnectStringOptions: { }
+    EOS_Lobby_ParseConnectStringOptions: { }
+    EOS_LobbyModification_SetBucketIdOptions: { }
+    EOS_LobbyModification_SetPermissionLevelOptions: { }
+    EOS_LobbyModification_SetMaxMembersOptions: { }
+    EOS_LobbyModification_SetInvitesAllowedOptions: { }
+    EOS_LobbyModification_AddAttributeOptions: { }
+    EOS_LobbyModification_RemoveAttributeOptions: { }
+    EOS_LobbyModification_AddMemberAttributeOptions: { }
+    EOS_LobbyModification_RemoveMemberAttributeOptions: { }
+    EOS_LobbyModification_SetAllowedPlatformIdsOptions: { }
+    EOS_LobbyDetails_GetLobbyOwnerOptions: { }
+    EOS_LobbyDetails_CopyInfoOptions: { }
+    EOS_LobbyDetails_GetAttributeCountOptions: { }
+    EOS_LobbyDetails_CopyAttributeByIndexOptions: { }
+    EOS_LobbyDetails_CopyAttributeByKeyOptions: { }
+    EOS_LobbyDetails_GetMemberAttributeCountOptions: { }
+    EOS_LobbyDetails_CopyMemberAttributeByIndexOptions: { }
+    EOS_LobbyDetails_CopyMemberAttributeByKeyOptions: { }
+    EOS_LobbyDetails_GetMemberCountOptions: { }
+    EOS_LobbyDetails_GetMemberByIndexOptions: { }
+    EOS_LobbySearch_FindOptions: { }
+    EOS_LobbySearch_FindCallbackInfo: { }
+    EOS_LobbySearch_SetLobbyIdOptions: { }
+    EOS_LobbySearch_SetTargetUserIdOptions: { }
+    EOS_LobbySearch_SetParameterOptions: { }
+    EOS_LobbySearch_RemoveParameterOptions: { }
+    EOS_LobbySearch_SetMaxResultsOptions: { }
+    EOS_LobbySearch_GetSearchResultCountOptions: { }
+    EOS_LobbySearch_CopySearchResultByIndexOptions: { }
+    EOS_LobbyDetails_CopyMemberInfoOptions: { }
+    EOS_LobbyDetails_MemberInfo: { }
+    EOS_Lobby_AddNotifyLeaveLobbyRequestedOptions: { }
+    EOS_Lobby_LeaveLobbyRequestedCallbackInfo: { }
+    EOS_UserInfo_QueryUserInfoOptions: { }
+    EOS_UserInfo_QueryUserInfoCallbackInfo: { }
+    EOS_UserInfo_QueryUserInfoByDisplayNameOptions: { }
+    EOS_UserInfo_QueryUserInfoByDisplayNameCallbackInfo: { }
+    EOS_UserInfo_QueryUserInfoByExternalAccountOptions: { }
+    EOS_UserInfo_QueryUserInfoByExternalAccountCallbackInfo: { }
+    EOS_UserInfo: { }
+    EOS_UserInfo_CopyUserInfoOptions: { }
+    EOS_UserInfo_ExternalUserInfo: { }
+    EOS_UserInfo_GetExternalUserInfoCountOptions: { }
+    EOS_UserInfo_CopyExternalUserInfoByIndexOptions: { }
+    EOS_UserInfo_CopyExternalUserInfoByAccountTypeOptions: { }
+    EOS_UserInfo_CopyExternalUserInfoByAccountIdOptions: { }
+    EOS_UserInfo_BestDisplayName: { }
+    EOS_UserInfo_CopyBestDisplayNameOptions: { }
+    EOS_UserInfo_CopyBestDisplayNameWithPlatformOptions: { }
+    EOS_UserInfo_GetLocalPlatformTypeOptions: { }
+    EOS_PlayerDataStorage_FileMetadata: { }
+    EOS_PlayerDataStorage_QueryFileOptions: { }
+    EOS_PlayerDataStorage_QueryFileCallbackInfo: { }
+    EOS_PlayerDataStorage_QueryFileListOptions: { }
+    EOS_PlayerDataStorage_QueryFileListCallbackInfo: { }
+    EOS_PlayerDataStorage_GetFileMetadataCountOptions: { }
+    EOS_PlayerDataStorage_CopyFileMetadataAtIndexOptions: { }
+    EOS_PlayerDataStorage_CopyFileMetadataByFilenameOptions: { }
+    EOS_PlayerDataStorage_DuplicateFileOptions: { }
+    EOS_PlayerDataStorage_DuplicateFileCallbackInfo: { }
+    EOS_PlayerDataStorage_DeleteFileOptions: { }
+    EOS_PlayerDataStorage_DeleteFileCallbackInfo: { }
+    EOS_PlayerDataStorage_FileTransferProgressCallbackInfo: { }
+    EOS_PlayerDataStorage_ReadFileDataCallbackInfo: { }
+    EOS_PlayerDataStorage_ReadFileOptions: { }
+    EOS_PlayerDataStorage_ReadFileCallbackInfo: { }
+    EOS_PlayerDataStorage_WriteFileDataCallbackInfo: { }
+    EOS_PlayerDataStorage_WriteFileOptions: { }
+    EOS_PlayerDataStorage_WriteFileCallbackInfo: { }
+    EOS_PlayerDataStorage_DeleteCacheOptions: { }
+    EOS_PlayerDataStorage_DeleteCacheCallbackInfo: { }
+    EOS_TitleStorage_FileMetadata: { }
+    EOS_TitleStorage_QueryFileOptions: { }
+    EOS_TitleStorage_QueryFileCallbackInfo: { }
+    EOS_TitleStorage_QueryFileListOptions: { }
+    EOS_TitleStorage_QueryFileListCallbackInfo: { }
+    EOS_TitleStorage_GetFileMetadataCountOptions: { }
+    EOS_TitleStorage_CopyFileMetadataAtIndexOptions: { }
+    EOS_TitleStorage_CopyFileMetadataByFilenameOptions: { }
+    EOS_TitleStorage_FileTransferProgressCallbackInfo: { }
+    EOS_TitleStorage_ReadFileDataCallbackInfo: { }
+    EOS_TitleStorage_ReadFileOptions: { }
+    EOS_TitleStorage_ReadFileCallbackInfo: { }
+    EOS_TitleStorage_DeleteCacheOptions: { }
+    EOS_TitleStorage_DeleteCacheCallbackInfo: { }
+    EOS_Connect_Credentials: { }
+    EOS_Connect_UserLoginInfo: { }
+    EOS_Connect_LoginOptions: { }
+    EOS_Connect_LoginCallbackInfo: { }
+    EOS_Connect_LogoutOptions: { }
+    EOS_Connect_LogoutCallbackInfo: { }
+    EOS_Connect_CreateUserOptions: { }
+    EOS_Connect_CreateUserCallbackInfo: { }
+    EOS_Connect_LinkAccountOptions: { }
+    EOS_Connect_LinkAccountCallbackInfo: { }
+    EOS_Connect_UnlinkAccountOptions: { }
+    EOS_Connect_UnlinkAccountCallbackInfo: { }
+    EOS_Connect_CreateDeviceIdOptions: { }
+    EOS_Connect_CreateDeviceIdCallbackInfo: { }
+    EOS_Connect_DeleteDeviceIdOptions: { }
+    EOS_Connect_DeleteDeviceIdCallbackInfo: { }
+    EOS_Connect_TransferDeviceIdAccountOptions: { }
+    EOS_Connect_TransferDeviceIdAccountCallbackInfo: { }
+    EOS_Connect_QueryExternalAccountMappingsOptions: { }
+    EOS_Connect_QueryExternalAccountMappingsCallbackInfo: { }
+    EOS_Connect_GetExternalAccountMappingsOptions: { }
+    EOS_Connect_QueryProductUserIdMappingsOptions: { }
+    EOS_Connect_QueryProductUserIdMappingsCallbackInfo: { }
+    EOS_Connect_GetProductUserIdMappingOptions: { }
+    EOS_Connect_GetProductUserExternalAccountCountOptions: { }
+    EOS_Connect_CopyProductUserExternalAccountByIndexOptions: { }
+    EOS_Connect_CopyProductUserExternalAccountByAccountTypeOptions: { }
+    EOS_Connect_CopyProductUserExternalAccountByAccountIdOptions: { }
+    EOS_Connect_CopyProductUserInfoOptions: { }
+    EOS_Connect_ExternalAccountInfo: { }
+    EOS_Connect_AddNotifyAuthExpirationOptions: { }
+    EOS_Connect_AuthExpirationCallbackInfo: { }
+    EOS_Connect_AddNotifyLoginStatusChangedOptions: { }
+    EOS_Connect_LoginStatusChangedCallbackInfo: { }
+    EOS_Connect_IdToken: { }
+    EOS_Connect_CopyIdTokenOptions: { }
+    EOS_Connect_VerifyIdTokenOptions: { }
+    EOS_Connect_VerifyIdTokenCallbackInfo: { }
+    EOS_Achievements_QueryDefinitionsOptions: { }
+    EOS_Achievements_StatThresholds: { }
+    EOS_Achievements_PlayerStatInfo: { }
+    EOS_Achievements_DefinitionV2: { }
+    EOS_Achievements_GetAchievementDefinitionCountOptions: { }
+    EOS_Achievements_CopyAchievementDefinitionV2ByIndexOptions: { }
+    EOS_Achievements_CopyAchievementDefinitionV2ByAchievementIdOptions: { }
+    EOS_Achievements_OnQueryDefinitionsCompleteCallbackInfo: { }
+    EOS_Achievements_QueryPlayerAchievementsOptions: { }
+    EOS_Achievements_PlayerAchievement: { }
+    EOS_Achievements_GetPlayerAchievementCountOptions: { }
+    EOS_Achievements_CopyPlayerAchievementByIndexOptions: { }
+    EOS_Achievements_CopyPlayerAchievementByAchievementIdOptions: { }
+    EOS_Achievements_OnQueryPlayerAchievementsCompleteCallbackInfo: { }
+    EOS_Achievements_UnlockAchievementsOptions: { }
+    EOS_Achievements_OnUnlockAchievementsCompleteCallbackInfo: { }
+    EOS_Achievements_AddNotifyAchievementsUnlockedV2Options: { }
+    EOS_Achievements_OnAchievementsUnlockedCallbackV2Info: { }
+    EOS_Achievements_Definition: { }
+    EOS_Achievements_CopyAchievementDefinitionByIndexOptions: { }
+    EOS_Achievements_CopyAchievementDefinitionByAchievementIdOptions: { }
+    EOS_Achievements_UnlockedAchievement: { }
+    EOS_Achievements_GetUnlockedAchievementCountOptions: { }
+    EOS_Achievements_CopyUnlockedAchievementByIndexOptions: { }
+    EOS_Achievements_CopyUnlockedAchievementByAchievementIdOptions: { }
+    EOS_Achievements_AddNotifyAchievementsUnlockedOptions: { }
+    EOS_Achievements_OnAchievementsUnlockedCallbackInfo: { }
+    EOS_Stats_IngestData: { }
+    EOS_Stats_IngestStatOptions: { }
+    EOS_Stats_IngestStatCompleteCallbackInfo: { }
+    EOS_Stats_QueryStatsOptions: { }
+    EOS_Stats_Stat: { }
+    EOS_Stats_GetStatCountOptions: { }
+    EOS_Stats_CopyStatByIndexOptions: { }
+    EOS_Stats_CopyStatByNameOptions: { }
+    EOS_Stats_OnQueryStatsCompleteCallbackInfo: { }
+    EOS_Leaderboards_QueryLeaderboardDefinitionsOptions: { }
+    EOS_Leaderboards_Definition: { }
+    EOS_Leaderboards_GetLeaderboardDefinitionCountOptions: { }
+    EOS_Leaderboards_CopyLeaderboardDefinitionByIndexOptions: { }
+    EOS_Leaderboards_CopyLeaderboardDefinitionByLeaderboardIdOptions: { }
+    EOS_Leaderboards_OnQueryLeaderboardDefinitionsCompleteCallbackInfo: { }
+    EOS_Leaderboards_UserScoresQueryStatInfo: { }
+    EOS_Leaderboards_QueryLeaderboardUserScoresOptions: { }
+    EOS_Leaderboards_LeaderboardUserScore: { }
+    EOS_Leaderboards_GetLeaderboardUserScoreCountOptions: { }
+    EOS_Leaderboards_CopyLeaderboardUserScoreByIndexOptions: { }
+    EOS_Leaderboards_CopyLeaderboardUserScoreByUserIdOptions: { }
+    EOS_Leaderboards_OnQueryLeaderboardUserScoresCompleteCallbackInfo: { }
+    EOS_Leaderboards_QueryLeaderboardRanksOptions: { }
+    EOS_Leaderboards_LeaderboardRecord: { }
+    EOS_Leaderboards_GetLeaderboardRecordCountOptions: { }
+    EOS_Leaderboards_CopyLeaderboardRecordByIndexOptions: { }
+    EOS_Leaderboards_CopyLeaderboardRecordByUserIdOptions: { }
+    EOS_Leaderboards_OnQueryLeaderboardRanksCompleteCallbackInfo: { }
+    EOS_Mod_Identifier: { }
+    EOS_Mods_InstallModOptions: { }
+    EOS_Mods_InstallModCallbackInfo: { }
+    EOS_Mods_UninstallModOptions: { }
+    EOS_Mods_UninstallModCallbackInfo: { }
+    EOS_Mods_EnumerateModsOptions: { }
+    EOS_Mods_EnumerateModsCallbackInfo: { }
+    EOS_Mods_CopyModInfoOptions: { }
+    EOS_Mods_ModInfo: { }
+    EOS_Mods_UpdateModOptions: { }
+    EOS_Mods_UpdateModCallbackInfo: { }
+    EOS_AntiCheatCommon_Vec3f: { }
+    EOS_AntiCheatCommon_Quat: { }
+    EOS_AntiCheatCommon_OnMessageToClientCallbackInfo: { }
+    EOS_AntiCheatCommon_OnClientActionRequiredCallbackInfo: { }
+    EOS_AntiCheatCommon_OnClientAuthStatusChangedCallbackInfo: { }
+    EOS_AntiCheatCommon_SetClientDetailsOptions: { }
+    EOS_AntiCheatCommon_SetGameSessionIdOptions: { }
+    EOS_AntiCheatCommon_RegisterEventParamDef: { }
+    EOS_AntiCheatCommon_RegisterEventOptions: { }
+    EOS_AntiCheatCommon_LogEventParamPair: { }
+    _tagEOS_AntiCheatCommon_LogEventParamPair$InnerStruct$1:
+        name: EOS_AntiCheatCommon_LogEventParamPair_ParamValue
+    EOS_AntiCheatCommon_LogEventOptions: { }
+    EOS_AntiCheatCommon_LogGameRoundStartOptions: { }
+    EOS_AntiCheatCommon_LogGameRoundEndOptions: { }
+    EOS_AntiCheatCommon_LogPlayerSpawnOptions: { }
+    EOS_AntiCheatCommon_LogPlayerDespawnOptions: { }
+    EOS_AntiCheatCommon_LogPlayerReviveOptions: { }
+    EOS_AntiCheatCommon_LogPlayerTickOptions: { }
+    EOS_AntiCheatCommon_LogPlayerUseWeaponData: { }
+    EOS_AntiCheatCommon_LogPlayerUseWeaponOptions: { }
+    EOS_AntiCheatCommon_LogPlayerUseAbilityOptions: { }
+    EOS_AntiCheatCommon_LogPlayerTakeDamageOptions: { }
+    EOS_AntiCheatClient_OnMessageToServerCallbackInfo: { }
+    EOS_AntiCheatClient_OnClientIntegrityViolatedCallbackInfo: { }
+    EOS_AntiCheatClient_AddNotifyMessageToServerOptions: { }
+    EOS_AntiCheatClient_AddNotifyMessageToPeerOptions: { }
+    EOS_AntiCheatClient_AddNotifyPeerActionRequiredOptions: { }
+    EOS_AntiCheatClient_AddNotifyPeerAuthStatusChangedOptions: { }
+    EOS_AntiCheatClient_AddNotifyClientIntegrityViolatedOptions: { }
+    EOS_AntiCheatClient_BeginSessionOptions: { }
+    EOS_AntiCheatClient_EndSessionOptions: { }
+    EOS_AntiCheatClient_Reserved01Options: { }
+    EOS_AntiCheatClient_AddExternalIntegrityCatalogOptions: { }
+    EOS_AntiCheatClient_ReceiveMessageFromServerOptions: { }
+    EOS_AntiCheatClient_GetProtectMessageOutputLengthOptions: { }
+    EOS_AntiCheatClient_ProtectMessageOptions: { }
+    EOS_AntiCheatClient_UnprotectMessageOptions: { }
+    EOS_AntiCheatClient_RegisterPeerOptions: { }
+    EOS_AntiCheatClient_UnregisterPeerOptions: { }
+    EOS_AntiCheatClient_ReceiveMessageFromPeerOptions: { }
+    EOS_AntiCheatClient_PollStatusOptions: { }
+    EOS_AntiCheatServer_AddNotifyMessageToClientOptions: { }
+    EOS_AntiCheatServer_AddNotifyClientActionRequiredOptions: { }
+    EOS_AntiCheatServer_AddNotifyClientAuthStatusChangedOptions: { }
+    EOS_AntiCheatServer_BeginSessionOptions: { }
+    EOS_AntiCheatServer_EndSessionOptions: { }
+    EOS_AntiCheatServer_RegisterClientOptions: { }
+    EOS_AntiCheatServer_UnregisterClientOptions: { }
+    EOS_AntiCheatServer_ReceiveMessageFromClientOptions: { }
+    EOS_AntiCheatServer_SetClientNetworkStateOptions: { }
+    EOS_AntiCheatServer_GetProtectMessageOutputLengthOptions: { }
+    EOS_AntiCheatServer_ProtectMessageOptions: { }
+    EOS_AntiCheatServer_UnprotectMessageOptions: { }
+    EOS_Reports_SendPlayerBehaviorReportOptions: { }
+    EOS_Reports_SendPlayerBehaviorReportCompleteCallbackInfo: { }
+    EOS_Sanctions_PlayerSanction: { }
+    EOS_Sanctions_QueryActivePlayerSanctionsOptions: { }
+    EOS_Sanctions_QueryActivePlayerSanctionsCallbackInfo: { }
+    EOS_Sanctions_GetPlayerSanctionCountOptions: { }
+    EOS_Sanctions_CopyPlayerSanctionByIndexOptions: { }
+    EOS_Sanctions_CreatePlayerSanctionAppealOptions: { }
+    EOS_Sanctions_CreatePlayerSanctionAppealCallbackInfo: { }
+    EOS_KWS_PermissionStatus: { }
+    EOS_KWS_QueryAgeGateOptions: { }
+    EOS_KWS_QueryAgeGateCallbackInfo: { }
+    EOS_KWS_CreateUserOptions: { }
+    EOS_KWS_CreateUserCallbackInfo: { }
+    EOS_KWS_QueryPermissionsOptions: { }
+    EOS_KWS_QueryPermissionsCallbackInfo: { }
+    EOS_KWS_UpdateParentEmailOptions: { }
+    EOS_KWS_UpdateParentEmailCallbackInfo: { }
+    EOS_KWS_RequestPermissionsOptions: { }
+    EOS_KWS_RequestPermissionsCallbackInfo: { }
+    EOS_KWS_GetPermissionsCountOptions: { }
+    EOS_KWS_CopyPermissionByIndexOptions: { }
+    EOS_KWS_GetPermissionByKeyOptions: { }
+    EOS_KWS_AddNotifyPermissionsUpdateReceivedOptions: { }
+    EOS_KWS_PermissionsUpdateReceivedCallbackInfo: { }
+    EOS_RTC_JoinRoomOptions: { }
+    EOS_RTC_Option: { }
+    EOS_RTC_JoinRoomCallbackInfo: { }
+    EOS_RTC_LeaveRoomOptions: { }
+    EOS_RTC_LeaveRoomCallbackInfo: { }
+    EOS_RTC_BlockParticipantOptions: { }
+    EOS_RTC_BlockParticipantCallbackInfo: { }
+    EOS_RTC_AddNotifyDisconnectedOptions: { }
+    EOS_RTC_DisconnectedCallbackInfo: { }
+    EOS_RTC_ParticipantMetadata: { }
+    EOS_RTC_AddNotifyParticipantStatusChangedOptions: { }
+    EOS_RTC_ParticipantStatusChangedCallbackInfo: { }
+    EOS_RTC_SetSettingOptions: { }
+    EOS_RTC_SetRoomSettingOptions: { }
+    EOS_RTC_AddNotifyRoomStatisticsUpdatedOptions: { }
+    EOS_RTC_RoomStatisticsUpdatedInfo: { }
+    EOS_RTCAdmin_QueryJoinRoomTokenOptions: { }
+    EOS_RTCAdmin_QueryJoinRoomTokenCompleteCallbackInfo: { }
+    EOS_RTCAdmin_UserToken: { }
+    EOS_RTCAdmin_CopyUserTokenByIndexOptions: { }
+    EOS_RTCAdmin_CopyUserTokenByUserIdOptions: { }
+    EOS_RTCAdmin_KickOptions: { }
+    EOS_RTCAdmin_KickCompleteCallbackInfo: { }
+    EOS_RTCAdmin_SetParticipantHardMuteOptions: { }
+    EOS_RTCAdmin_SetParticipantHardMuteCompleteCallbackInfo: { }
+    EOS_ProgressionSnapshot_BeginSnapshotOptions: { }
+    EOS_ProgressionSnapshot_AddProgressionOptions: { }
+    EOS_ProgressionSnapshot_SubmitSnapshotOptions: { }
+    EOS_ProgressionSnapshot_EndSnapshotOptions: { }
+    EOS_ProgressionSnapshot_SubmitSnapshotCallbackInfo: { }
+    EOS_ProgressionSnapshot_DeleteSnapshotOptions: { }
+    EOS_ProgressionSnapshot_DeleteSnapshotCallbackInfo: { }
+    EOS_CustomInvites_SetCustomInviteOptions: { }
+    EOS_CustomInvites_SendCustomInviteOptions: { }
+    EOS_CustomInvites_SendCustomInviteCallbackInfo: { }
+    EOS_CustomInvites_AddNotifyCustomInviteReceivedOptions: { }
+    EOS_CustomInvites_OnCustomInviteReceivedCallbackInfo: { }
+    EOS_CustomInvites_AddNotifyCustomInviteAcceptedOptions: { }
+    EOS_CustomInvites_OnCustomInviteAcceptedCallbackInfo: { }
+    EOS_CustomInvites_AddNotifyCustomInviteRejectedOptions: { }
+    EOS_CustomInvites_CustomInviteRejectedCallbackInfo: { }
+    EOS_CustomInvites_FinalizeInviteOptions: { }
+    EOS_CustomInvites_SendRequestToJoinOptions: { }
+    EOS_CustomInvites_SendRequestToJoinCallbackInfo: { }
+    EOS_CustomInvites_AddNotifyRequestToJoinResponseReceivedOptions: { }
+    EOS_CustomInvites_RequestToJoinResponseReceivedCallbackInfo: { }
+    EOS_CustomInvites_AddNotifyRequestToJoinReceivedOptions: { }
+    EOS_CustomInvites_RequestToJoinReceivedCallbackInfo: { }
+    EOS_CustomInvites_AcceptRequestToJoinOptions: { }
+    EOS_CustomInvites_AcceptRequestToJoinCallbackInfo: { }
+    EOS_CustomInvites_RejectRequestToJoinOptions: { }
+    EOS_CustomInvites_RejectRequestToJoinCallbackInfo: { }
+    EOS_CustomInvites_AddNotifySendCustomNativeInviteRequestedOptions: { }
+    EOS_CustomInvites_SendCustomNativeInviteRequestedCallbackInfo: { }
+    EOS_CustomInvites_AddNotifyRequestToJoinAcceptedOptions: { }
+    EOS_CustomInvites_OnRequestToJoinAcceptedCallbackInfo: { }
+    EOS_CustomInvites_AddNotifyRequestToJoinRejectedOptions: { }
+    EOS_CustomInvites_OnRequestToJoinRejectedCallbackInfo: { }
+
+
+    '_tagEOS_.*':
+        exclude: true
+
+protocols:
+
+functions:
+    EOS_(Initialize|Shutdown|ByteArray_ToString):
+        class: EOS
+        name: '#{g[0]}'
+
+    EOS_Platform_(.*):
+        class: EOS_PlatformHandle
+        name: '#{g[0]}'
+    EOS_EResult_(ToString):
+        class: EOS_EResult
+        name: '#{g[0]}'
+        return_marshaler: StringMarshalers.AsAsciiZMarshaler
+        return_type: String
+    EOS_EResult_(.*):
+        class: EOS_EResult
+        name: '#{g[0]}'
+    EOS_EpicAccountId_(.*):
+        class: EOS_EpicAccountIdDetails
+        name: '#{g[0]}'
+    EOS_ProductUserId_(.*):
+        class: EOS_ProductUserIdDetails
+        name: '#{g[0]}'
+    EOS_ContinuanceToken_(.*):
+        class: EOS_ContinuanceTokenDetails
+        name: '#{g[0]}'
+    EOS_IntegratedPlatformOptionsContainer_(.*):
+        class: EOS_IntegratedPlatformOptionsContainerHandle
+        name: '#{g[0]}'
+    EOS_EApplicationStatus_(ToString):
+        class: EOS_EApplicationStatus
+        name: '#{g[0]}'
+        return_marshaler: StringMarshalers.AsAsciiZMarshaler
+        return_type: String
+    EOS_Auth_Token_(.*):
+        class: EOS_Auth_Token
+        name: '#{g[0]}'
+    EOS_Auth_(.*):
+        class: EOS_AuthHandle
+        name: '#{g[0]}'
+    EOS_Achievements_PlayerAchievement_(.*):
+        class: EOS_Achievements_PlayerAchievement
+        name: '#{g[0]}'
+    EOS_Connect_(.*):
+        class: EOS_ConnectHandle
+        name: '#{g[0]}'
+    EOS_ENetworkStatus_(ToString):
+        class: EOS_ENetworkStatus
+        name: '#{g[0]}'
+        return_marshaler: StringMarshalers.AsAsciiZMarshaler
+        return_type: String
+    EOS_ENetworkStatus_(.*):
+        class: EOS_ENetworkStatus
+        name: '#{g[0]}'
+    EOS_IntegratedPlatform_CreateIntegratedPlatformOptionsContainer:
+        class: EOS_IntegratedPlatformOptionsContainerHandle
+        name: Create
+    EOS_Leaderboards_LeaderboardDefinition_Release:
+        exclude: true # as deprecated
+
+    # release with Handle suffix pattern
+    (EOS_ActiveSession|EOS_Ecom_Transaction|EOS_LobbyDetails|EOS_LobbyModification|EOS_LobbySearch|EOS_PlayerDataStorageFileTransferRequest)_Release:
+        class: '#{g[0]}Handle'
+        name: Release
+    (EOS_PresenceModification|EOS_SessionDetails|EOS_SessionModification|EOS_SessionSearch|EOS_TitleStorageFileTransferRequest)_Release:
+        class: '#{g[0]}Handle'
+        name: Release
+
+    # generic release pattern should be last, verify result, make sure it
+    # doesn't create new classes just for *_Release method
+    (.*)_Release:
+        class: '#{g[0]}'
+        name: Release
+
+    # Make sure we don't miss any functions if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Function_#{g[0]}'
+
+values:
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: 'Value_#{g[0]}'
+
+constants:
+    EOS_(.*):
+        class: EOS_Consts
+
+    SWIFT_(.*):
+        exclude: true
+
+    # Make sure we don't miss any values if new ones are introduced in a later version
+    (.*):
+        class: __FixMe
+        name: '#{g[0]}'

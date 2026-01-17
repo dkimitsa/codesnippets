@@ -249,6 +249,22 @@ val knownFrameworks = mutableMapOf<String, (String) -> Unit>(
             """.trimIndent()
         )
     },
+    "EOSSDK" to { framework ->
+        val artifact = "$framework.framework"
+        val artifactLocation = downloadFolder.extend("EOS-SDK-IOS/SDK/Bin/IOS/EOSSDK.xcframework/ios-arm64/$artifact")
+        processFramework(
+            artifact = artifact,
+            moduleFolder = "epicsdk/",
+            sourceHeadersDir = artifactLocation.headers,
+            yaml = "eossdk.yaml",
+            version = null,
+            instruction = """
+                1. download latest EOS-SDK-IOS-?????-Release-v????.zip https://dev.epicgames.com/docs/epic-online-services/platforms/i-os
+                2. unpack and rename to EOS-SDK-IOS
+                2. expected location ${artifactLocation} 
+            """.trimIndent()
+        )
+    },
 
 )
 
@@ -330,7 +346,7 @@ fun printHelpAndExit(code: Int) {
 
 fun processInternal(
     framework: String,
-    versionProvider: () -> String,
+    versionProvider: (() -> String)?,
     moduleFolder: String,
     sourceHeadersDir: File,
     destinationHeadersDir: File,
@@ -357,14 +373,16 @@ fun processInternal(
             return
     }
 
-    val version = versionProvider()
+    val version = versionProvider?.invoke()
     log.d("$framework: version $version")
     headerFolderCleaner(framework, destinationHeadersDir)
     headersCopier(framework, sourceHeadersDir, destinationHeadersDir)
     javaFolderCleaner(framework, javaFolder)
     broGenExecutor(framework, javaFolder, yamlFile)
-    pomVersionStringUpdater(framework, pomFile, version)
-    readmeFileVersionUpdater(framework, moduleFolder, version)
+    if (version != null) {
+        pomVersionStringUpdater(framework, pomFile, version)
+        readmeFileVersionUpdater(framework, moduleFolder, version)
+    }
 }
 
 
@@ -548,7 +566,7 @@ fun processFramework(
     sourceHeadersDir: File,
     destinationHeadersDir: File? = null,
     yaml: String,
-    version: () -> String,
+    version: (() -> String)?,
     instruction: String? = null,
     interactiveValidateHeaderFolder: (framework: String, sourceHeadersDir: File, instruction: String?, optional: Boolean) -> Unit = ::interactiveValidateHeaderFolder,
     headerFolderCleaner: (framework: String, destinationHeadersDir: File) -> Unit = ::cleanUpHeaders,

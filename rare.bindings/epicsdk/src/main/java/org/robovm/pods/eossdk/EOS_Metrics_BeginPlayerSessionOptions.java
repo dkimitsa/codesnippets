@@ -1,0 +1,78 @@
+/*
+ * Copyright (C) 2013-2015 RoboVM AB
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.robovm.pods.eossdk;
+
+/*<imports>*/
+import java.io.*;
+import java.nio.*;
+import java.util.*;
+import org.robovm.objc.*;
+import org.robovm.objc.annotation.*;
+import org.robovm.objc.block.*;
+import org.robovm.rt.*;
+import org.robovm.rt.annotation.*;
+import org.robovm.rt.bro.*;
+import org.robovm.rt.bro.annotation.*;
+import org.robovm.rt.bro.ptr.*;
+import org.robovm.apple.foundation.*;
+import org.robovm.apple.uikit.*;
+import org.robovm.apple.coregraphics.*;
+import org.robovm.apple.coreanimation.*;
+/*</imports>*/
+
+/*<javadoc>*/
+
+/*</javadoc>*/
+/*<annotations>*//*</annotations>*/
+/*<visibility>*/public/*</visibility>*/ class /*<name>*/EOS_Metrics_BeginPlayerSessionOptions/*</name>*/ 
+    extends /*<extends>*/Struct<EOS_Metrics_BeginPlayerSessionOptions>/*</extends>*/ 
+    /*<implements>*//*</implements>*/ {
+
+    /*<ptr>*/public static class EOS_Metrics_BeginPlayerSessionOptionsPtr extends Ptr<EOS_Metrics_BeginPlayerSessionOptions, EOS_Metrics_BeginPlayerSessionOptionsPtr> {}/*</ptr>*/
+    /*<bind>*/
+    /*</bind>*/
+    /*<constants>*//*</constants>*/
+    /*<constructors>*/
+    public EOS_Metrics_BeginPlayerSessionOptions() {}
+    public EOS_Metrics_BeginPlayerSessionOptions(int ApiVersion, EOS_EMetricsAccountIdType AccountIdType, EOS_Metrics_BeginPlayerSessionOptions_AccountId AccountId, BytePtr DisplayName, EOS_EUserControllerType ControllerType, BytePtr ServerIp, BytePtr GameSessionId) {
+        this.setApiVersion(ApiVersion);
+        this.setAccountIdType(AccountIdType);
+        this.setAccountId(AccountId);
+        this.setDisplayName(DisplayName);
+        this.setControllerType(ControllerType);
+        this.setServerIp(ServerIp);
+        this.setGameSessionId(GameSessionId);
+    }
+    /*</constructors>*/
+    /*<properties>*//*</properties>*/
+    /*<members>*/
+    @StructMember(0) public native int getApiVersion();
+    @StructMember(0) public native EOS_Metrics_BeginPlayerSessionOptions setApiVersion(int ApiVersion);
+    @StructMember(1) public native EOS_EMetricsAccountIdType getAccountIdType();
+    @StructMember(1) public native EOS_Metrics_BeginPlayerSessionOptions setAccountIdType(EOS_EMetricsAccountIdType AccountIdType);
+    @StructMember(2) public native @ByVal EOS_Metrics_BeginPlayerSessionOptions_AccountId getAccountId();
+    @StructMember(2) public native EOS_Metrics_BeginPlayerSessionOptions setAccountId(@ByVal EOS_Metrics_BeginPlayerSessionOptions_AccountId AccountId);
+    @StructMember(3) public native BytePtr getDisplayName();
+    @StructMember(3) public native EOS_Metrics_BeginPlayerSessionOptions setDisplayName(BytePtr DisplayName);
+    @StructMember(4) public native EOS_EUserControllerType getControllerType();
+    @StructMember(4) public native EOS_Metrics_BeginPlayerSessionOptions setControllerType(EOS_EUserControllerType ControllerType);
+    @StructMember(5) public native BytePtr getServerIp();
+    @StructMember(5) public native EOS_Metrics_BeginPlayerSessionOptions setServerIp(BytePtr ServerIp);
+    @StructMember(6) public native BytePtr getGameSessionId();
+    @StructMember(6) public native EOS_Metrics_BeginPlayerSessionOptions setGameSessionId(BytePtr GameSessionId);
+    /*</members>*/
+    /*<methods>*//*</methods>*/
+}
