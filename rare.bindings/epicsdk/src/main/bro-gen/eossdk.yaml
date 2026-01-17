@@ -5,6 +5,7 @@ clang_args: ['-x', 'objective-c']
 headers:
     - eos_sdk.h
     - eos_auth.h
+    - eos_ecom.h
 
 private_typedefs: {}
 
@@ -836,11 +837,23 @@ functions:
     EOS_IntegratedPlatform_CreateIntegratedPlatformOptionsContainer:
         class: EOS_IntegratedPlatformOptionsContainerHandle
         name: Create
+
+    # ecom release catch
+    EOS_Ecom_Transaction_Release:
+        class: EOS_Ecom_TransactionHandle
+        name: 'Release'
+    EOS_Ecom_(.*)_Release:
+        class: 'EOS_Ecom_#{g[0]}'
+        name: 'Release'
+    EOS_Ecom_(.*):
+        class: EOS_EcomHandle
+        name: '#{g[0]}'
+
     EOS_Leaderboards_LeaderboardDefinition_Release:
         exclude: true # as deprecated
 
     # release with Handle suffix pattern
-    (EOS_ActiveSession|EOS_Ecom_Transaction|EOS_LobbyDetails|EOS_LobbyModification|EOS_LobbySearch|EOS_PlayerDataStorageFileTransferRequest)_Release:
+    (EOS_ActiveSession|EOS_LobbyDetails|EOS_LobbyModification|EOS_LobbySearch|EOS_PlayerDataStorageFileTransferRequest)_Release:
         class: '#{g[0]}Handle'
         name: Release
     (EOS_PresenceModification|EOS_SessionDetails|EOS_SessionModification|EOS_SessionSearch|EOS_TitleStorageFileTransferRequest)_Release:
