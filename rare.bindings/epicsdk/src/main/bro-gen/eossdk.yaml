@@ -6,6 +6,7 @@ headers:
     - eos_sdk.h
     - eos_auth.h
     - eos_ecom.h
+    - eos_logging.h
 
 private_typedefs: {}
 
@@ -78,6 +79,10 @@ enums:
     EOS_EKWSPermissionStatus: { }
     EOS_ERTCParticipantStatus: { }
     EOS_ERequestToJoinResponse: { }
+    EOS_ELogLevel:
+        __EOS_ELogLevel_PAD_INT32__: EOS_LOG_PAD_INT32
+    EOS_ELogCategory:
+        __EOS_ELogCategory_PAD_INT32__: EOS_LC_PAD_INT32
 
 classes:
     # structs
@@ -774,6 +779,7 @@ classes:
     EOS_CustomInvites_OnRequestToJoinAcceptedCallbackInfo: { }
     EOS_CustomInvites_AddNotifyRequestToJoinRejectedOptions: { }
     EOS_CustomInvites_OnRequestToJoinRejectedCallbackInfo: { }
+    EOS_LogMessage: {}
 
 
     '_tagEOS_.*':
@@ -847,6 +853,9 @@ functions:
         name: 'Release'
     EOS_Ecom_(.*):
         class: EOS_EcomHandle
+        name: '#{g[0]}'
+    EOS_Logging_(.*):
+        class: EOS_Logging
         name: '#{g[0]}'
 
     EOS_Leaderboards_LeaderboardDefinition_Release:
