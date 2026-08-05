@@ -5,7 +5,7 @@ This is a Kotlin Multiplatform project demo application that run on iOS RoboVm.
 ### Running the apps
 
 Quickest way to run the apps is to use the Gradle tasks:
-> 
+> ./gradlew  --info :robovm-app:launchIPhoneSimulator
 
 ---
 Repositories:
